@@ -59,7 +59,8 @@ nav {
     margin: 0 auto;
     height: 60px;
     background: #fff;
-    z-index: 1;
+    z-index: 3;
+    border-bottom: 1px solid rgba(122, 122, 122, 0.2);
 }
 
 .navigation-container {
@@ -83,21 +84,26 @@ nav {
     color: #000;
     text-decoration: none;
     text-transform: uppercase;
-    background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #000 50%);
+    background-image: linear-gradient(
+        120deg,
+        transparent 0%,
+        transparent 50%,
+        #000 50%
+    );
     background-size: 220%;
-    transition: all .4s;
+    transition: all 0.4s;
 }
 
 .navigation-link:hover,
 .navigation-link:active {
     background-position: 100%;
-    color:white;
+    color: white;
     transform: translateX(1rem);
 }
 
 header {
     width: 100%;
-    height: 650px;
+    height: 80vh;
     margin-top: 60px;
     margin-bottom: 300px;
     display: flex;
@@ -106,7 +112,33 @@ header {
     z-index: 0;
 }
 
+.animation-container {
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    display: grid;
+    align-content: stretch;
+    justify-content: center;
+    column-gap: 0px;
+    row-gap: 0px;
+    z-index: 1;
+}
+
+.square {
+    width: 10px;
+    height: 10px;
+    /* border-style: solid; */
+    font-size: 1rem;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.3);
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+
 .heading-text-box {
+    z-index: -1;
 }
 
 .heading-primary--main,
@@ -137,36 +169,41 @@ section {
 }
 
 .about-section {
-    height: 800px;
+    height: 95vh;
     color: white;
     background-color: black;
-    transform: skewY(2deg) skewX(5deg) scale(1.3);
+    clip-path: polygon(0 200px,100% 0, 100% 600px, 0 100%);
+    /* transform: skewY(2deg) skewX(5deg) scale(1); */
 }
 .story-section {
     height: 800px;
     color: black;
     background-color: grey;
-    transform: skewY(-2deg) skewX(-5deg) scale(1.3);
+    clip-path: polygon(0 200px,100% 0, 100% 100%, 0 100%);
+    /* transform: skewY(-2deg) skewX(-5deg) scale(1); */
 }
 .project-section {
     height: 800px;
     color: black;
     background-color: white;
-    transform: skewY(2deg) skewX(5deg) scale(1.3);
+    clip-path: polygon(0 200px,100% 0, 100% 600px, 0 100%);
+    /* transform: skewY(2deg) skewX(5deg) scale(1); */
 }
 
 .contact-section {
     height: 800px;
     color: black;
     background-color: grey;
-    transform: skewY(-2deg) skewX(-5deg) scale(1.3);
+    clip-path: polygon(0 200px,100% 0, 100% 600px, 0 100%);
+    /* transform: skewY(-2deg) skewX(-5deg) scale(1); */
 }
 
 .resume-section {
     height: 800px;
     color: white;
     background-color: black;
-    transform: skewY(2deg) skewX(5deg) scale(1.3);
+    clip-path: polygon(0 200px,100% 0, 100% 600px, 0 100%);
+    /* transform: skewY(2deg) skewX(5deg) scale(1); */
 }
 
 .content-container-left {
@@ -174,6 +211,7 @@ section {
     margin: 100px auto 100px;
     padding: 100px 60px 100px;
     transition: all 0.6s ease-out;
+    transform: skewY(2deg) skewX(5deg) scale(1);
 }
 
 .content-container-left:active,
@@ -181,7 +219,8 @@ section {
     width: 60%;
     margin: 100px auto 100px;
     padding: 100px 60px 100px;
-    transform: skewY(-2deg) skewX(-5deg) scale(1.2);
+    /* transform: skewY(-2deg) skewX(-5deg) scale(1); */
+    transform: scale(1.2);
 }
 
 .content-container-right {
@@ -189,6 +228,7 @@ section {
     margin: 100px auto 100px;
     padding: 100px 60px 100px;
     transition: all 0.6s ease-out;
+    transform: skewY(-2deg) skewX(-5deg) scale(1.2); 
 }
 
 .content-container-right:active,
