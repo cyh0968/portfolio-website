@@ -3,158 +3,109 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/brands.min.css" />
         <link rel="stylesheet" href="./index.css" />
+        <!--     Font     -->
+        <link href="https://fonts.googleapis.com/css?family=Lato:100i,300,300i,400&display=swap" rel="stylesheet" />
         <title>Welcome to Yohan's website!</title>
     </head>
-    <!-- background should be graident with orange yello green 45 degree and when I scroll down, the color variation is change also -->
-    <!-- Add music player also.  -->
     <body>
-        <nav>
-            <ul class="navigation-container">
-                <li class="navigation-item">
-                    <a href="#about" class="navigation-link"
-                        ><span>About</span></a
-                    >
-                </li>
-                <li class="navigation-item">
-                    <a href="#story" class="navigation-link"
-                        ><span>Story</span></a
-                    >
-                </li>
-                <li class="navigation-item">
-                    <a href="#projects" class="navigation-link"
-                        ><span>Projects</span></a
-                    >
-                </li>
-                <li class="navigation-item">
-                    <a href="#contact" class="navigation-link"
-                        ><span>Contact</span></a
-                    >
-                </li>
-                <li class="navigation-item">
-                    <a href="#resume" class="navigation-link"
-                        ><span>Resume</span></a
-                    >
-                </li>
-            </ul>
-        </nav>
-     
+        <div class="navigation">
+            <input type="checkbox" class="navigation__checkbox" id="navigation-toggle">
+
+            <label for="navigation-toggle" class="navigation__button">
+                    <ion-icon name="menu-outline" class='navigation__icon'></ion-icon>
+                    &nbsp; 
+            </label>
+
+            <div class="navigation__background">&nbsp;</div>
+            <nav class="navigation__nav">
+                <ul class="navigation__list" id="navigation-toggle-menu">
+                    <li class="navigation__item">
+                        <a href="#home" class="navigation__link">Home</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#about" class="navigation__link">About</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#project" class="navigation__link">Project</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#contact" class="navigation__link">Contact</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="https://drive.google.com/file/d/1mmHUoYclntSdGCEMFwmlEv6YvWZRqnCN/view?usp=sharing" class="navigation__link">Resume</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
 
         <header class="header">
             <div class="animation-container" id="animation-container"></div>
             <div class="heading-text-box">
-                <h1 class="heading-primary">
-                    <span class="heading-primary--main">Hello</span><br /><span
-                        class="heading-primary--sub"
-                        >I'm Yohan</span
-                    >
-                </h1>
+                <h1>Welcome to Visit</h1>
             </div>
         </header>
 
         <main>
-            <section class="about-section" id="about">
-                <div class="content-container-left">
-                    <h2>About</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Mauris accumsan est convallis bibendum porta. Nam velit
-                        arcu, accumsan et condimentum ac, dictum non tellus. In
-                        hac habitasse platea dictumst. Duis vel magna accumsan,
-                        dignissim sem quis, accumsan est. Integer nec feugiat
-                        ligula. Vivamus at est diam. Pellentesque cursus
-                        pharetra enim ut luctus. Duis eget faucibus massa.
-                        Quisque luctus elementum fermentum. Quisque suscipit
-                        nulla et ante posuere, quis molestie diam molestie.
-                        Praesent luctus eros id arcu pretium, at pretium odio
-                        congue. Aenean eu odio suscipit, egestas nisl et,
-                        sagittis dui.
-                    </p>
+            <section class="section" id="about">
+                <div class="content-container">
+                    <h1>About</h1>
+                    <h2>Skills</h2>
+                    <h2>Experience</h2>
+                    <div class="description-box">
+                        <h3>Software Developer / IT Analyst</h3>
+                    </div>
                 </div>
             </section>
-            <section class="story-section" id="story">
-                <div class="content-container-right">
-                    <h2>Story</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Mauris accumsan est convallis bibendum porta. Nam velit
-                        arcu, accumsan et condimentum ac, dictum non tellus. In
-                        hac habitasse platea dictumst. Duis vel magna accumsan,
-                        dignissim sem quis, accumsan est. Integer nec feugiat
-                        ligula. Vivamus at est diam. Pellentesque cursus
-                        pharetra enim ut luctus. Duis eget faucibus massa.
-                        Quisque luctus elementum fermentum. Quisque suscipit
-                        nulla et ante posuere, quis molestie diam molestie.
-                        Praesent luctus eros id arcu pretium, at pretium odio
-                        congue. Aenean eu odio suscipit, egestas nisl et,
-                        sagittis dui.
-                    </p>
+            <section class="section" id="project">
+                <div class="content-container">
+                    <h1>Project</h1>
+                    <h2>Fleamarket</h2>
+                    <h3>description</h3>
+                    <h2>Employee Management System</h2>
+                    <h3>description</h3>
                 </div>
             </section>
-            <section class="project-section" id="projects">
-                <div class="content-container-left">
-                    <h2>Projects</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Mauris accumsan est convallis bibendum porta. Nam velit
-                        arcu, accumsan et condimentum ac, dictum non tellus. In
-                        hac habitasse platea dictumst. Duis vel magna accumsan,
-                        dignissim sem quis, accumsan est. Integer nec feugiat
-                        ligula. Vivamus at est diam. Pellentesque cursus
-                        pharetra enim ut luctus. Duis eget faucibus massa.
-                        Quisque luctus elementum fermentum. Quisque suscipit
-                        nulla et ante posuere, quis molestie diam molestie.
-                        Praesent luctus eros id arcu pretium, at pretium odio
-                        congue. Aenean eu odio suscipit, egestas nisl et,
-                        sagittis dui.
-                    </p>
-                </div>
-            </section>
-            <section class="contact-section" id="contact">
-                <div class="content-container-right">
-                    <h2>Contact</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Mauris accumsan est convallis bibendum porta. Nam velit
-                        arcu, accumsan et condimentum ac, dictum non tellus. In
-                        hac habitasse platea dictumst. Duis vel magna accumsan,
-                        dignissim sem quis, accumsan est. Integer nec feugiat
-                        ligula. Vivamus at est diam. Pellentesque cursus
-                        pharetra enim ut luctus. Duis eget faucibus massa.
-                        Quisque luctus elementum fermentum. Quisque suscipit
-                        nulla et ante posuere, quis molestie diam molestie.
-                        Praesent luctus eros id arcu pretium, at pretium odio
-                        congue. Aenean eu odio suscipit, egestas nisl et,
-                        sagittis dui.
-                    </p>
-                </div>
-            </section>
-            <section class="resume-section" id="resume">
-                <div class="content-container-left">
-                    <h2>Resume</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Mauris accumsan est convallis bibendum porta. Nam velit
-                        arcu, accumsan et condimentum ac, dictum non tellus. In
-                        hac habitasse platea dictumst. Duis vel magna accumsan,
-                        dignissim sem quis, accumsan est. Integer nec feugiat
-                        ligula. Vivamus at est diam. Pellentesque cursus
-                        pharetra enim ut luctus. Duis eget faucibus massa.
-                        Quisque luctus elementum fermentum. Quisque suscipit
-                        nulla et ante posuere, quis molestie diam molestie.
-                        Praesent luctus eros id arcu pretium, at pretium odio
-                        congue. Aenean eu odio suscipit, egestas nisl et,
-                        sagittis dui.
-                    </p>
+            <section class="section" id="contact">
+                <div class="content-container">
+                    <h1>Contact</h1>
+                    <div class="icon-container">
+                        <ul>
+                            <li>
+                                <a href="https://www.linkedin.com/in/yohan-choi-629288155/" class="contact-link">
+                                    <ion-icon name="logo-linkedin" class="contact-icon"></ion-icon>Linkedin
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/cyh0968" class="contact-link">
+                                    <ion-icon name="logo-github" class="contact-icon"></ion-icon>GITHUB
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/remember2019" class="contact-link">
+                                    <ion-icon name="logo-twitter" class="contact-icon"></ion-icon>TWITTER
+                                </a>
+                            </li>
+                            <li>
+                                <a href="malito:remember2019@gmail.com" class="contact-link">
+                                    <ion-icon name="mail-outline" class="contact-icon"></ion-icon>EMAIL
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </section>
         </main>
 
         <footer>
-            <div class="footer-container"></div>
+            <div class="footer-container">
+                    <div class="footer-text">
+                        <p><span class="small">&copy; 2020 by Yohan Choi. All rights reserved.</span></p>
+                    </div>
+            </div>
         </footer>
-        <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
-        <script src="./anima-data.js"></script>
+        <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
         <script src="./index.js"></script>
     </body>
 </html>
