@@ -99,7 +99,7 @@ h3 {
 }
 
 .paragraph__subheading {
-    margin-left: 20px;
+    margin-right: 5px;
     font-size: 90%;
     text-align: center;
     text-transform: uppercase;
@@ -341,4 +341,9 @@ a:link,
 a:visited {
     text-decoration: none;
     color: var(--white);
+}
+
+a:hover, a:active {
+    color: var(--accent-color);
+    transition: all 0.4s;
 }
