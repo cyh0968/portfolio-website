@@ -55,19 +55,20 @@ h3 {
 }
 
 h1 {
-    text-align: center;
+    
     margin-top: 0;
     margin-bottom: 25px;
     font-size: 240%;
+    text-align: center;
     word-spacing: 4px;
     letter-spacing: 1px;
 }
 
 h2 {
-    font-size: 180%;
-    word-spacing: 2px;
-    text-align: center;
     margin-bottom: 30px;
+    font-size: 180%;
+    text-align: center;
+    word-spacing: 2px;
     letter-spacing: 1px;
 }
 
@@ -82,12 +83,13 @@ h2::after {
 }
 
 h3 {
-    font-size: 110%;
     margin-bottom: 15px;
+    font-size: 110%;
+    text-align: center;
 }
 
 /* Paragraphs */
-.logn-copy {
+.long-copy {
     line-height: 145%;
 }
 
@@ -99,22 +101,24 @@ h3 {
 .paragraph__subheading {
     margin-left: 20px;
     font-size: 90%;
+    text-align: center;
     text-transform: uppercase;
     color: var(--light-grey);
 }
 
 .text__container {
     margin-bottom: 60px;
+    text-align: center;
 }
 
 /* Footer */
-.footer-container {
+.footer__container {
     height: 100px;
     vertical-align: baseline;
     bottom: 0;
 }
 
-.footer-text {
+.footer__text {
     margin: 0 auto;
     padding-top: 40px;
     text-align: center;
@@ -123,10 +127,11 @@ h3 {
 /* List */
 li {
     list-style-type: none;
+    margin-bottom: 15px;
 }
 
 /* Icon */
-.icon-container {
+.icon__container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -164,12 +169,11 @@ li {
 }
 
 .navigation__button {
-    /* background-color: var(--primary-color); */
-    height: 7rem;
-    width: 7rem;
+    height: 6rem;
+    width: 6rem;
     position: fixed;
-    top: 6rem;
-    left: 6rem;
+    top: 2rem;
+    left: 3rem;
     border-radius: 50%;
     z-index: 5;
     text-align: center;
@@ -283,7 +287,7 @@ li {
         120deg,
         transparent 0%,
         transparent 50%,
-        /* var(--accent-color) 50% */ var(--primary-color) 50%
+        var(--primary-color) 50%
     );
     background-size: 220%;
     transition: all 0.5s;
@@ -292,7 +296,6 @@ li {
 .navigation__link:hover,
 .navigation__link:active {
     background-position: 100%;
-    color: var(--primary-color);
     color: var(--accent-color);
     transform: scale(1.2);
 }
@@ -307,21 +310,23 @@ header {
     z-index: 0;
 }
 
+.heading-textbox {
+}
+
 section {
     width: 100%;
     margin: 0 auto;
 }
 
-.content-container {
+.content__container {
     width: 50%;
     margin: 100px auto 0px;
     padding: 100px 60px 100px;
     transition: all 0.6s ease-out;
-    transform: skewY(2deg) skewX(5deg) scale(0.8);
 }
 
-.content-container:active,
-.content-container:hover {
+.content__container:active,
+.content__container:hover {
     transform: scale(1.2);
 }
 
