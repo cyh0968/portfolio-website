@@ -137,6 +137,11 @@ li {
     justify-content: center;
 }
 
+.logo-medium {
+    color: var(--white);
+}
+
+
 .contact-icon {
     display: inline-block;
     font-size: 110%;
