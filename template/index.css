@@ -376,6 +376,10 @@ li {
         width: 80vw;
     }
 
+    .paragraph {
+        width: 18rem;
+    }
+
     .navigation__button {
         height: 2rem;
         width: 3rem;
@@ -406,6 +410,10 @@ li {
 }
 
 @media only screen and (max-width: 20rem) {
+    .paragraph {
+        width: 15rem;
+    }
+
     .navigation__link {
         width: 15rem;
     }
