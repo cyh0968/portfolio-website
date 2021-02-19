@@ -128,8 +128,8 @@ function Homepage() {
                             technologies such as node.js/express.js and react.js by using Nginx reverse proxy to serve
                             the API server and the client-side react application
                         </div>
+                        <h4 className={utilStyles.headingMd}>Github:</h4>&nbsp;
                         <p>
-                            <h4 className={utilStyles.headingMd}>Github:</h4>&nbsp;
                             <a href="https://github.com/yohan-choi-dev/fleamarket-backend" target="_blank">
                                 backend
                             </a>
@@ -146,8 +146,8 @@ function Homepage() {
                             The EMS application helps a user to manage employees on the web The project is developed in
                             server-side JavaScript technologies such as node.js/express.js, MongoDB, and PostgreSQL
                         </div>
+                        <h4 className={utilStyles.headingMd}>Github:</h4>&nbsp;
                         <p>
-                            <h4 className={utilStyles.headingMd}>Github:</h4>&nbsp;
                             <a href="https://github.com/yohan-choi-dev/employee-management-system" target="_blank">
                                 repository
                             </a>
