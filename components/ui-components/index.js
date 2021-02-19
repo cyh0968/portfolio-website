@@ -1,1 +1,1 @@
-export { LinkedInIcon, GithubIcon, TwitterIcon, MailIcon, ResumeIcon } from './icons';
+export { LinkedInIcon, GithubIcon, TwitterIcon, MailIcon, ResumeIcon, ChevronDown, ChevronUp } from './icons';

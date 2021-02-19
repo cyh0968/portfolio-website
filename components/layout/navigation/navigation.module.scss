@@ -34,7 +34,6 @@
 .icon {
     position: relative;
     margin-top: 3rem;
-
     &,
     &::before,
     &::after {
@@ -58,6 +57,12 @@
     &::after {
         top: 1rem;
     }
+}
+
+.iconUp {
+}
+
+.iconDown {
 }
 
 .item {

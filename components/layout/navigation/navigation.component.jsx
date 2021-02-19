@@ -1,4 +1,5 @@
 import styles from './navigation.module.scss';
+import { ChevronDown, ChevronUp } from '../../ui-components';
 import Link from 'next/link';
 import { useState } from 'react';
 
@@ -14,7 +15,7 @@ function Navigation() {
     function handleOnClick() {
         setCheckboxStatus(false);
     }
-
+    // <span className={styles.icon}>&nbsp;</span>
     return (
         <>
             <input
@@ -25,7 +26,8 @@ function Navigation() {
                 id="toggle"
             />
             <label htmlFor="toggle" className={styles.toggleButton}>
-                <span className={styles.icon}>&nbsp;</span>
+                <ChevronDown classNmae={styles.iconUp}></ChevronDown>
+                <ChevronDown classNmae={styles.iconDown}></ChevronDown>
                 &nbsp;
             </label>
             {isChecked ? (
