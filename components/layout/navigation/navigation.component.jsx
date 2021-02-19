@@ -37,7 +37,7 @@ function Navigation() {
                             </Link>
                         </li>
                         <li className={styles.item}>
-                            <Link href="/#about">
+                            <Link href="/about">
                                 <a className={styles.link}>About</a>
                             </Link>
                         </li>
