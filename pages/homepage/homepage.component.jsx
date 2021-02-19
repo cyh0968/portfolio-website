@@ -1,5 +1,6 @@
 import styles from './homepage.module.scss';
 import { Layout } from '../../components/layout';
+import { LinkedInIcon, GithubIcon, TwitterIcon, MailIcon, ResumeIcon } from '../../components/ui-components';
 
 function Homepage() {
     return (
@@ -162,29 +163,29 @@ function Homepage() {
                                     target="_blank"
                                     className="contact-link"
                                 >
-                                    <ion-icon name="logo-linkedin" className="contact-icon"></ion-icon>Linkedin
+                                    <LinkedInIcon name="logo-linkedin" className="contact-icon"></LinkedInIcon>Linkedin
                                 </a>
                             </li>
                             <li>
                                 <a href="https://github.com/yohan-choi-dev" target="_blank" className="contact-link">
-                                    <ion-icon name="logo-github" className="contact-icon"></ion-icon>GITHUB
+                                    <GithubIcon name="logo-github" className="contact-icon"></GithubIcon>GITHUB
                                 </a>
                             </li>
 
                             <li>
                                 <a href="https://twitter.com/remember2019" target="_blank" className="contact-link">
-                                    <ion-icon name="logo-twitter" className="contact-icon"></ion-icon>TWITTER
+                                    <TwitterIcon name="logo-twitter" className="contact-icon"></TwitterIcon>TWITTER
                                 </a>
                             </li>
                             <li>
                                 <a href="malito:yohan.choi.dev@gmail.com" target="_blank" className="contact-link">
-                                    <ion-icon name="mail-outline" className="contact-icon"></ion-icon>EMAIL
+                                    <MailIcon name="mail-outline" className="contact-icon"></MailIcon>EMAIL
                                 </a>
                             </li>
 
                             <li>
                                 <a href="https://tinyurl.com/y4yncva7" target="_blank" className="contact-link">
-                                    <ion-icon name="document-outline" className="contact-icon"></ion-icon>RESUME
+                                    <ResumeIcon name="document-outline" className="contact-icon"></ResumeIcon>RESUME
                                 </a>
                             </li>
                         </ul>
