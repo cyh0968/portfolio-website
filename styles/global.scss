@@ -41,15 +41,6 @@ body {
     align-content: space-between;
 }
 
-.header {
-    height: 80vh;
-    margin-top: 3rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 0;
-}
-
 /* Section */
 .section {
     display: flex;
@@ -90,19 +81,6 @@ li::before {
 li {
     list-style: none;
     margin-bottom: 0.3rem;
-}
-
-/* Footer */
-.footer__container {
-    height: 5rem;
-    vertical-align: baseline;
-    bottom: 0;
-}
-
-.footer__text {
-    margin: 0 auto;
-    padding-top: 2rem;
-    text-align: center;
 }
 
 /* Icon */
