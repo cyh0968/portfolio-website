@@ -1,17 +1,16 @@
 .navigation {
     height: 100vh;
     position: fixed;
-    display: none;
-    background-color: var(--accent-color);
     top: 0;
     right: 0;
     z-index: 4;
-    opacity: 0;
-    width: 0;
+    display: block;
+    background-color: var(--accent-color);
+    width: 100vw;
     transition: all 0.6s;
 }
 
-.button {
+.toggleButton {
     height: 6rem;
     width: 6rem;
     position: fixed;
@@ -107,22 +106,16 @@
             transform: scale(80);
         }
 
-        & ~ .navigation {
-            display: inherit;
-            opacity: 1;
-            width: 100vw;
-        }
-
-        & + .button .icon {
+        & + .toggleButton .icon {
             background-color: transparent;
         }
 
-        & + .button .icon::before {
+        & + .toggleButton .icon::before {
             top: 0;
             transform: rotate(135deg);
         }
 
-        & + .button .icon::after {
+        & + .toggleButton .icon::after {
             top: 0;
             transform: rotate(-135deg);
         }
