@@ -1,0 +1,46 @@
+/* List */
+.list {
+    list-style: none;
+    margin-bottom: 0.3rem;
+    &::before {
+        margin-right: 0.25rem;
+    }
+}
+
+/* link */
+.link {
+    &,
+    &:link,
+    &:visited {
+        font-size: 1.8rem;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: var(--white);
+        letter-spacing: 1px;
+        word-spacing: 2px;
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
+
+    &:hover,
+    &:active {
+        color: var(--accent-color);
+        transition: all 0.4s;
+    }
+}
+
+/* Icon */
+.icon {
+    display: inline-block;
+    font-size: 1.8rem;
+    margin-right: 1rem;
+    line-height: 1.2;
+    vertical-align: middle;
+    margin-top: -0.25rem;
+}
+
+.iconContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
