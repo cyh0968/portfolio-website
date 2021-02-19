@@ -4,9 +4,9 @@ import { Navigation } from '../navigation';
 function Header() {
     return (
         <div>
-            <Navigation></Navigation>
-            <header className="header" id="home">
-                <div className="header__textbox">
+            <header class="header" id="home">
+                <Navigation></Navigation>
+                <div class="header__textbox">
                     <h1>Thank you for visiting</h1>
                 </div>
             </header>
