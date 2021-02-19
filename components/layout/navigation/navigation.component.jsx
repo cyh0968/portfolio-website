@@ -34,12 +34,12 @@ function Navigation() {
                 <nav className={styles.navigation} onClick={handleOnClick}>
                     <ul className={styles.list}>
                         <li className={styles.item}>
-                            <Link href="/">
+                            <Link href="/#home">
                                 <a className={styles.link}>Home</a>
                             </Link>
                         </li>
                         <li className={styles.item}>
-                            <Link href="/about">
+                            <Link href="/#about">
                                 <a className={styles.link}>About</a>
                             </Link>
                         </li>

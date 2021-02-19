@@ -8,7 +8,7 @@ import { Section } from '../components/section';
 function Homepage() {
     return (
         <Layout>
-            <div className={styles.container}>
+            <div className={styles.container} id="home">
                 <div className={styles.intro}>
                     <span className={styles.leftAlign}>
                         <h1 className={styles.introText}>Full-stack web</h1>
@@ -30,7 +30,7 @@ function Homepage() {
                 </div>
             </div>
 
-            <Section leftHeading="About" rightHeading="About">
+            <Section leftHeading="About" rightHeading="About" id="about">
                 <div className={utilStyles.content}>
                     <p className={utilStyles.long}>
                         Hello, I'm Yohan. Thank you for visiting my website! I believe that our fingertips can make a
