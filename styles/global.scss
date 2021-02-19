@@ -83,41 +83,6 @@ li {
     margin-bottom: 0.3rem;
 }
 
-/* Icon */
-.icon__container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.contact-icon {
-    display: inline-block;
-    font-size: 1.8rem;
-    margin-right: 1rem;
-    line-height: 1.2;
-    vertical-align: middle;
-    margin-top: -0.25rem;
-}
-
-.contact-link,
-.contact-link:link,
-.contact-link:visited {
-    font-size: 1.8rem;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: var(--white);
-    letter-spacing: 1px;
-    word-spacing: 2px;
-    text-align: center;
-    margin-bottom: 1.5rem;
-}
-
-.contact-link:hover,
-.contact-link:active {
-    color: var(--accent-color);
-    transition: all 0.4s;
-}
-
 /* Media queries */
 
 @media only screen and (max-width: 64rem) {
