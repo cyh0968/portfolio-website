@@ -60,6 +60,18 @@
     font-size: 0.9rem;
     /* text-align: center; */
     color: var(--white);
+
+    @media only screen and (max-width: 34rem) {
+        .paragraph {
+            width: 18rem;
+        }
+    }
+
+    @media only screen and (max-width: 20rem) {
+        & {
+            width: 15rem;
+        }
+    }
 }
 
 .long {

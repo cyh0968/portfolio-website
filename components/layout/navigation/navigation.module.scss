@@ -19,6 +19,15 @@
     z-index: 5;
     text-align: center;
     cursor: pointer;
+
+    @media only screen and (max-width: 34rem) {
+        & {
+            height: 2rem;
+            width: 3rem;
+            top: -0.5rem;
+            right: 1rem;
+        }
+    }
 }
 
 .list {
@@ -56,6 +65,23 @@
     }
     &::after {
         top: 1rem;
+    }
+
+    @media only screen and (max-width: 34rem) {
+        &,
+        &::before,
+        &::after {
+            width: 1.75rem;
+            height: 2px;
+            display: inline-block;
+            background-color: var(--white);
+        }
+        &::before {
+            top: -0.5rem;
+        }
+        &::after {
+            top: 0.5rem;
+        }
     }
 }
 
@@ -101,6 +127,17 @@
         background-position: 100%;
         color: var(--accent-color);
         transform: scale(1.2);
+    }
+
+    @media only screen and (max-width: 34rem) {
+        & {
+            width: 20rem;
+        }
+    }
+    @media only screen and (max-width: 20rem) {
+        & {
+            width: 15rem;
+        }
     }
 }
 
