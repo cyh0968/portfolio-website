@@ -1,9 +1,23 @@
+import Image from 'next/image';
+
 import utilStyles from '../../styles/utils.module.scss';
 import { Layout } from '../../components/layout';
+
+const name = 'Yohan Choi';
 
 function About() {
     return (
         <Layout>
+            <Image
+                priority
+                src="../../public/images/profile.jpg"
+                className={utilStyles.borderCircle}
+                height={144}
+                width={144}
+                alt={name}
+            ></Image>
+            <h2 className={utilStyles.headingLg}></h2>
+
             <section className="section" id="about">
                 <div className="section__content">
                     <h1 className={utilStyles.heading2Xl}>About</h1>
