@@ -92,53 +92,6 @@ li {
     margin-bottom: 0.3rem;
 }
 
-/* Paragraphs */
-.long-copy {
-    line-height: 1.45;
-}
-
-.small {
-    font-size: smaller;
-    text-align: center;
-}
-
-.text-container {
-    margin-bottom: 3rem;
-    text-align: center;
-    z-index: 1;
-}
-
-.subheading {
-    font-size: 0.9rem;
-    text-align: center;
-    text-transform: uppercase;
-    color: var(--light-grey);
-}
-
-.paragraph {
-    width: 25rem;
-    margin: 0 auto 0.5rem;
-    font-size: 0.9rem;
-    /* text-align: center; */
-    color: var(--white);
-}
-
-.details {
-    margin-top: 1rem;
-    display: block;
-    font-size: 1.1rem;
-    text-transform: uppercase;
-}
-
-.details::after {
-    display: block;
-    width: 3rem;
-    height: 0.1rem;
-    margin: 1rem auto;
-    content: '';
-    background-color: var(--accent-color);
-}
-
 /* Footer */
 .footer__container {
     height: 5rem;
