@@ -1,5 +1,7 @@
 import styles from './navigation.module.scss';
+import Link from 'next/link';
 import { useState } from 'react';
+
 function Navigation() {
     const [isChecked, setCheckboxStatus] = useState(false);
 
@@ -30,14 +32,14 @@ function Navigation() {
                 <nav className={styles.navigation} onClick={handleOnClick}>
                     <ul className={styles.list}>
                         <li className={styles.item}>
-                            <a href="#home" className={styles.link}>
-                                Home
-                            </a>
+                            <Link href="/">
+                                <a className={styles.link}>Home</a>
+                            </Link>
                         </li>
                         <li className={styles.item}>
-                            <a href="#about" className={styles.link}>
-                                About
-                            </a>
+                            <Link href="/#about">
+                                <a className={styles.link}>About</a>
+                            </Link>
                         </li>
                         <li className={styles.item}>
                             <a href="#blog" className={styles.link}>
@@ -45,14 +47,14 @@ function Navigation() {
                             </a>
                         </li>
                         <li className={styles.item}>
-                            <a href="#project" className={styles.link}>
-                                Project
-                            </a>
+                            <Link href="/projects">
+                                <a className={styles.link}>Project</a>
+                            </Link>
                         </li>
                         <li className={styles.item}>
-                            <a href="#contact" className={styles.link}>
-                                Contact
-                            </a>
+                            <Link href="/#contact">
+                                <a className={styles.link}>Contact</a>
+                            </Link>
                         </li>
                         <li className={styles.item}>
                             <a href="https://tinyurl.com/y4yncva7" className={styles.link}>

@@ -7,7 +7,6 @@ function Header() {
         <div>
             <header className={styles.header} id="home">
                 <Navigation></Navigation>
-                <h1 className={utilStyles.heading2Xl}>Thank you for visiting</h1>
             </header>
         </div>
     );
