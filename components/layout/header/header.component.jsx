@@ -5,7 +5,7 @@ import { Navigation } from '../navigation';
 function Header() {
     return (
         <div>
-            <header className={styles.header} id="home">
+            <header className={styles.header}>
                 <Navigation></Navigation>
             </header>
         </div>
