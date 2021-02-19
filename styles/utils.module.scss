@@ -19,16 +19,33 @@
     flex-direction: column;
     align-items: center;
     align-content: space-between;
+    padding-bottom: 5rem;
+    margin-bottom: 5rem;
+    border-bottom: solid 1px var(--white);
+}
+
+.sectionLeft {
+    width: 20%;
+}
+
+.sectionRight {
+    width: 60%;
+}
+
+.sectionTitle {
+    color: var(--white);
+    font-weight: 900;
+    font-size: 5rem;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    text-transform: uppercase;
 }
 
 .sectionContent {
-    transition: all 0.2s ease-out;
-    transform: scale(0.8);
+    display: flex;
     width: 70%;
-    &:active,
-    &:hover {
-        transform: scale(1);
-    }
 }
 
 /* Headings */
@@ -51,18 +68,17 @@
     text-transform: uppercase;
     margin-bottom: 1.5rem;
     font-size: 1.8rem;
-    text-align: center;
+    text-align: left;
     word-spacing: 2px;
     letter-spacing: 1px;
 
     &::after {
         display: block;
+        margin-top: 0.5rem;
         height: 0.1rem;
-        background-color: var(--accent-color);
+        width: 40%;
+        background-color: var(--white);
         content: '';
-        width: 5rem;
-        margin: 0 auto;
-        margin-top: 1.5rem;
     }
 }
 
@@ -108,7 +124,7 @@
 /* Paragraphs */
 .content {
     margin-bottom: 3rem;
-    text-align: center;
+    text-align: left;
     z-index: 1;
 }
 

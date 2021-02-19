@@ -1,12 +1,16 @@
 /* Footer */
 .footerContainer {
-    height: 5rem;
-    vertical-align: baseline;
+    margin-top: 2rem;
     bottom: 0;
 }
 
+.footerContact {
+    display: flex;
+    justify-content: center;
+}
+
 .footerText {
-    margin: 0 auto;
-    padding-top: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     text-align: center;
 }
