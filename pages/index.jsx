@@ -1,11 +1,13 @@
+import styles from './index.module.scss';
 import utilStyles from '../styles/utils.module.scss';
 import { Layout } from '../components/layout';
 
 function Homepage() {
     return (
         <Layout>
-            <div>
+            <div className={styles.container}>
                 <h1 className={utilStyles.heading2Xl}>Welcome to Yohan's website!</h1>
+
                 <ul>
                     <li>About</li>
                     <li>Project</li>

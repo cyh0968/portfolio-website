@@ -1,4 +1,4 @@
-import styles from './layout.module.sass';
+import styles from './layout.module.scss';
 import { Header } from './header';
 import { Footer } from './footer';
 
@@ -6,7 +6,7 @@ function Layout({ children }) {
     return (
         <div>
             <Header></Header>
-            <main>{children}</main>
+            <main className={styles.main}>{children}</main>
             <Footer></Footer>
         </div>
     );
