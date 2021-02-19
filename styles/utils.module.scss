@@ -1,3 +1,36 @@
+.container {
+    width: 60vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-between;
+
+    @media only screen and (max-width: 64rem) {
+        & {
+            width: 80vw;
+        }
+    }
+}
+
+/* Section */
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-between;
+}
+
+.sectionContent {
+    transition: all 0.2s ease-out;
+    transform: scale(0.8);
+
+    &:active,
+    &::after {
+        transform: scale(1);
+    }
+}
+
 /* Headings */
 
 .heading2Xl {

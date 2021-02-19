@@ -4,8 +4,8 @@ import { Layout } from '../../components/layout';
 function Project() {
     return (
         <Layout>
-            <section className="section">
-                <div className="section__content">
+            <section className={utilStyles.section}>
+                <div className={utilStyles.sectionContent}>
                     <h1 className={utilStyles.heading2Xl}>Project</h1>
                     <h2 className={utilStyles.headingXl}>Fleamarket</h2>
                     <div className={utilStyles.content}>

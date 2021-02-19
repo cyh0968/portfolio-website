@@ -8,7 +8,7 @@ const name = 'Yohan Choi';
 function About() {
     return (
         <Layout>
-            <section className="section" id="about">
+            <section className={utilStyles.section}>
                 <Image
                     priority
                     src="/images/profile.jpg"
@@ -18,7 +18,7 @@ function About() {
                     alt={name}
                 ></Image>
                 <h2 className={utilStyles.headingMd}>{name}</h2>
-                <div className="section__content">
+                <div className={utilStyles.sectionContent}>
                     <h1 className={utilStyles.heading2Xl}>About</h1>
                     <div className={utilStyles.content}>
                         <p>Hello, I'm Yohan. Thank you for visiting my website!</p>
@@ -34,7 +34,7 @@ function About() {
                         </p>
                     </div>
                 </div>
-                <div className="section__content">
+                <div className={utilStyles.sectionContent}>
                     <h2 className={utilStyles.headingXl}>Skills</h2>
                     <div className={utilStyles.content}>
                         <h3 className={utilStyles.headingLg}>Programming Languages</h3>
@@ -70,7 +70,7 @@ function About() {
                         </h4>
                     </div>
                 </div>
-                <div className="section__content">
+                <div className={utilStyles.sectionContent}>
                     <h2 className={utilStyles.headingXl}>Experience</h2>
                     <div className={utilStyles.content}>
                         <h3 className={utilStyles.headingLg}>Software Developer</h3>
@@ -119,7 +119,7 @@ function About() {
                         </div>
                     </div>
                 </div>
-                <div className="section__content">
+                <div className={utilStyles.sectionContent}>
                     <h2 className={utilStyles.headingXl}>Education</h2>
                     <div className={utilStyles.content}>
                         <h3 className={utilStyles.headingLg}>Computer Programming and Analysis</h3>

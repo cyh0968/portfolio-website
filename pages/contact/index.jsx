@@ -6,8 +6,8 @@ import { LinkedInIcon, GithubIcon, TwitterIcon, MailIcon, ResumeIcon } from '../
 function Contact() {
     return (
         <Layout>
-            <section className="section" id="contact">
-                <div className="section__content">
+            <section className={utilStyles.section}>
+                <div className={utilStyles.sectionContent}>
                     <h1 className={utilStyles.heading2Xl}>Contact</h1>
                     <div className={utilStyles.iconContainer}>
                         <ul>

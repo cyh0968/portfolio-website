@@ -47,24 +47,6 @@ body {
     }
 }
 
-/* Section */
-.section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: space-between;
-}
-
-.section__content {
-    transition: all 0.2s ease-out;
-    transform: scale(0.8);
-}
-
-.section__content:active,
-.section__content:hover {
-    transform: scale(1);
-}
-
 /* Links */
 a,
 a:link,
