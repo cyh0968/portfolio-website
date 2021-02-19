@@ -58,11 +58,6 @@ function Navigation() {
                                 <a className={styles.link}>Contact</a>
                             </Link>
                         </li>
-                        <li className={styles.item}>
-                            <a href="https://tinyurl.com/y4yncva7" className={styles.link}>
-                                Resume
-                            </a>
-                        </li>
                     </ul>
                 </nav>
             ) : (

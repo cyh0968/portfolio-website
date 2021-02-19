@@ -37,13 +37,6 @@ function Contact() {
                                     <MailIcon name="mail-outline" className={utilStyles.iconMd}></MailIcon>EMAIL
                                 </a>
                             </li>
-
-                            <li className={styles.list}>
-                                <a href="https://tinyurl.com/y4yncva7" target="_blank" className={styles.link}>
-                                    <ResumeIcon name="document-outline" className={utilStyles.iconMd}></ResumeIcon>
-                                    RESUME
-                                </a>
-                            </li>
                         </ul>
                     </div>
                 </div>
