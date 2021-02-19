@@ -4,23 +4,27 @@
     top: 0;
     right: 0;
     z-index: 4;
+    opacity: 1;
     display: block;
     background-color: var(--accent-color);
     width: 100vw;
     transition: all 0.6s;
-    animation: fadeIn 0.7s ease-in;
+    animation: fadeIn 0.3s linear;
 }
 
 .toggleButton {
-    height: 6rem;
-    width: 6rem;
     position: fixed;
     bottom: 1rem;
     right: 1.5rem;
     z-index: 5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 6rem;
+    width: 6rem;
+
     text-align: center;
     cursor: pointer;
-
     @media only screen and (max-width: 34rem) {
         & {
             height: 2rem;
@@ -29,9 +33,6 @@
             right: 1rem;
         }
     }
-
-    display: flex;
-    flex-direction: column;
 }
 
 .iconUp,
@@ -70,7 +71,7 @@
 .link {
     display: inline-block;
     width: 20rem;
-    font-weight: 300;
+    font-weight: 500;
     font-size: 2.4rem;
     text-align: center;
     clip-path: var(--highlight-polygon);
@@ -112,9 +113,6 @@
 .checkbox {
     display: none;
     &:checked {
-        & ~ .navigation {
-            opacity: 1;
-        }
         & ~ .link:active {
             transform: scale(80);
         }
@@ -130,11 +128,11 @@
 }
 
 @keyframes fadeIn {
-    0% {
+    from {
         opacity: 0.1;
     }
 
-    100% {
+    to {
         opacity: 1;
     }
 }
