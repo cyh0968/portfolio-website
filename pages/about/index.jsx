@@ -8,19 +8,17 @@ const name = 'Yohan Choi';
 function About() {
     return (
         <Layout>
-            <Image
-                priority
-                src="../../public/images/profile.jpg"
-                className={utilStyles.borderCircle}
-                height={144}
-                width={144}
-                alt={name}
-            ></Image>
-            <h2 className={utilStyles.headingLg}></h2>
-
             <section className="section" id="about">
+                <Image
+                    priority
+                    src="/images/profile.jpg"
+                    className={utilStyles.borderCircle}
+                    height={144}
+                    width={144}
+                    alt={name}
+                ></Image>
+                <h2 className={utilStyles.headingMd}>{name}</h2>
                 <div className="section__content">
-                    <h1 className={utilStyles.heading2Xl}>About</h1>
                     <div className={utilStyles.content}>
                         <p>Hello, I'm Yohan. Thank you for visiting my website!</p>
                         <p className={utilStyles.long}>
