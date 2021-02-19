@@ -1,10 +1,10 @@
-import utilStyles from '../styles/utils.module.scss';
-import { Layout } from '../components/layout';
+import utilStyles from '../../styles/utils.module.scss';
+import { Layout } from '../../components/layout';
 
 function Project() {
     return (
         <Layout>
-            <section className="section" id="project">
+            <section className="section">
                 <div className="section__content">
                     <h1 className={utilStyles.heading2Xl}>Project</h1>
                     <h2 className={utilStyles.headingXl}>Fleamarket</h2>
