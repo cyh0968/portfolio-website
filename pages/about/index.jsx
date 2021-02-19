@@ -19,6 +19,7 @@ function About() {
                 ></Image>
                 <h2 className={utilStyles.headingMd}>{name}</h2>
                 <div className="section__content">
+                    <h1 className={utilStyles.heading2Xl}>About</h1>
                     <div className={utilStyles.content}>
                         <p>Hello, I'm Yohan. Thank you for visiting my website!</p>
                         <p className={utilStyles.long}>
