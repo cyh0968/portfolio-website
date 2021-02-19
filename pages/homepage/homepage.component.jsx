@@ -1,4 +1,5 @@
 import styles from './homepage.module.scss';
+import utilStyles from '../../styles/utils.module.scss';
 import { Layout } from '../../components/layout';
 import { LinkedInIcon, GithubIcon, TwitterIcon, MailIcon, ResumeIcon } from '../../components/ui-components';
 
@@ -7,7 +8,7 @@ function Homepage() {
         <Layout>
             <section className="section" id="about">
                 <div className="section__content">
-                    <h1>About</h1>
+                    <h1 className={utilStyles.heading2Xl}>About</h1>
                     <div className="text-container">
                         <p>Hello, I'm Yohan. Thank you for visiting my website!</p>
                         <p className="long-copy">
@@ -23,46 +24,46 @@ function Homepage() {
                     </div>
                 </div>
                 <div className="section__content">
-                    <h2>Skills</h2>
+                    <h2 className={utilStyles.headingXl}>Skills</h2>
                     <div className="text-container">
-                        <h3>Programming Languages</h3>
-                        <span className="subheading">
+                        <h3 className={utilStyles.headingLg}>Programming Languages</h3>
+                        <h4 className={utilStyles.headingMd}>
                             JavaScript, Typescript, Java, C, C++, C#, Python, Bash, Powershell
-                        </span>
+                        </h4>
                     </div>
                     <div className="text-container">
-                        <h3>Database</h3>
-                        <span className="subheading">
+                        <h3 className={utilStyles.headingLg}>Database</h3>
+                        <h4 className={utilStyles.headingMd}>
                             IBM DB2, Oracle Database, PostgreSQL, MySQL, SQLite, MongoDB, Redis
-                        </span>
+                        </h4>
                     </div>
                     <div className="text-container">
-                        <h3>Frameworks / Libraries</h3>
-                        <span className="subheading">
+                        <h3 className={utilStyles.headingLg}>Frameworks / Libraries</h3>
+                        <h4 className={utilStyles.headingMd}>
                             Node.js/express, React.js, Redux, SASS, Babel, Webpack, Jest, jQuery, Socket.io, Sequelize,
                             Mongoose, ASP.net,Java EE, JDBC
-                        </span>
+                        </h4>
                     </div>
                     <div className="text-container">
-                        <h3>OS / Environments</h3>
-                        <span className="subheading">
+                        <h3 className={utilStyles.headingLg}>OS / Environments</h3>
+                        <h4 className={utilStyles.headingMd}>
                             Ubuntu, Windows 7, Windows 10, Windows Server 2012, Digital Ocean Droplet, AWS EC2, AWS EBS,
                             AWS Lambda
-                        </span>
+                        </h4>
                     </div>
 
                     <div className="text-container">
-                        <h3>Tools</h3>
-                        <span className="subheading">
+                        <h3 className={utilStyles.headingLg}>Tools</h3>
+                        <h4 className={utilStyles.headingMd}>
                             Nginx, Visual Studio, VSCode, IntelliJ, Eclipse, Figma, Postman, Visio, Trello
-                        </span>
+                        </h4>
                     </div>
                 </div>
                 <div className="section__content">
-                    <h2>Experience</h2>
+                    <h2 className={utilStyles.headingXl}>Experience</h2>
                     <div className="text-container">
-                        <h3>Software Developer</h3>
-                        <span className="subheading">Emerson DEC 2019 - SEP 2020</span>
+                        <h3 className={utilStyles.headingLg}>Software Developer</h3>
+                        <h4 className={utilStyles.headingMd}>Emerson DEC 2019 - SEP 2020</h4>
                         <span className="details">details</span>
                         <div className="paragraph">
                             <ul>
@@ -88,8 +89,8 @@ function Homepage() {
                         </div>
                     </div>
                     <div className="text-container">
-                        <h3>ITS Technologist</h3>
-                        <span className="subheading">Seneca College Apr 2019 - Aug 2019</span>
+                        <h3 className={utilStyles.headingLg}>ITS Technologist</h3>
+                        <h4 className={utilStyles.headingMd}>Seneca College Apr 2019 - Aug 2019</h4>
                         <span className="details">details</span>
                         <div className="paragraph">
                             <ul>
@@ -106,17 +107,17 @@ function Homepage() {
                     </div>
                 </div>
                 <div className="section__content">
-                    <h2>Education</h2>
+                    <h2 className={utilStyles.headingXl}>Education</h2>
                     <div className="text-container">
-                        <h3>Computer Programming and Analysis</h3>
-                        <span className="subheading">Seneca College JAN 2018 - DEC 2020</span>
+                        <h3 className={utilStyles.headingLg}>Computer Programming and Analysis</h3>
+                        <h4 className={utilStyles.headingMd}>Seneca College JAN 2018 - DEC 2020</h4>
                     </div>
                 </div>
             </section>
             <section className="section" id="project">
                 <div className="section__content">
-                    <h1>Project</h1>
-                    <h2>Fleamarket</h2>
+                    <h1 className={utilStyles.heading2Xl}>Project</h1>
+                    <h2 className={utilStyles.headingXl}>Fleamarket</h2>
                     <div className="text-container">
                         <span className="details">Description</span>
                         <div className="paragraph">
@@ -126,7 +127,7 @@ function Homepage() {
                             the API server and the client-side react application
                         </div>
                         <p>
-                            <span className="subheading">Github:</span>&nbsp;
+                            <h4 className={utilStyles.headingMd}>Github:</h4>&nbsp;
                             <a href="https://github.com/yohan-choi-dev/fleamarket-backend" target="_blank">
                                 backend
                             </a>
@@ -136,7 +137,7 @@ function Homepage() {
                             </a>
                         </p>
                     </div>
-                    <h2>Employee Management System</h2>
+                    <h2 className={utilStyles.headingXl}>Employee Management System</h2>
                     <div className="text-container">
                         <span className="details">Description</span>
                         <div className="paragraph">
@@ -144,7 +145,7 @@ function Homepage() {
                             server-side JavaScript technologies such as node.js/express.js, MongoDB, and PostgreSQL
                         </div>
                         <p>
-                            <span className="subheading">Github:</span>&nbsp;
+                            <h4 className={utilStyles.headingMd}>Github:</h4>&nbsp;
                             <a href="https://github.com/yohan-choi-dev/employee-management-system" target="_blank">
                                 repository
                             </a>
@@ -154,7 +155,7 @@ function Homepage() {
             </section>
             <section className="section" id="contact">
                 <div className="section__content">
-                    <h1>Contact</h1>
+                    <h1 className={utilStyles.heading2Xl}>Contact</h1>
                     <div className="icon__container">
                         <ul>
                             <li>
