@@ -26,8 +26,8 @@ function Navigation() {
                 id="toggle"
             />
             <label htmlFor="toggle" className={styles.toggleButton}>
-                <ChevronDown classNmae={styles.iconUp}></ChevronDown>
-                <ChevronDown classNmae={styles.iconDown}></ChevronDown>
+                <ChevronUp className={styles.iconUp}></ChevronUp>
+                <ChevronDown className={styles.iconDown}></ChevronDown>
                 &nbsp;
             </label>
             {isChecked ? (

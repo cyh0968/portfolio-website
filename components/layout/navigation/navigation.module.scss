@@ -8,6 +8,7 @@
     background-color: var(--accent-color);
     width: 100vw;
     transition: all 0.6s;
+    animation: fadeIn 0.7s ease-in;
 }
 
 .toggleButton {
@@ -28,6 +29,24 @@
             right: 1rem;
         }
     }
+
+    display: flex;
+    flex-direction: column;
+}
+
+.iconUp,
+.iconDown {
+    display: inline-block;
+    font-size: 3rem;
+    transition: 0.2s ease 0s;
+}
+
+.iconUp {
+    transform: translate(2px, -0.1rem);
+}
+
+.iconDown {
+    transform: translate(2px, 0.1rem);
 }
 
 .list {
@@ -38,57 +57,6 @@
     list-style: none;
     text-align: center;
     width: 100%;
-}
-
-.icon {
-    position: relative;
-    margin-top: 3rem;
-    &,
-    &::before,
-    &::after {
-        width: 2.5rem;
-        height: 2px;
-        display: inline-block;
-        background-color: var(--white);
-    }
-
-    &::before,
-    &::after {
-        content: '';
-        position: absolute;
-        right: 0;
-        transition: all 0.2s;
-    }
-
-    &::before {
-        top: -1rem;
-    }
-    &::after {
-        top: 1rem;
-    }
-
-    @media only screen and (max-width: 34rem) {
-        &,
-        &::before,
-        &::after {
-            width: 1.75rem;
-            height: 2px;
-            display: inline-block;
-            background-color: var(--white);
-        }
-        &::before {
-            top: -0.5rem;
-        }
-        &::after {
-            top: 0.5rem;
-        }
-    }
-}
-
-.iconUp {
-}
-
-.iconDown {
 }
 
 .item {
@@ -144,22 +112,29 @@
 .checkbox {
     display: none;
     &:checked {
+        & ~ .navigation {
+            opacity: 1;
+        }
         & ~ .link:active {
             transform: scale(80);
         }
 
-        & + .toggleButton .icon {
-            background-color: transparent;
+        & + .toggleButton .iconUp {
+            transform: translate(2px, 1.4rem);
         }
 
-        & + .toggleButton .icon::before {
-            top: 0;
-            transform: rotate(135deg);
+        & + .toggleButton .iconDown {
+            transform: translate(2px, -1.4rem);
         }
+    }
+}
 
-        & + .toggleButton .icon::after {
-            top: 0;
-            transform: rotate(-135deg);
-        }
+@keyframes fadeIn {
+    0% {
+        opacity: 0.1;
+    }
+
+    100% {
+        opacity: 1;
     }
 }
