@@ -24,7 +24,7 @@
 .sectionContent {
     transition: all 0.2s ease-out;
     transform: scale(0.8);
-
+    width: 70%;
     &:active,
     &:hover {
         transform: scale(1);
@@ -113,7 +113,7 @@
 }
 
 .paragraph {
-    width: 25rem;
+    // width: 25rem;
     margin: 0 auto 0.5rem;
     font-size: 0.9rem;
     /* text-align: center; */
