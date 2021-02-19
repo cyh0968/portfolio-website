@@ -1,22 +1,15 @@
 /* Headings */
 
 .heading2Xl {
-    color: var(--white);
-    text-transform: uppercase;
     margin-top: 0;
     margin-bottom: 1.25rem;
+    color: var(--white);
     font-size: 3rem;
     font-weight: 700;
-    -webkit-font-smoothing: antialiased;
-    -webkit-text-stroke-color: var(--white);
-    -webkit-text-stroke-width: 1px;
     word-spacing: 4px;
     letter-spacing: 1px;
-    transition: color 0.5s ease;
-
-    &:hover {
-        color: var(--primary-color);
-    }
+    text-align: center;
+    text-transform: uppercase;
 }
 
 .headingXl {
