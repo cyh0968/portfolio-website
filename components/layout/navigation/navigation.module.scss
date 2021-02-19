@@ -1,19 +1,4 @@
-.navigation__checkbox {
-    display: none;
-}
-
-.navigation__button {
-    height: 6rem;
-    width: 6rem;
-    position: fixed;
-    top: 1rem;
-    right: 1.5rem;
-    z-index: 5;
-    text-align: center;
-    cursor: pointer;
-}
-
-.navigation__nav {
+.navigation {
     height: 100vh;
     position: fixed;
     display: none;
@@ -26,7 +11,18 @@
     transition: all 0.6s;
 }
 
-.navigation__list {
+.button {
+    height: 6rem;
+    width: 6rem;
+    position: fixed;
+    top: 1rem;
+    right: 1.5rem;
+    z-index: 5;
+    text-align: center;
+    cursor: pointer;
+}
+
+.list {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -36,93 +32,99 @@
     width: 100%;
 }
 
-.navigation__link:hover,
-.navigation__link:active {
-    background-position: 100%;
-    color: var(--accent-color);
-    transform: translateX(1rem);
-}
-
-.navigation__icon {
+.icon {
     position: relative;
     margin-top: 3rem;
+
+    &,
+    &::before,
+    &::after {
+        width: 2.5rem;
+        height: 2px;
+        display: inline-block;
+        background-color: var(--white);
+    }
+
+    &::before,
+    &::after {
+        content: '';
+        position: absolute;
+        right: 0;
+        transition: all 0.2s;
+    }
+
+    &::before {
+        top: -1rem;
+    }
+    &::after {
+        top: 1rem;
+    }
 }
 
-.navigation__icon,
-.navigation__icon::before,
-.navigation__icon::after {
-    width: 2.5rem;
-    height: 2px;
-    display: inline-block;
-    background-color: var(--white);
-}
-
-.navigation__icon::before,
-.navigation__icon::after {
-    content: '';
-    position: absolute;
-    right: 0;
-    transition: all 0.2s;
-}
-
-.navigation__icon::before {
-    top: -1rem;
-}
-
-.navigation__icon::after {
-    top: 1rem;
-}
-
-.navigation__checkbox:checked ~ .navigation__link:active {
-    transform: scale(80);
-}
-
-.navigation__checkbox:checked ~ .navigation__nav {
-    display: inherit;
-    opacity: 1;
-    width: 100vw;
-}
-
-.navigation__checkbox:checked + .navigation__button .navigation__icon {
-    background-color: transparent;
-}
-
-.navigation__checkbox:checked + .navigation__button .navigation__icon::before {
-    top: 0;
-    transform: rotate(135deg);
-}
-
-.navigation__checkbox:checked + .navigation__button .navigation__icon::after {
-    top: 0;
-    transform: rotate(-135deg);
-}
-
-.navigation__item {
+.item {
+    list-style: none;
     margin: 1rem;
+    &::before {
+        margin-right: 0.25rem;
+    }
 }
 
-.navigation__link {
+.link {
     display: inline-block;
     width: 20rem;
     font-weight: 300;
     font-size: 2.4rem;
     text-align: center;
     clip-path: var(--highlight-polygon);
+
+    &,
+    &:link,
+    &:visited {
+        color: var(--white);
+        text-decoration: none;
+    }
+
+    &:link,
+    &:visited {
+        text-transform: uppercase;
+        background-image: linear-gradient(120deg, transparent 0%, transparent 50%, var(--primary-color) 50%);
+        background-size: 220%;
+        transition: all 0.5s;
+    }
+
+    &:hover,
+    &:active {
+        background-position: 100%;
+        color: var(--accent-color);
+        transform: scale(1.2);
+    }
 }
 
-.navigation__link:link,
-.navigation__link:visited {
-    color: var(--white);
-    text-decoration: none;
-    text-transform: uppercase;
-    background-image: linear-gradient(120deg, transparent 0%, transparent 50%, var(--primary-color) 50%);
-    background-size: 220%;
-    transition: all 0.5s;
-}
+.checkbox {
+    display: none;
+    &:checked {
+        & ~ .link:active {
+            transform: scale(80);
+        }
 
-.navigation__link:hover,
-.navigation__link:active {
-    background-position: 100%;
-    color: var(--accent-color);
-    transform: scale(1.2);
+        & ~ .navigation {
+            display: inherit;
+            opacity: 1;
+            width: 100vw;
+        }
+
+        & + .button .icon {
+            background-color: transparent;
+        }
+
+        & + .button .icon::before {
+            top: 0;
+            transform: rotate(135deg);
+        }
+
+        & + .button .icon::after {
+            top: 0;
+            transform: rotate(-135deg);
+        }
+    }
 }
