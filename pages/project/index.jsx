@@ -18,11 +18,19 @@ function Project() {
                         </div>
                         <h4 className={utilStyles.headingMd}>Github:</h4>&nbsp;
                         <p>
-                            <a href="https://github.com/yohan-choi-dev/fleamarket-backend" target="_blank">
+                            <a
+                                className={utilStyles.link}
+                                href="https://github.com/yohan-choi-dev/fleamarket-backend"
+                                target="_blank"
+                            >
                                 backend
                             </a>
                             &nbsp;
-                            <a href="https://github.com/yohan-choi-dev/fleamarket-frontend" target="_blank">
+                            <a
+                                className={utilStyles.link}
+                                href="https://github.com/yohan-choi-dev/fleamarket-frontend"
+                                target="_blank"
+                            >
                                 frontend
                             </a>
                         </p>
@@ -36,7 +44,11 @@ function Project() {
                         </div>
                         <h4 className={utilStyles.headingMd}>Github:</h4>&nbsp;
                         <p>
-                            <a href="https://github.com/yohan-choi-dev/employee-management-system" target="_blank">
+                            <a
+                                className={utilStyles.link}
+                                href="https://github.com/yohan-choi-dev/employee-management-system"
+                                target="_blank"
+                            >
                                 repository
                             </a>
                         </p>

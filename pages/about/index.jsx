@@ -78,23 +78,33 @@ function About() {
                         <span className={utilStyles.details}>details</span>
                         <div className={utilStyles.paragraph}>
                             <ul>
-                                <li className={utilStyles.long}>
-                                    Developed features for intranet user assistance application using React.js,
-                                    Electron, SASS
+                                <li className={utilStyles.list}>
+                                    <span className={utilStyles.long}>
+                                        Developed features for intranet user assistance application using React.js,
+                                        Electron, SASS
+                                    </span>
                                 </li>
-                                <li className={utilStyles.long}>
-                                    Developed Node.js automating test tools for database migration application
+                                <li className={utilStyles.list}>
+                                    <span className={utilStyles.long}>
+                                        Developed Node.js automating test tools for database migration application
+                                    </span>
                                 </li>
-                                <li className={utilStyles.long}>
-                                    Developed DB2/Oracle Database Migration Application using JDBC
+                                <li className={utilStyles.list}>
+                                    <span className={utilStyles.long}>
+                                        Developed DB2/Oracle Database Migration Application using JDBC
+                                    </span>
                                 </li>
-                                <li className={utilStyles.long}>
-                                    Contributed to development and maintenance of Warehouse Managemenet System using
-                                    Java EE
+                                <li className={utilStyles.list}>
+                                    <span className={utilStyles.long}>
+                                        Contributed to development and maintenance of Warehouse Managemenet System using
+                                        Java EE
+                                    </span>
                                 </li>
-                                <li className={utilStyles.long}>
-                                    Developed a Powershell automation script to update user applications, which it
-                                    increased software update rate by 20%
+                                <li className={utilStyles.list}>
+                                    <span className={utilStyles.long}>
+                                        Developed a Powershell automation script to update user applications, which it
+                                        increased software update rate by 20%
+                                    </span>
                                 </li>
                             </ul>
                         </div>
@@ -105,15 +115,25 @@ function About() {
                         <span className={utilStyles.details}>details</span>
                         <div className={utilStyles.paragraph}>
                             <ul>
-                                <li className={utilStyles.long}>Updated and reported issues on the helpdesk website</li>
-                                <li className={utilStyles.long}>
-                                    Assisted field service through client support, assigned task and research
+                                <li className={utilStyles.list}>
+                                    <span className={utilStyles.long}>
+                                        Updated and reported issues on the helpdesk website
+                                    </span>
                                 </li>
-                                <li className={utilStyles.long}>
-                                    Provided user support service to resolve technical issues
+                                <li className={utilStyles.list}>
+                                    <span className={utilStyles.long}>
+                                        Assisted field service through client support, assigned task and research
+                                    </span>
                                 </li>
-                                <li className={utilStyles.long}>
-                                    Installed and maintained equipment of E-classNameroom and computer labs
+                                <li className={utilStyles.list}>
+                                    <span className={utilStyles.long}>
+                                        Provided user support service to resolve technical issues
+                                    </span>
+                                </li>
+                                <li className={utilStyles.list}>
+                                    <span className={utilStyles.long}>
+                                        Installed and maintained equipment of E-classNameroom and computer labs
+                                    </span>
                                 </li>
                             </ul>
                         </div>

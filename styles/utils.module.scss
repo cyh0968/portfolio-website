@@ -26,7 +26,7 @@
     transform: scale(0.8);
 
     &:active,
-    &::after {
+    &:hover {
         transform: scale(1);
     }
 }
@@ -78,6 +78,31 @@
     text-align: center;
     text-transform: uppercase;
     color: var(--light-grey);
+}
+
+/* Link */
+.link {
+    &,
+    &:link,
+    &:visited {
+        color: var(--white);
+        text-decoration: none;
+    }
+
+    &:hover,
+    &:active {
+        color: var(--accent-color);
+        transition: all 0.4s;
+    }
+}
+
+/* List */
+.list {
+    list-style: none;
+    margin-bottom: 0.3rem;
+    &::before {
+        margin-right: 0.25rem;
+    }
 }
 
 /* Paragraphs */

@@ -15,11 +15,12 @@
 *::before {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: inherit;
 }
 
 html,
 body {
+    box-sizing: border-box;
     background-color: var(--primary-color);
     color: var(--white);
     font-family: 'Lato', 'Arial', 'sans-serif';
@@ -45,30 +46,6 @@ body {
             width: 80vw;
         }
     }
-}
-
-/* Links */
-a,
-a:link,
-a:visited {
-    text-decoration: none;
-    color: var(--white);
-}
-
-a:hover,
-a:active {
-    color: var(--accent-color);
-    transition: all 0.4s;
-}
-
-li::before {
-    /* content: '\25CF';  */
-    margin-right: 0.25rem;
-}
-/* List */
-li {
-    list-style: none;
-    margin-bottom: 0.3rem;
 }
 
 /* Media Queries */
