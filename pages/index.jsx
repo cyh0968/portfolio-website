@@ -16,7 +16,7 @@ function Homepage() {
                     </span>
                     <span className={styles.rightAlign}>
                         <h1 className={styles.introText}>currently based in</h1>
-                        <h1 className={styles.introText}>Toronto.</h1>
+                        <h1 className={styles.introText}>Toronto</h1>
                     </span>
                     <span className={styles.leftAlign}>
                         <h1 className={styles.introText}>Focussed on</h1>
