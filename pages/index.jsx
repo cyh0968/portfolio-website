@@ -1,9 +1,9 @@
-import Link from 'next/link';
 import Image from 'next/image';
 import styles from './index.module.scss';
 import utilStyles from '../styles/utils.module.scss';
 import { Layout } from '../components/layout';
 import { Section } from '../components/section';
+import { Cube } from '../components/ui-components';
 
 function Homepage() {
     return (
@@ -29,49 +29,123 @@ function Homepage() {
                     </span>
                 </div>
             </div>
+            <div className={styles.primary}>
+                <Section leftHeading="About" id="about">
+                    <Image
+                        className={utilStyles.borderCircle}
+                        src="/images/profile.jpg"
+                        width={250}
+                        height={250}
+                    ></Image>
+                    <h1 className={utilStyles.heading2Xl}>Yohan</h1>
+                    <div className={utilStyles.content}>
+                        <p className={utilStyles.long}>
+                            Thank you for visiting my website! I'm on the long journey of craftmanship. I'm a simple
+                            person who has only one purpose that is making good products.
+                        </p>
+                        <br />
+                        <p className={utilStyles.long}>
+                            I believe that the projects that I will work on will impact people's everyday lives, and I
+                            will be willing to take my responsibility to make the best.
+                        </p>
+                        <br />
+                        <p className={utilStyles.long}>
+                            A promise with myself is that I will remain humble and improve myself by the end of my
+                            journey.
+                        </p>
+                    </div>
+                </Section>
+                <div className={utilStyles.lineBreak} />
+                <Section leftHeading="Skills">
+                    <Cube></Cube>
+                    <h1 className={utilStyles.heading2Xl}>Mainly focused on</h1>
+                    <h2 className={utilStyles.headingXl}>Node.js, Express, React, SQL</h2>
+                </Section>
 
-            <Section leftHeading="About" rightHeading="About" id="about">
-                <div className={utilStyles.content}>
-                    <p className={utilStyles.long}>
-                        Hello, I'm Yohan. Thank you for visiting my website! I believe that our fingertips can make a
-                        better world. As a software developer, I wish my code is working in the real world and
-                        contributing to our society and community.
-                    </p>
-                    <p className={utilStyles.long}>
-                        To create a better program, I do not hesitate to refactor my code. Attitude to find the best
-                        solution for a problem is my asset. The intense passion for programming made me start to join an
-                        open-source. Self-learning with a passion for programming is a nutrient to be a better
-                        programmer.
-                    </p>
-                </div>
-            </Section>
-            <Section leftHeading="Skills" rightHeading="Languages">
-                <h4 className={utilStyles.headingMd}>
-                    JavaScript, Typescript, Java, C, C++, C#, Python, Bash, Powershell
-                </h4>
-            </Section>
-            <Section leftHeading="Skills" rightHeading="Databases">
-                <h4 className={utilStyles.headingMd}>
-                    IBM DB2, Oracle Database, PostgreSQL, MySQL, SQLite, MongoDB, Redis
-                </h4>
-            </Section>
-            <Section leftHeading="Skills" rightHeading="Frameworks/Libraries">
-                <h4 className={utilStyles.headingMd}>
-                    Node.js/express, React.js, Redux, SASS, Babel, Webpack, Jest, jQuery, Socket.io, Sequelize,
-                    Mongoose, ASP.net,Java EE, JDBC
-                </h4>
-            </Section>
-            <Section leftHeading="Skills" rightHeading="OS/Environments">
-                <h4 className={utilStyles.headingMd}>
-                    Ubuntu, Windows 7, Windows 10, Windows Server 2012, Digital Ocean Droplet, AWS EC2, AWS EBS, AWS
-                    Lambda
-                </h4>
-            </Section>
-            <Section leftHeading="Skills" rightHeading="Tools">
-                <h4 className={utilStyles.headingMd}>
-                    Nginx, Visual Studio, VSCode, IntelliJ, Eclipse, Figma, Postman, Visio, Trello
-                </h4>
-            </Section>
+                <div className={utilStyles.lineBreak} />
+                <Section leftHeading="project">
+                    <h1 className={utilStyles.heading2Xl}>Sorting Algoritm</h1>
+                    <h1 className={utilStyles.heading2Xl}>Visualizer</h1>
+                    <h3 className={utilStyles.headingXl}>Motivation</h3>
+                    <div className={utilStyles.content}>
+                        <p className={utilStyles.long}>
+                            While I was learning sorting algorithms, I was wondering how each sorting algorithm would
+                            look. It was pretty interesting to see how each algorithm looks, and it gave me a better
+                            understanding of sorting algorithms. For instance, if a sorting algorithm uses the divide
+                            and conquers approach, you can see the pattern of self-imitation.
+                        </p>
+                    </div>
+                    <h3 className={utilStyles.headingXl}>Technologies</h3>
+                    <h3 className={utilStyles.headingXl}>Code</h3>
+                    <h3 className={utilStyles.headingXl}>Demo</h3>
+
+                    <h3 className={utilStyles.headingXl}>Features</h3>
+                    <h4 className={utilStyles.headingLg}>Controller</h4>
+                    <div className={utilStyles.content}>
+                        <p className={utilStyles.long}>
+                            By default, you can play, pause, forward, backward the sorting algorithm animation.
+                        </p>
+                        <br />
+                        <p className={utilStyles.long}>
+                            In a desktop environment, you can control the image with a keyboard.
+                        </p>
+                        <p className={utilStyles.long}>(&#8592;: backward, space: play/pause, &#8594;: forward)</p>
+                        <br />
+                        <p className={utilStyles.long}>
+                            In Mobile, you can control the animation with wide buttons on the animation. (left:
+                            backward, center: play/pause, right: forward)
+                        </p>
+                    </div>
+                    <h4 className={utilStyles.headingLg}>Bubble Sort</h4>
+                    <h4 className={utilStyles.headingLg}>Selection Sort</h4>
+                    <h4 className={utilStyles.headingLg}>Insertion Sort</h4>
+                    <h4 className={utilStyles.headingLg}>Merge Sort</h4>
+                    <iframe
+                        width="784"
+                        height="441"
+                        src="https://www.youtube.com/embed/U8eKVst2hEA"
+                        frameborder="0"
+                        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                    ></iframe>
+
+                    <h4 className={utilStyles.headingLg}>Quick Sort</h4>
+
+                    <h3 className={utilStyles.headingXl}>How it works?</h3>
+                    <div className={utilStyles.content}>
+                        <p className={utilStyles.long}>
+                            It is built with React Hooks and Sass. When a user triggers the play function, the animation
+                            utility will record each step of the sorting algorithm while the sorting algorithm runs and
+                            sorts the actual array.
+                        </p>
+                        <br />
+                        <p className={utilStyles.long}>
+                            Once the recording is completed, the record will be played by the player function. The
+                            player function calls from the generator function, and the generator only updates the frame
+                            of the animation only when the player can run the animation.
+                        </p>
+                        <br />
+                        <p className={utilStyles.long}>
+                            Before it updates an element on the DOM, the application stores the element's original
+                            status in the undo stack. In that way, the application can run backward and forward without
+                            any problem.
+                        </p>
+                    </div>
+                </Section>
+                <div className={utilStyles.lineBreak} />
+                <Section leftHeading="project" rightHeading="Flea Market">
+                    <h3 className={utilStyles.headingXl}>Motivation</h3>
+
+                    <h3 className={utilStyles.headingXl}>Technologies</h3>
+                    <h3 className={utilStyles.headingXl}>Code</h3>
+
+                    <h3 className={utilStyles.headingXl}>Live Demo</h3>
+                    <h3 className={utilStyles.headingXl}>Features</h3>
+                    <h4 className={utilStyles.headingLg}>Real-Time Trading</h4>
+                    <h4 className={utilStyles.headingLg}>Chatting Service</h4>
+                    <h3 className={utilStyles.headingXl}>How it works?</h3>
+                </Section>
+            </div>
         </Layout>
     );
 }
