@@ -4,8 +4,8 @@ import { LinkedInIcon, GithubIcon, TwitterIcon, MailIcon } from '../../ui-compon
 
 function Footer() {
     return (
-        <footer>
-            <div className={styles.footerContainer}>
+        <div className={styles.footerContainer}>
+            <footer>
                 <div className={styles.footerContact} id="contact">
                     <a
                         href="https://www.linkedin.com/in/yohan-choi-dev/"
@@ -38,8 +38,8 @@ function Footer() {
                 <div className={styles.footerText}>
                     <p className={utilStyles.small}>&copy; 2020 by Yohan Choi. All rights reserved.</p>
                 </div>
-            </div>
-        </footer>
+            </footer>
+        </div>
     );
 }
 

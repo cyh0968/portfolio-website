@@ -1,7 +1,10 @@
 /* Footer */
 .footerContainer {
-    margin-top: 2rem;
+    position: relative;
     bottom: 0;
+    z-index: 3;
+    padding-top: 2rem;
+    background-color: var(--primary-color);
 }
 
 .footerContact {
