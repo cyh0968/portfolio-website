@@ -8,7 +8,6 @@ function Sidebar() {
     const [clientHeight, setClientHeight] = useState(0);
     const [scrollHeight, setScrollHeight] = useState(0);
     const [scrollTop, setScrollTop] = useState(0);
-    const gageStyle = { height: Math.ceil((scrollTop / (scrollHeight - clientHeight)) * 100) + '%' };
 
     useEventListner('scroll', handleScroll);
     // Get a reference for the root element
@@ -25,6 +24,12 @@ function Sidebar() {
         setScrollTop(rootElementRef.current.scrollTop);
     }, [rootElementRef.current?.clientHeight, rootElementRef.current?.scrollHeight]);
 
+    function getGageStyle() {
+        const height =
+            scrollHeight === clientHeight ? 100 : Math.ceil((scrollTop / (scrollHeight - clientHeight)) * 100);
+        const style = { height: +height + '%' };
+        return style;
+    }
     async function handleScroll() {
         const newScrollTop = rootElementRef.current.scrollTop;
         // To prevent frequent Change, it only updates when the difference is bigger than 10
@@ -36,7 +41,7 @@ function Sidebar() {
     return (
         <div className={styles.siderbar}>
             <div className={styles.line}>
-                <div className={styles.gage} style={gageStyle}></div>
+                <div className={styles.gage} style={getGageStyle()}></div>
             </div>
             <div className={styles.circle}>
                 <a className={utilStyles.link} href="#"></a>
