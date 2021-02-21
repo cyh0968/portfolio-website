@@ -98,7 +98,7 @@ function Homepage() {
                     </div>
                     <iframe
                         width="784"
-                        width="441"
+                        height="441"
                         src="https://www.youtube.com/embed/5bxqWZ6IHgk"
                         frameborder="0"
                         allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -107,7 +107,7 @@ function Homepage() {
                     <h4 className={utilStyles.headingLg}>Bubble Sort</h4>
                     <iframe
                         width="784"
-                        width="441"
+                        height="441"
                         src="https://www.youtube.com/embed/VaTS6i_g6Fo"
                         frameborder="0"
                         allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -116,7 +116,7 @@ function Homepage() {
                     <h4 className={utilStyles.headingLg}>Selection Sort</h4>
                     <iframe
                         width="784"
-                        width="441"
+                        height="441"
                         src="https://www.youtube.com/embed/UwGUuV0lQgk"
                         frameborder="0"
                         allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -125,7 +125,7 @@ function Homepage() {
                     <h4 className={utilStyles.headingLg}>Insertion Sort</h4>
                     <iframe
                         width="784"
-                        width="441"
+                        height="441"
                         src="https://www.youtube.com/embed/863sLH3mAzA"
                         frameborder="0"
                         allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -134,25 +134,17 @@ function Homepage() {
                     <h4 className={utilStyles.headingLg}>Merge Sort</h4>
                     <iframe
                         width="784"
-                        width="441"
+                        height="441"
                         src="https://www.youtube.com/embed/CU-sk9Pwu6w"
                         frameborder="0"
                         allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen
-                    ></iframe>
-                    <iframe
-                        width="784"
-                        height="441"
-                        src="https://www.youtube.com/embed/U8eKVst2hEA"
-                        frameborder="0"
-                        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen
                     ></iframe>
 
                     <h4 className={utilStyles.headingLg}>Quick Sort</h4>
                     <iframe
                         width="784"
-                        width="441"
+                        height="441"
                         src="https://www.youtube.com/embed/qrCrlBGSVRM"
                         frameborder="0"
                         allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture"
