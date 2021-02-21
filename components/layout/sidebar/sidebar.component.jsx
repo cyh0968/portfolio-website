@@ -9,11 +9,10 @@ function Sidebar() {
     const [scrollHeight, setScrollHeight] = useState(0);
     const [scrollTop, setScrollTop] = useState(0);
     const gageStyle = { height: Math.ceil((scrollTop / (scrollHeight - clientHeight)) * 100) + '%' };
+
     useEventListner('scroll', handleScroll);
-    console.log('render');
     // Get a reference for the root element
     useEffect(() => {
-        console.log('effect1');
         if (!rootElementRef.current) {
             rootElementRef.current = globalThis?.document?.documentElement;
         }
@@ -21,7 +20,6 @@ function Sidebar() {
 
     // Whenever clientHeight or scrollHeight are changed, it call setter for them
     useEffect(() => {
-        console.log('effect2');
         setClientHeight(rootElementRef.current.clientHeight);
         setScrollHeight(rootElementRef.current.scrollHeight);
         setScrollTop(rootElementRef.current.scrollTop);
