@@ -12,6 +12,17 @@
         }
     }
 }
+/* Line Break */
+
+.lineBreak {
+    display: block;
+    position: relative;
+    z-index: 3;
+    width: 100vw;
+    height: 5rem;
+    border-top: dashed 1px var(--white);
+    background-color: var(--primary-color);
+}
 
 /* Headings */
 
@@ -29,7 +40,7 @@
 
 .headingXl {
     color: var(--white);
-    font-weight: 300;
+    font-weight: 500;
     text-transform: uppercase;
     margin-bottom: 1.5rem;
     font-size: 1.8rem;
@@ -41,7 +52,7 @@
         display: block;
         margin-top: 0.5rem;
         height: 0.1rem;
-        width: 40%;
+        width: 100%;
         background-color: var(--white);
         content: '';
     }
@@ -114,6 +125,7 @@
 }
 
 .long {
+    font-weight: 500;
     line-height: 1.45;
 }
 
