@@ -1,21 +1,30 @@
 /* Section */
+.container {
+    position: relative;
+    z-index: 3;
+    // margin-bottom: 5rem;
+    padding: 5rem;
+    background-color: var(--primary-color);
+}
 .section {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding-bottom: 5rem;
-    margin-bottom: 5rem;
-    border-bottom: dashed 1px var(--white);
 }
 
 .sectionLeft {
-    width: 20%;
+    width: 6rem;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .sectionRight {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 50%;
 }
 
