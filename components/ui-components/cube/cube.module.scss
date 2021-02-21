@@ -1,0 +1,93 @@
+@keyframes turn {
+    from {
+        transform: rotate3d(0, 0, 0, 0);
+    }
+    to {
+        transform: rotate3d(0, 1, 0, 360deg);
+    }
+}
+
+@mixin face($length, $position) {
+    width: $length;
+    height: $length;
+    border: 2px solid var(--white);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    font-size: 2rem;
+    background-color: var(--low-opacity-light-gray);
+
+    @if $position == front {
+        transform: translateZ($length / 2) rotateY(0deg);
+        @content;
+    }
+
+    @if $position == back {
+        transform: translateZ(-($length / 2)) rotateY(180deg);
+        @content;
+    }
+
+    @if $position == left {
+        transform: translateX(-($length / 2)) rotateY(-90deg);
+        @content;
+    }
+
+    @if $position == right {
+        transform: translateX($length / 2) rotateY(90deg);
+        @content;
+    }
+
+    @if $position == top {
+        transform: translateY(-($length / 2)) rotateX(90deg);
+        @content;
+    }
+
+    @if $position == bottom {
+        transform: translateY($length / 2) rotateX(-90deg);
+        @content;
+    }
+}
+
+$length: 200px;
+
+.container {
+    width: $length;
+    height: $length;
+    perspective: 500px;
+    margin: 100px;
+}
+
+.cube {
+    position: relative;
+    width: $length;
+    height: $length;
+    transform-style: preserve-3d;
+    animation: turn 20s linear infinite;
+}
+
+.front {
+    @include face($length, front);
+}
+
+.back {
+    @include face($length, back);
+}
+
+.left {
+    @include face($length, left);
+}
+
+.right {
+    @include face($length, right);
+}
+
+.top {
+    @include face($length, top);
+}
+
+.bottom {
+    @include face($length, bottom);
+}
