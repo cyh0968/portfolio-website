@@ -1,0 +1,17 @@
+.container {
+    width: 10rem;
+    height: 15rem;
+    border: solid 5px var(--white);
+}
+
+.logo {
+    display: flex;
+    width: 8rem;
+    height: 11.5rem;
+    margin: 0 auto;
+}
+
+.children {
+    text-align: center;
+    padding: 0.5rem 0.25rem;
+}
