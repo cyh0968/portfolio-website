@@ -76,6 +76,7 @@
 .primary {
     position: relative;
     padding-right: 5rem;
+    width: 100vw;
     &::before {
         display: block;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
