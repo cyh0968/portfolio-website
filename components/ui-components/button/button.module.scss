@@ -7,6 +7,7 @@ $button-border-radius: 20%;
     display: inline-block;
     width: 10rem;
     height: 3rem;
+    margin: 0.5rem;
     border: solid var(--white) 2px;
     border-radius: $button-border-radius;
     transition: $transition;
