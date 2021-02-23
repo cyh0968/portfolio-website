@@ -4,6 +4,15 @@ import utilStyles from '../styles/utils.module.scss';
 import { Layout } from '../components/layout';
 import { Section } from '../components/section';
 import { Button, Cube } from '../components/ui-components';
+import {
+    Css3Logo,
+    ExpressLogo,
+    JavaScriptLogo,
+    MySqlLogo,
+    NodeJsLogo,
+    ReactLogo,
+    SassLogo,
+} from '../components/ui-components/logos';
 
 function Homepage() {
     return (
@@ -87,6 +96,11 @@ function Homepage() {
                     </div>
 
                     <h3 className={utilStyles.headingXl}>Technologies</h3>
+                    <div className={utilStyles.alignCenter}>
+                        <JavaScriptLogo></JavaScriptLogo>
+                        <ReactLogo></ReactLogo>
+                        <SassLogo></SassLogo>
+                    </div>
 
                     <h3 className={utilStyles.headingXl}>Features</h3>
                     <h4 className={utilStyles.headingLg}>Controller</h4>
@@ -193,16 +207,25 @@ function Homepage() {
                         </p>
                         <br />
                         <div className={utilStyles.alignCenter}>
-                            <Button name="code" href="https://github.com/yohan-choi-dev/sorting-algorithm-visualizer">
+                            <Button name="code" href="https://github.com/yohan-choi-dev/fleamarket">
                                 Code
                             </Button>
                         </div>
                     </div>
 
                     <h3 className={utilStyles.headingXl}>Technologies</h3>
-                    <h3 className={utilStyles.headingXl}>Code</h3>
+                    <div className={utilStyles.alignCenter}>
+                        <JavaScriptLogo></JavaScriptLogo>
+                        <ReactLogo></ReactLogo>
+                        <Css3Logo></Css3Logo>
+                    </div>
 
-                    <h3 className={utilStyles.headingXl}>Live Demo</h3>
+                    <div className={utilStyles.alignCenter}>
+                        <NodeJsLogo></NodeJsLogo>
+                        <ExpressLogo></ExpressLogo>
+                        <MySqlLogo></MySqlLogo>
+                    </div>
+
                     <h3 className={utilStyles.headingXl}>Features</h3>
                     <h4 className={utilStyles.headingLg}>Real-Time Trading</h4>
                     <h4 className={utilStyles.headingLg}>Chatting Service</h4>
