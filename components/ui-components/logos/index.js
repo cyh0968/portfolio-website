@@ -1,8 +1,9 @@
 export { LogoContainer } from './logo-container';
+export { Css3Logo } from './css3-logo';
 export { ExpressLogo } from './express-logo';
 export { JavaScriptLogo } from './javascript-logo';
 export { MySqlLogo } from './mysql-logo';
 export { NodeJsLogo } from './nodejs-logo';
 export { ReactLogo } from './react-logo';
-export { SassLogo } from './sass-logo';
+export { SassLogo } from './css3-logo';
 export { SocketIoLogo } from './socket-io-logo';
