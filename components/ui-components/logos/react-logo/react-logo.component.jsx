@@ -1,15 +1,11 @@
-import ReactSVG from '../../../../public/images/logos/react.svg';
-import styles from './react-logo.module.scss';
+import ReactSvg from '../../../../assets/logos/react.svg';
+import { LogoContainer } from '../logo-container';
 
-function ReactLogo({ fill = '#eeeeee', stroke = '', children }) {
+function ReactLogo({ fill = '#eeeeee', stroke = '' }) {
     return (
-        <div className={styles.container}>
-            <div className={styles.logo}>
-                <ReactSVG fill={fill} stroke={stroke} />
-            </div>
-
-            <div className={styles.children}>{children}</div>
-        </div>
+        <LogoContainer name="react">
+            <ReactSvg fill={fill} stroke={stroke} />
+        </LogoContainer>
     );
 }
 
