@@ -5,5 +5,5 @@ export { JavaScriptLogo } from './javascript-logo';
 export { MySqlLogo } from './mysql-logo';
 export { NodeJsLogo } from './nodejs-logo';
 export { ReactLogo } from './react-logo';
-export { SassLogo } from './css3-logo';
+export { SassLogo } from './sass-logo';
 export { SocketIoLogo } from './socket-io-logo';
