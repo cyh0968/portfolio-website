@@ -3,7 +3,7 @@ import styles from './index.module.scss';
 import utilStyles from '../styles/utils.module.scss';
 import { Layout } from '../components/layout';
 import { Section } from '../components/section';
-import { Cube } from '../components/ui-components';
+import { Button, Cube } from '../components/ui-components';
 
 function Homepage() {
     return (
@@ -66,7 +66,8 @@ function Homepage() {
                 <Section leftHeading="project">
                     <h1 className={utilStyles.heading2Xl}>Sorting Algoritm</h1>
                     <h1 className={utilStyles.heading2Xl}>Visualizer</h1>
-                    <h3 className={utilStyles.headingXl}>Motivation</h3>
+
+                    <h3 className={utilStyles.headingXl}>Introduction</h3>
                     <div className={utilStyles.content}>
                         <p className={utilStyles.long}>
                             While I was learning sorting algorithms, I was wondering how each sorting algorithm would
@@ -74,10 +75,18 @@ function Homepage() {
                             understanding of sorting algorithms. For instance, if a sorting algorithm uses the divide
                             and conquers approach, you can see the pattern of self-imitation.
                         </p>
+                        <br />
+                        <div className={styles.buttonContainer}>
+                            <Button name="demo" href="http://sav.yohan-choi.com/">
+                                Demo
+                            </Button>
+                            <Button name="code" href="https://github.com/yohan-choi-dev/sorting-algorithm-visualizer">
+                                Code
+                            </Button>
+                        </div>
                     </div>
+
                     <h3 className={utilStyles.headingXl}>Technologies</h3>
-                    <h3 className={utilStyles.headingXl}>Code</h3>
-                    <h3 className={utilStyles.headingXl}>Demo</h3>
 
                     <h3 className={utilStyles.headingXl}>Features</h3>
                     <h4 className={utilStyles.headingLg}>Controller</h4>
@@ -100,45 +109,45 @@ function Homepage() {
                         width="784"
                         height="441"
                         src="https://www.youtube.com/embed/5bxqWZ6IHgk"
-                        frameborder="0"
+                        frameBorder="0"
                         allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen
+                        allowFullScreen
                     ></iframe>
                     <h4 className={utilStyles.headingLg}>Bubble Sort</h4>
                     <iframe
                         width="784"
                         height="441"
                         src="https://www.youtube.com/embed/VaTS6i_g6Fo"
-                        frameborder="0"
+                        frameBorder="0"
                         allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen
+                        allowFullScreen
                     ></iframe>
                     <h4 className={utilStyles.headingLg}>Selection Sort</h4>
                     <iframe
                         width="784"
                         height="441"
                         src="https://www.youtube.com/embed/UwGUuV0lQgk"
-                        frameborder="0"
+                        frameBorder="0"
                         allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen
+                        allowFullScreen
                     ></iframe>
                     <h4 className={utilStyles.headingLg}>Insertion Sort</h4>
                     <iframe
                         width="784"
                         height="441"
                         src="https://www.youtube.com/embed/863sLH3mAzA"
-                        frameborder="0"
+                        frameBorder="0"
                         allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen
+                        allowFullScreen
                     ></iframe>
                     <h4 className={utilStyles.headingLg}>Merge Sort</h4>
                     <iframe
                         width="784"
                         height="441"
                         src="https://www.youtube.com/embed/CU-sk9Pwu6w"
-                        frameborder="0"
+                        frameBorder="0"
                         allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen
+                        allowFullScreen
                     ></iframe>
 
                     <h4 className={utilStyles.headingLg}>Quick Sort</h4>
@@ -146,9 +155,9 @@ function Homepage() {
                         width="784"
                         height="441"
                         src="https://www.youtube.com/embed/qrCrlBGSVRM"
-                        frameborder="0"
+                        frameBorder="0"
                         allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen
+                        allowFullScreen
                     ></iframe>
 
                     <h3 className={utilStyles.headingXl}>How it works?</h3>
