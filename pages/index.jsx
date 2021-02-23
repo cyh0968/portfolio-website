@@ -76,7 +76,7 @@ function Homepage() {
                             and conquers approach, you can see the pattern of self-imitation.
                         </p>
                         <br />
-                        <div className={styles.buttonContainer}>
+                        <div className={utilStyles.alignRight}>
                             <Button name="demo" href="http://sav.yohan-choi.com/">
                                 Demo
                             </Button>
@@ -183,7 +183,21 @@ function Homepage() {
                 </Section>
                 <div className={utilStyles.lineBreak} />
                 <Section leftHeading="project" rightHeading="Flea Market">
-                    <h3 className={utilStyles.headingXl}>Motivation</h3>
+                    <h3 className={utilStyles.headingXl}>Introduction</h3>
+                    <div className={utilStyles.content}>
+                        <p className={utilStyles.long}>
+                            While I was learning sorting algorithms, I was wondering how each sorting algorithm would
+                            look. It was pretty interesting to see how each algorithm looks, and it gave me a better
+                            understanding of sorting algorithms. For instance, if a sorting algorithm uses the divide
+                            and conquers approach, you can see the pattern of self-imitation.
+                        </p>
+                        <br />
+                        <div className={utilStyles.alignCenter}>
+                            <Button name="code" href="https://github.com/yohan-choi-dev/sorting-algorithm-visualizer">
+                                Code
+                            </Button>
+                        </div>
+                    </div>
 
                     <h3 className={utilStyles.headingXl}>Technologies</h3>
                     <h3 className={utilStyles.headingXl}>Code</h3>
