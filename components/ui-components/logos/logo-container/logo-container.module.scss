@@ -1,9 +1,28 @@
+@keyframes turn {
+    from {
+        transform: rotate3d(0, 0, 0, 0);
+    }
+    to {
+        transform: rotate3d(0, 1, 0, 360deg);
+    }
+}
+
 .container {
     display: inline-block;
-    width: 10rem;
-    height: 15rem;
-    margin: 2.5rem 2.5rem 4rem;
+    width: 12rem;
+    height: 17rem;
+    margin: 1rem 1.5rem 2.5rem;
+    transform-style: preserve-3d;
+    &:hover,
+    &:active {
+        animation: turn 1s ease-in;
+    }
+}
+
+.card {
     border: solid 5px var(--white);
+    margin: 1rem;
+    cursor: pointer;
 }
 
 .logo {
