@@ -1,13 +1,9 @@
 import styles from './header.module.scss';
-import utilStyles from '../../../styles/utils.module.scss';
-import { Navigation } from '../navigation';
 
-function Header() {
+function Header({ children }) {
     return (
         <div>
-            <header className={styles.header}>
-                <Navigation></Navigation>
-            </header>
+            <header className={styles.header}>{children}</header>
         </div>
     );
 }
