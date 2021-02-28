@@ -9,16 +9,18 @@ function Layout({ defaultLayout = false, siteTitle = "Yohan's website", children
     return (
         <div>
             <Head>
-                <meta charset="utf-8" />
+                <meta charSet="utf-8" />
                 <link rel="icon" href="/favicon.ico" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <meta name="description" content="Yohan's portfolio site" />
+                <meta name="description" content="Yohan's portfolio website" />
                 <meta name="og:title" content={siteTitle} />
                 <title>{siteTitle}</title>
             </Head>
             {defaultLayout ? (
                 <>
-                    <Header></Header>
+                    <Header>
+                        <Navigation></Navigation>
+                    </Header>
                     <main className={styles.main}>{children}</main>
                 </>
             ) : (
