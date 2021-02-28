@@ -1,0 +1,70 @@
+@keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.invisible {
+    position: absolute;
+    transform: translateX(-200%);
+    z-index: 0;
+}
+
+.visible {
+    display: block;
+}
+
+.moveLeft {
+    left: -100%;
+}
+
+.moveRight {
+    right: -100%;
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+}
+
+.slide {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    animation: fade 0.5s ease;
+}
+
+.previous,
+.next {
+    position: absolute;
+    z-index: 500;
+    top: 20%;
+    width: auto;
+    margin-top: 3rem;
+    color: var(--white);
+    font-size: 4rem;
+    font-weight: 900;
+    cursor: pointer;
+    transition: all 1s ease;
+}
+
+.previous {
+    left: -10%;
+    border-radius: 0 3px 3px 0;
+}
+
+.next {
+    right: -10%;
+    border-radius: 3px 0 0 3px;
+}
+
+.previous:hover,
+.next:hover {
+    background-color: var(--low-opacity-light-gray);
+}
