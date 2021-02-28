@@ -3,8 +3,12 @@ import utilStyles from '../../styles/utils.module.scss';
 import { Layout } from '../../components/layout';
 import { Section } from '../../components/section';
 import { Cube } from '../../components/ui-components';
+import ReactSvg from '../../assets/logos/react.svg';
+import NodeJsSvg from '../../assets/logos/node-dot-js.svg';
+import ExpressSvg from '../../assets/logos/express.svg';
+import PostgresSvg from '../../assets/logos/postgresql.svg';
 
-function Project() {
+function About() {
     return (
         <Layout>
             <Section leftHeading="About" id="about">
@@ -28,7 +32,12 @@ function Project() {
             </Section>
             <div className={utilStyles.lineBreak} />
             <Section leftHeading="Skills">
-                <Cube></Cube>
+                <Cube size="medium" animation>
+                    <ReactSvg fill="#61DAFB"></ReactSvg>
+                    <NodeJsSvg fill="#339933"></NodeJsSvg>
+                    <ExpressSvg fill="#000000"></ExpressSvg>
+                    <PostgresSvg fill="#336791"></PostgresSvg>
+                </Cube>
                 <h1 className={utilStyles.heading2Xl}>Mainly focused on</h1>
                 <h2 className={utilStyles.headingXlc}>Node.js, Express, React, SQL</h2>
             </Section>
@@ -49,4 +58,4 @@ function Project() {
     );
 }
 
-export default Project;
+export default About;
