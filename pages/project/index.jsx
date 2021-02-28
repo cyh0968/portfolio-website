@@ -2,7 +2,7 @@ import Link from 'next/link';
 import utilStyles from '../../styles/utils.module.scss';
 import { Layout } from '../../components/layout';
 import { Section } from '../../components/section';
-import { Button } from '../../components/ui-components';
+import { Button, Slider } from '../../components/ui-components';
 import {
     Css3Logo,
     ExpressLogo,
@@ -41,7 +41,7 @@ function Project() {
                 </div>
 
                 <h3 className={utilStyles.headingXl}>Technologies</h3>
-                <div className={utilStyles.alignCenter}>
+                <div className={utilStyles.horizontal}>
                     <JavaScriptLogo></JavaScriptLogo>
                     <ReactLogo></ReactLogo>
                     <SassLogo></SassLogo>
@@ -64,60 +64,78 @@ function Project() {
                         center: play/pause, right: forward)
                     </p>
                 </div>
-                <iframe
-                    width="784"
-                    height="441"
-                    src="https://www.youtube.com/embed/5bxqWZ6IHgk"
-                    frameBorder="0"
-                    allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                ></iframe>
-                <h4 className={utilStyles.headingLg}>Bubble Sort</h4>
-                <iframe
-                    width="784"
-                    height="441"
-                    src="https://www.youtube.com/embed/VaTS6i_g6Fo"
-                    frameBorder="0"
-                    allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                ></iframe>
-                <h4 className={utilStyles.headingLg}>Selection Sort</h4>
-                <iframe
-                    width="784"
-                    height="441"
-                    src="https://www.youtube.com/embed/UwGUuV0lQgk"
-                    frameBorder="0"
-                    allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                ></iframe>
-                <h4 className={utilStyles.headingLg}>Insertion Sort</h4>
-                <iframe
-                    width="784"
-                    height="441"
-                    src="https://www.youtube.com/embed/863sLH3mAzA"
-                    frameBorder="0"
-                    allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                ></iframe>
-                <h4 className={utilStyles.headingLg}>Merge Sort</h4>
-                <iframe
-                    width="784"
-                    height="441"
-                    src="https://www.youtube.com/embed/CU-sk9Pwu6w"
-                    frameBorder="0"
-                    allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                ></iframe>
+                <Slider>
+                    <div>
+                        <iframe
+                            width="784"
+                            height="441"
+                            src="https://www.youtube.com/embed/5bxqWZ6IHgk"
+                            frameBorder="0"
+                            allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
+                        ></iframe>
+                    </div>
 
-                <h4 className={utilStyles.headingLg}>Quick Sort</h4>
-                <iframe
-                    width="784"
-                    height="441"
-                    src="https://www.youtube.com/embed/qrCrlBGSVRM"
-                    frameBorder="0"
-                    allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                ></iframe>
+                    <div>
+                        <h4 className={utilStyles.headingLg}>Bubble Sort</h4>
+                        <iframe
+                            width="784"
+                            height="441"
+                            src="https://www.youtube.com/embed/VaTS6i_g6Fo"
+                            frameBorder="0"
+                            allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
+                        ></iframe>
+                    </div>
+
+                    <div>
+                        <h4 className={utilStyles.headingLg}>Selection Sort</h4>
+                        <iframe
+                            width="784"
+                            height="441"
+                            src="https://www.youtube.com/embed/UwGUuV0lQgk"
+                            frameBorder="0"
+                            allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
+                        ></iframe>
+                    </div>
+
+                    <div>
+                        <h4 className={utilStyles.headingLg}>Insertion Sort</h4>
+                        <iframe
+                            width="784"
+                            height="441"
+                            src="https://www.youtube.com/embed/863sLH3mAzA"
+                            frameBorder="0"
+                            allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
+                        ></iframe>
+                    </div>
+
+                    <div>
+                        <h4 className={utilStyles.headingLg}>Merge Sort</h4>
+                        <iframe
+                            width="784"
+                            height="441"
+                            src="https://www.youtube.com/embed/CU-sk9Pwu6w"
+                            frameBorder="0"
+                            allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
+                        ></iframe>
+                    </div>
+
+                    <div>
+                        <h4 className={utilStyles.headingLg}>Quick Sort</h4>
+                        <iframe
+                            width="784"
+                            height="441"
+                            src="https://www.youtube.com/embed/qrCrlBGSVRM"
+                            frameBorder="0"
+                            allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
+                        ></iframe>
+                    </div>
+                </Slider>
 
                 <h3 className={utilStyles.headingXl}>How it works?</h3>
                 <div className={utilStyles.content}>
@@ -158,13 +176,13 @@ function Project() {
                 </div>
 
                 <h3 className={utilStyles.headingXl}>Technologies</h3>
-                <div className={utilStyles.alignCenter}>
+                <div className={utilStyles.horizontal}>
                     <JavaScriptLogo></JavaScriptLogo>
                     <ReactLogo></ReactLogo>
                     <Css3Logo></Css3Logo>
                 </div>
 
-                <div className={utilStyles.alignCenter}>
+                <div className={utilStyles.horizontal}>
                     <NodeJsLogo></NodeJsLogo>
                     <ExpressLogo></ExpressLogo>
                     <MySqlLogo></MySqlLogo>
