@@ -1,53 +1,45 @@
-@use 'sass:math';
-
-$length: 200px;
-$width: $length * 2;
 .container {
     position: relative;
-    width: $length;
-    height: $width;
-    perspective: $length * 2.5;
-    margin: $length / 2;
+    margin: 5rem auto;
+    perspective: 500px;
 }
 
 .slider {
-    width: 100%;
-    width: 100%;
     position: relative;
     transform-style: preserve-3d;
     transition: transform 1s ease;
 }
 
 .slide {
-    width: $width;
-    height: $length;
-    border: 2px solid var(--white);
     position: absolute;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: red;
     font-family: Arial, sans-serif;
     font-size: 2rem;
-    background-color: var(--light-grey);
-    transition: transform 1s ease;
+    cursor: pointer;
+    transition: all 1s ease;
 }
 
 .current {
+    opacity: 1;
     transform: translateZ(0);
 }
 
 .previous {
-    transform: translateZ(-100px) translateX(-50%);
+    opacity: 0.7;
+    transform: translateZ(-100px) translateX(-50%) translateY(-20%);
 }
 
 .next {
-    transform: translateZ(-100px) translateX(50%);
+    opacity: 0.7;
+    transform: translateZ(-100px) translateX(50%) translateY(-20%);
 }
 
 .ready {
-    transform: translateZ(-200px);
+    opacity: 0;
+    transform: translateZ(-120px) translateY(-40%);
 }
 
 .waiting {
@@ -69,12 +61,12 @@ $width: $length * 2;
 }
 
 .previousButton {
-    left: -100%;
+    left: -40%;
     border-radius: 0 3px 3px 0;
 }
 
 .nextButton {
-    right: -100%;
+    right: -40%;
     border-radius: 3px 0 0 3px;
 }
 

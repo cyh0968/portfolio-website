@@ -1,5 +1,5 @@
 /* React */
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 /* Utility */
 import PropType from 'prop-types';
@@ -16,16 +16,41 @@ const slideStatusStyles = {
     waiting: mergeStrings(styles.slide, styles.waiting),
 };
 
-function Slider({ children }) {
+function Slider({ width = '40rem', height = '20rem', autoPlayMode = false, playSpeed = 2000, children }) {
     const [indexOfCurrentSlide, setIndexOfCurrentSlide] = useState(0);
+    const slideSize = { width: width, height: height };
     const slides = Array.isArray(children) ? children : [children];
-    const listSlides = slides.map((slide, index, array) => {
-        return (
-            <div key={index} className={getSlideStatusStyles(index, array.length)}>
-                {slide}
-            </div>
-        );
-    });
+    const listSlides = slides.map((slide, index, array) => (
+        <div
+            key={index}
+            className={getSlideStatusStyles(index, array.length)}
+            onClick={() => setIndexOfCurrentSlide(index)}
+        >
+            {slide}
+        </div>
+    ));
+
+    function showNextSlide() {
+        indexOfCurrentSlide < slides.length - 1
+            ? setIndexOfCurrentSlide((previous) => previous + 1)
+            : setIndexOfCurrentSlide(0);
+    }
+
+    function showPreviousSlide() {
+        indexOfCurrentSlide !== 0
+            ? setIndexOfCurrentSlide((previous) => previous - 1)
+            : setIndexOfCurrentSlide(slides.length - 1);
+    }
+
+    useEffect(() => {
+        if (autoPlayMode) {
+            const interval = setInterval(
+                () => setIndexOfCurrentSlide((previous) => (previous < slides.length - 1 ? previous + 1 : 0)),
+                playSpeed
+            );
+            return () => clearInterval(interval);
+        }
+    }, []);
 
     function getSlideStatusStyles(index, length) {
         if (index === indexOfCurrentSlide) {
@@ -56,20 +81,14 @@ function Slider({ children }) {
         return slideStatusStyles.waiting;
     }
 
-    function showNextSlide() {
-        indexOfCurrentSlide < slides.length - 1
-            ? setIndexOfCurrentSlide((previous) => previous + 1)
-            : setIndexOfCurrentSlide(0);
-    }
-
-    function showPreviousSlide() {
-        indexOfCurrentSlide !== 0
-            ? setIndexOfCurrentSlide((previous) => previous - 1)
-            : setIndexOfCurrentSlide(slides.length - 1);
-    }
-
-    return (
-        <div className={styles.container}>
+    return autoPlayMode ? (
+        <div style={slideSize} className={styles.container}>
+            <div style={slideSize} className={styles.slider}>
+                {listSlides}
+            </div>
+        </div>
+    ) : (
+        <div style={slideSize} className={styles.container}>
             <div className={styles.controller}>
                 <a className={styles.previousButton} onClick={showPreviousSlide}>
                     &#10094;
@@ -78,7 +97,9 @@ function Slider({ children }) {
                     &#10095;
                 </a>
             </div>
-            <div className={styles.slider}>{listSlides}</div>
+            <div style={slideSize} className={styles.slider}>
+                {listSlides}
+            </div>
         </div>
     );
 }
