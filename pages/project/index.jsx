@@ -1,8 +1,9 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import utilStyles from '../../styles/utils.module.scss';
 import { Layout } from '../../components/layout';
 import { Section } from '../../components/section';
-import { Button, Slider } from '../../components/ui-components';
+import { Button, Slider, TypoAnimation } from '../../components/ui-components';
 import {
     Css3Logo,
     ExpressLogo,
@@ -13,6 +14,10 @@ import {
     SassLogo,
 } from '../../components/ui-components/logos';
 
+const str = `While I was learning sorting algorithms, I was wondering how each sorting algorithm would look.
+                        It was pretty interesting to see how each algorithm looks, and it gave me a better understanding
+                        of sorting algorithms. For instance, if a sorting algorithm uses the divide and conquers
+                        approach, you can see the pattern of self-imitation.`;
 function Project() {
     return (
         <Layout>
@@ -24,10 +29,12 @@ function Project() {
                 <h3 className={utilStyles.headingXl}>Introduction</h3>
                 <div className={utilStyles.content}>
                     <p className={utilStyles.long}>
-                        While I was learning sorting algorithms, I was wondering how each sorting algorithm would look.
-                        It was pretty interesting to see how each algorithm looks, and it gave me a better understanding
-                        of sorting algorithms. For instance, if a sorting algorithm uses the divide and conquers
-                        approach, you can see the pattern of self-imitation.
+                        <TypoAnimation>
+                            While I was learning sorting algorithms, I was wondering how each sorting algorithm would
+                            look. It was pretty interesting to see how each algorithm looks, and it gave me a better
+                            understanding of sorting algorithms. For instance, if a sorting algorithm uses the divide
+                            and conquers approach, you can see the pattern of self-imitation.
+                        </TypoAnimation>
                     </p>
                     <br />
                     <div className={utilStyles.alignRight}>
@@ -64,7 +71,7 @@ function Project() {
                         center: play/pause, right: forward)
                     </p>
                 </div>
-                <Slider>
+                <Slider width="40rem" height="25rem">
                     <div>
                         <iframe
                             width="784"
@@ -187,6 +194,50 @@ function Project() {
                     <ExpressLogo></ExpressLogo>
                     <MySqlLogo></MySqlLogo>
                 </div>
+                <Slider width="40rem" height="40rem" autoPlayMode>
+                    <Image
+                        className={utilStyles.borderRound}
+                        src="/images/projects/fleamarket/01.png"
+                        width={600}
+                        height={600}
+                    ></Image>
+                    <Image
+                        className={utilStyles.borderRound}
+                        src="/images/projects/fleamarket/02.png"
+                        width={600}
+                        height={600}
+                    ></Image>
+                    <Image
+                        className={utilStyles.borderRound}
+                        src="/images/projects/fleamarket/03.png"
+                        width={600}
+                        height={600}
+                    ></Image>
+                    <Image
+                        className={utilStyles.borderRound}
+                        src="/images/projects/fleamarket/04.png"
+                        width={600}
+                        height={600}
+                    ></Image>
+                    <Image
+                        className={utilStyles.borderRound}
+                        src="/images/projects/fleamarket/05.png"
+                        width={600}
+                        height={600}
+                    ></Image>
+                    <Image
+                        className={utilStyles.borderRound}
+                        src="/images/projects/fleamarket/06.png"
+                        width={600}
+                        height={600}
+                    ></Image>
+                    <Image
+                        className={utilStyles.borderRound}
+                        src="/images/projects/fleamarket/07.png"
+                        width={600}
+                        height={600}
+                    ></Image>
+                </Slider>
 
                 <h3 className={utilStyles.headingXl}>Features</h3>
                 <h4 className={utilStyles.headingLg}>Real-Time Trading</h4>

@@ -9,7 +9,7 @@ import utilStyles from '../styles/utils.module.scss';
 
 /* Component */
 import { Layout } from '../components/layout';
-import { Cube } from '../components/ui-components';
+import { Cube, Ipad } from '../components/ui-components';
 
 const introContainerStyle = mergeStrings(styles.container, styles.introMarginBottom);
 const introStyle = mergeStrings(styles.intro, utilStyles.vertical);
@@ -86,6 +86,9 @@ function Homepage() {
                                 </h1>
                             </a>
                         </Link>
+                        <div className={utilStyles.alignLeft}>
+                            <Ipad></Ipad>
+                        </div>
                     </div>
                     <div className={styles.content}>
                         <Link href="/project">
@@ -105,6 +108,7 @@ function Homepage() {
                             </a>
                         </Link>
                     </div>
+
                     <div ref={sceneRef} className={styles.scene}>
                         <Cube size="large" show={setCubeDirection()}>
                             <div>About</div>
