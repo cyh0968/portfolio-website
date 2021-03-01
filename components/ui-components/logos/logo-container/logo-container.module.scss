@@ -1,6 +1,6 @@
 @keyframes turn-scale {
     0% {
-        transform: scale(1) rotate3d(0, 0, 0, 0);
+        transform: scale(0.8) rotate3d(0, 0, 0, 0);
     }
 
     60% {
@@ -16,16 +16,20 @@
     }
 }
 
+.animation {
+    animation: turn-scale 1s cubic-bezier(0.4, 0.6, 0.8, 0.9);
+}
+
 .container {
     display: inline-block;
     width: 12rem;
     height: 17rem;
     margin: 1rem 1.5rem 2.5rem;
     transform-style: preserve-3d;
-    transition: all 1s ease;
+    transition: all 0.3s ease;
 
     &:hover {
-        animation: turn-scale 1s cubic-bezier(0.2, 0.6, 0.8, 0.9) 0.5s;
+        transform: scale(1.1);
     }
 }
 
