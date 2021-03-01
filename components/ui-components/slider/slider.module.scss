@@ -1,47 +1,61 @@
-@keyframes fade {
-    from {
-        opacity: 0.4;
-    }
+@use 'sass:math';
 
-    to {
-        opacity: 1;
-    }
-}
-
-.invisible {
-    position: absolute;
-    transform: translateX(-200%);
-    z-index: 0;
-}
-
-.visible {
-    display: block;
-}
-
-.moveLeft {
-    left: -100%;
-}
-
-.moveRight {
-    right: -100%;
+$length: 200px;
+$width: $length * 2;
+.container {
+    position: relative;
+    width: $length;
+    height: $width;
+    perspective: $length * 2.5;
+    margin: $length / 2;
 }
 
 .slider {
-    position: relative;
     width: 100%;
+    width: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 1s ease;
 }
 
 .slide {
-    width: 100%;
+    width: $width;
+    height: $length;
+    border: 2px solid var(--white);
+    position: absolute;
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
-    align-content: center;
-    animation: fade 0.5s ease;
+    color: red;
+    font-family: Arial, sans-serif;
+    font-size: 2rem;
+    background-color: var(--light-grey);
+    transition: transform 1s ease;
 }
 
-.previous,
+.current {
+    transform: translateZ(0);
+}
+
+.previous {
+    transform: translateZ(-100px) translateX(-50%);
+}
+
 .next {
+    transform: translateZ(-100px) translateX(50%);
+}
+
+.ready {
+    transform: translateZ(-200px);
+}
+
+.waiting {
+    display: none;
+}
+
+.previousButton,
+.nextButton {
     position: absolute;
     z-index: 500;
     top: 20%;
@@ -54,17 +68,17 @@
     transition: all 1s ease;
 }
 
-.previous {
-    left: -10%;
+.previousButton {
+    left: -100%;
     border-radius: 0 3px 3px 0;
 }
 
-.next {
-    right: -10%;
+.nextButton {
+    right: -100%;
     border-radius: 3px 0 0 3px;
 }
 
-.previous:hover,
-.next:hover {
-    background-color: var(--low-opacity-light-gray);
+.previousButton:hover,
+.nextButton:hover {
+    background-color: var(--primary-color);
 }
