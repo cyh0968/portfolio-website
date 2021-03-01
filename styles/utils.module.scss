@@ -27,6 +27,20 @@
     align-items: center;
 }
 
+.alignCenter {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.alignLeft {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
 .center {
     align-self: center;
 }
@@ -235,4 +249,8 @@
 /* Border */
 .borderCircle {
     border-radius: 9999px;
+}
+
+.borderRound {
+    border-radius: 5%;
 }
