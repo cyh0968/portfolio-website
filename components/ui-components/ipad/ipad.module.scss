@@ -1,0 +1,46 @@
+.container {
+    position: relative;
+    // transform: scale(2);
+}
+
+.ipad {
+    position: absolute;
+    z-index: 1100;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.screen {
+    position: absolute;
+    z-index: 1200;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 360px;
+    height: 505px;
+    background-color: rgb(40, 44, 52);
+    color: rgb(198, 120, 221);
+    font-size: 12px;
+    font-weight: 500;
+    font-family: 'Inconsolata', monospace;
+    border-radius: 1%;
+}
+textarea.input {
+}
+
+.textarea {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    bottom: -50%;
+    width: 100%;
+    height: 200px;
+    border: none;
+    color: rgb(198, 120, 221);
+    font-size: 12px;
+    font-weight: 500;
+    font-family: 'Inconsolata', monospace;
+    background-color: rgb(40, 44, 52);
+}
