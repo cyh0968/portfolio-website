@@ -2,8 +2,8 @@ import Link from 'next/link';
 import Image from 'next/image';
 import utilStyles from '../../styles/utils.module.scss';
 import { Layout } from '../../components/layout';
-import { Section } from '../../components/section';
-import { Button, Slider, TypoAnimation, ScrollAnimation } from '../../components/ui-components';
+// import { Section } from '../../components/section';
+import { Button, Slider, TypoAnimation, ScrollAnimation, Section } from '../../components/ui-components';
 import {
     Css3Logo,
     ExpressLogo,
@@ -168,10 +168,10 @@ function Project() {
                 <h3 className={utilStyles.headingXl}>Introduction</h3>
                 <div className={utilStyles.content}>
                     <p className={utilStyles.long}>
-                        While I was learning sorting algorithms, I was wondering how each sorting algorithm would look.
-                        It was pretty interesting to see how each algorithm looks, and it gave me a better understanding
-                        of sorting algorithms. For instance, if a sorting algorithm uses the divide and conquers
-                        approach, you can see the pattern of self-imitation.
+                        Fleamarket was the graudation project. Whenever I used Kijiji, I felt uncomfortable for its
+                        limited functionality. The main movitation of the application was providing simple and fast of
+                        trading. Fleamarket is E-commerse platform that allows local people exchange thier goods easily.
+                        It is a web application that supports responsive web design.
                     </p>
                     <br />
                     <div className={utilStyles.alignCenter}>
@@ -193,55 +193,135 @@ function Project() {
                     <ExpressLogo></ExpressLogo>
                     <MySqlLogo></MySqlLogo>
                 </div>
-                <Slider width="40rem" height="40rem" autoPlayMode>
-                    <Image
-                        className={utilStyles.borderRound}
-                        src="/images/projects/fleamarket/01.png"
-                        width={600}
-                        height={600}
-                    ></Image>
-                    <Image
-                        className={utilStyles.borderRound}
-                        src="/images/projects/fleamarket/02.png"
-                        width={600}
-                        height={600}
-                    ></Image>
-                    <Image
-                        className={utilStyles.borderRound}
-                        src="/images/projects/fleamarket/03.png"
-                        width={600}
-                        height={600}
-                    ></Image>
-                    <Image
-                        className={utilStyles.borderRound}
-                        src="/images/projects/fleamarket/04.png"
-                        width={600}
-                        height={600}
-                    ></Image>
-                    <Image
-                        className={utilStyles.borderRound}
-                        src="/images/projects/fleamarket/05.png"
-                        width={600}
-                        height={600}
-                    ></Image>
-                    <Image
-                        className={utilStyles.borderRound}
-                        src="/images/projects/fleamarket/06.png"
-                        width={600}
-                        height={600}
-                    ></Image>
-                    <Image
-                        className={utilStyles.borderRound}
-                        src="/images/projects/fleamarket/07.png"
-                        width={600}
-                        height={600}
-                    ></Image>
-                </Slider>
-
                 <h3 className={utilStyles.headingXl}>Features</h3>
-                <h4 className={utilStyles.headingLg}>Real-Time Trading</h4>
-                <h4 className={utilStyles.headingLg}>Chatting Service</h4>
-                <h3 className={utilStyles.headingXl}>How it works?</h3>
+                <Slider width="40rem" height="40rem" autoPlayMode>
+                    <div>
+                        <h4 className={utilStyles.headingLg}>Home</h4>
+                        <Image
+                            className={utilStyles.borderRound}
+                            src="/images/projects/fleamarket/09.png"
+                            width={600}
+                            height={600}
+                        ></Image>
+                    </div>
+                    <div>
+                        <h4 className={utilStyles.headingLg}>Create an account</h4>
+                        <Image
+                            className={utilStyles.borderRound}
+                            src="/images/projects/fleamarket/10.png"
+                            width={600}
+                            height={600}
+                        ></Image>
+                    </div>
+                    <div>
+                        <h4 className={utilStyles.headingLg}>Login to account</h4>
+                        <Image
+                            className={utilStyles.borderRound}
+                            src="/images/projects/fleamarket/11.png"
+                            width={600}
+                            height={600}
+                        ></Image>
+                    </div>
+                    <div>
+                        <h4 className={utilStyles.headingLg}>Edit account</h4>
+                        <Image
+                            className={utilStyles.borderRound}
+                            src="/images/projects/fleamarket/18.png"
+                            width={600}
+                            height={600}
+                        ></Image>
+                    </div>
+                    <div>
+                        <h4 className={utilStyles.headingLg}>User's inventory</h4>
+                        <Image
+                            className={utilStyles.borderRound}
+                            src="/images/projects/fleamarket/15.png"
+                            width={600}
+                            height={600}
+                        ></Image>
+                    </div>
+                    <div>
+                        <h4 className={utilStyles.headingLg}>Upload item</h4>
+                        <Image
+                            className={utilStyles.borderRound}
+                            src="/images/projects/fleamarket/27.png"
+                            width={600}
+                            height={600}
+                        ></Image>
+                    </div>
+                    <div>
+                        <h4 className={utilStyles.headingLg}>Delete item</h4>
+                        <Image
+                            className={utilStyles.borderRound}
+                            src="/images/projects/fleamarket/30.png"
+                            width={600}
+                            height={600}
+                        ></Image>
+                    </div>
+                    <div>
+                        <h4 className={utilStyles.headingLg}>Visit user profile</h4>
+                        <Image
+                            className={utilStyles.borderRound}
+                            src="/images/projects/fleamarket/16.png"
+                            width={600}
+                            height={600}
+                        ></Image>
+                    </div>
+                    <div>
+                        <h4 className={utilStyles.headingLg}>Item page</h4>
+                        <Image
+                            className={utilStyles.borderRound}
+                            src="/images/projects/fleamarket/26.png"
+                            width={600}
+                            height={600}
+                        ></Image>
+                    </div>
+                    <div>
+                        <h4 className={utilStyles.headingLg}>Chatting</h4>
+                        <Image
+                            className={utilStyles.borderRound}
+                            src="/images/projects/fleamarket/01.png"
+                            width={600}
+                            height={600}
+                        ></Image>
+                    </div>
+                    <div>
+                        <h4 className={utilStyles.headingLg}>Select item</h4>
+                        <Image
+                            className={utilStyles.borderRound}
+                            src="/images/projects/fleamarket/02.png"
+                            width={600}
+                            height={600}
+                        ></Image>
+                    </div>
+                    <div>
+                        <h4 className={utilStyles.headingLg}>Pending another user</h4>
+                        <Image
+                            className={utilStyles.borderRound}
+                            src="/images/projects/fleamarket/04.png"
+                            width={600}
+                            height={600}
+                        ></Image>
+                    </div>
+                    <div>
+                        <h4 className={utilStyles.headingLg}>Users confirm item</h4>
+                        <Image
+                            className={utilStyles.borderRound}
+                            src="/images/projects/fleamarket/06.png"
+                            width={600}
+                            height={600}
+                        ></Image>
+                    </div>
+                    <div>
+                        <h4 className={utilStyles.headingLg}>Rating a user</h4>
+                        <Image
+                            className={utilStyles.borderRound}
+                            src="/images/projects/fleamarket/08.png"
+                            width={600}
+                            height={600}
+                        ></Image>
+                    </div>
+                </Slider>
             </Section>
         </Layout>
     );
