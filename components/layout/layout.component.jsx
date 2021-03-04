@@ -1,5 +1,10 @@
+/* Next */
 import Head from 'next/head';
+
+/* Styles */
 import styles from './layout.module.scss';
+
+/* Component */
 import { Header } from './header';
 import { Footer } from './footer';
 import { Navigation } from './navigation';
