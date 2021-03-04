@@ -86,9 +86,6 @@ function Homepage() {
                                 </h1>
                             </a>
                         </Link>
-                        <div className={utilStyles.alignLeft}>
-                            <Ipad></Ipad>
-                        </div>
                     </div>
                     <div className={styles.content}>
                         <Link href="/project">
@@ -111,10 +108,10 @@ function Homepage() {
 
                     <div ref={sceneRef} className={styles.scene}>
                         <Cube size="large" show={setCubeDirection()}>
-                            <div>About</div>
-                            <div>Blog</div>
-                            <div>Project</div>
-                            <div>Contact</div>
+                            <h3>About</h3>
+                            <h3>Blog</h3>
+                            <h3>Project</h3>
+                            <h3>Contact</h3>
                         </Cube>
                     </div>
                 </div>

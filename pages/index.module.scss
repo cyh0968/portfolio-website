@@ -1,7 +1,12 @@
 @keyframes moveInLeft {
     0% {
         opacity: 0;
-        transform: translateX(-10rem);
+        transform: translateX(-7rem);
+    }
+
+    60% {
+        opacity: 1;
+        transform: translateX(-7rem);
     }
 
     80% {
@@ -9,7 +14,6 @@
     }
 
     100% {
-        opacity: 1;
         transform: translate(0);
     }
 }
@@ -17,7 +21,12 @@
 @keyframes moveInRight {
     0% {
         opacity: 0;
-        transform: translateX(10rem);
+        transform: translateX(7rem);
+    }
+
+    60% {
+        opacity: 1;
+        transform: translateX(7rem);
     }
 
     80% {
@@ -25,17 +34,16 @@
     }
 
     100% {
-        opacity: 1;
         transform: translate(0);
     }
 }
 
 .moveInLeft {
-    animation: moveInLeft 1s ease-in;
+    animation: moveInLeft 1.5s cubic-bezier(0.6, 0.4, 0.8, 0.65);
 }
 
 .moveInRight {
-    animation: moveInRight 1s ease-in;
+    animation: moveInRight 1.5s cubic-bezier(0.6, 0.4, 0.8, 0.65);
 }
 
 .container {
