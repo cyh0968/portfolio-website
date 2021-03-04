@@ -30,10 +30,6 @@ body {
     font-weight: 300;
     font-size: 125%; /* 1rem = 20px = 16px * 1.25 */
     text-rendering: optimizeLegibility;
-    -webkit-user-select: none; /* Chrome all / Safari all */
-    -moz-user-select: none; /* Firefox all */
-    -ms-user-select: none; /* IE 10+ */
-    user-select: none;
 }
 
 /* Media Queries */
