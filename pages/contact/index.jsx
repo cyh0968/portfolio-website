@@ -4,14 +4,14 @@ import styles from './index.module.scss';
 import utilStyles from '../../styles/utils.module.scss';
 
 import { Layout } from '../../components/layout';
-import { Section } from '../../components/section';
 import {
-    LinkedInIcon,
-    GithubIcon,
-    TwitterIcon,
-    MediumIcon,
-    MailIcon,
+    Section,
     DocumentIcon,
+    GithubIcon,
+    LinkedInIcon,
+    MailIcon,
+    MediumIcon,
+    TwitterIcon,
 } from '../../components/ui-components';
 
 const listStyle = mergeStrings(styles.heading, utilStyles.link);

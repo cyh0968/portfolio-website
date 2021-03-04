@@ -1,8 +1,7 @@
 import Image from 'next/image';
 import utilStyles from '../../styles/utils.module.scss';
 import { Layout } from '../../components/layout';
-import { Section } from '../../components/section';
-import { Cube, TypoAnimation } from '../../components/ui-components';
+import { Cube, Section, TypoAnimation } from '../../components/ui-components';
 import ReactSvg from '../../assets/logos/react.svg';
 import NodeJsSvg from '../../assets/logos/node-dot-js.svg';
 import ExpressSvg from '../../assets/logos/express.svg';
