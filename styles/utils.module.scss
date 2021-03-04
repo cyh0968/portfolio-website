@@ -161,6 +161,11 @@
 
 /* List */
 .list {
+    display: block;
+    margin: auto;
+}
+
+.item {
     list-style: none;
     margin-bottom: 0.3rem;
     &::before {
@@ -233,7 +238,7 @@
 
 .iconLg {
     display: inline-block;
-    font-size: 1.8rem;
+    font-size: 3rem;
     margin-right: 1rem;
     line-height: 1.2;
     vertical-align: middle;
