@@ -1,12 +1,14 @@
 import utilStyles from '../../styles/utils.module.scss';
 import { Layout } from '../../components/layout';
 import { Section } from '../../components/section';
+import { Ipad } from '../../components/ui-components';
 
 function Blog() {
     return (
         <Layout>
             <Section leftHeading="Blog">
                 <div className={utilStyles.content}>
+                    <Ipad></Ipad>
                     <p className={utilStyles.long}>
                         Thank you for visiting my website! I'm on the long journey of craftmanship. I'm a simple person
                         who has only one purpose that is making good products.

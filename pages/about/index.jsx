@@ -46,6 +46,7 @@ function About() {
                 <h1 className={utilStyles.heading2Xl}>Other Skills</h1>
                 <h2 className={utilStyles.headingXlc}>Node.js, Express, React, SQL</h2>
             </Section>
+            <div className={utilStyles.lineBreak} />
             <Section leftHeading="Experience">
                 <h1 className={utilStyles.heading2Xl}>Software Devloper</h1>
                 <h2 className={utilStyles.headingXlc}>Emerson</h2>

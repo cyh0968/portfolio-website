@@ -3,7 +3,7 @@ import Image from 'next/image';
 import utilStyles from '../../styles/utils.module.scss';
 import { Layout } from '../../components/layout';
 import { Section } from '../../components/section';
-import { Button, Slider, TypoAnimation } from '../../components/ui-components';
+import { Button, Slider, TypoAnimation, ScrollAnimation } from '../../components/ui-components';
 import {
     Css3Logo,
     ExpressLogo,
@@ -53,7 +53,6 @@ function Project() {
                     <ReactLogo></ReactLogo>
                     <SassLogo></SassLogo>
                 </div>
-
                 <h3 className={utilStyles.headingXl}>Features</h3>
                 <h4 className={utilStyles.headingLg}>Controller</h4>
                 <div className={utilStyles.content}>
