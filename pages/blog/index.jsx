@@ -1,27 +1,38 @@
-import utilStyles from '../../styles/utils.module.scss';
-import { Layout } from '../../components/layout';
-import { Section } from '../../components/section';
-import { Ipad } from '../../components/ui-components';
+/* Next */
+import Link from 'next/link';
+/* Utilies */
+import { getSortedPostsData } from '../../lib/posts';
 
-function Blog() {
+/* Styles */
+import utilStyles from '../../styles/utils.module.scss';
+/* Component */
+import { Layout } from '../../components/layout';
+import { Date, Ipad, Section } from '../../components/ui-components';
+
+export async function getStaticProps() {
+    const allPostsData = await getSortedPostsData();
+    return {
+        props: { allPostsData },
+    };
+}
+function Blog({ allPostsData }) {
     return (
         <Layout>
-            <Section leftHeading="Blog">
+            <Section leftHeading="Blog" rightHeading="Blog">
                 <div className={utilStyles.content}>
-                    <Ipad></Ipad>
-                    <p className={utilStyles.long}>
-                        Thank you for visiting my website! I'm on the long journey of craftmanship. I'm a simple person
-                        who has only one purpose that is making good products.
-                    </p>
-                    <br />
-                    <p className={utilStyles.long}>
-                        I believe that the projects that I will work on will impact people's everyday lives, and I will
-                        be willing to take my responsibility to make the best.
-                    </p>
-                    <br />
-                    <p className={utilStyles.long}>
-                        A promise with myself is that I will remain humble and improve myself by the end of my journey.
-                    </p>
+                    <ul className={utilStyles.list}>
+                        {allPostsData.map(({ id, date, title }) => (
+                            <li className={utilStyles.item} key={id}>
+                                <Link href={`/posts/${id}`}>
+                                    <a className={utilStyles.link}>{title}</a>
+                                </Link>
+                                <br />
+                                <small className={utilStyles.details}>
+                                    <Date dateString={date}></Date>
+                                </small>
+                            </li>
+                        ))}
+                    </ul>
                 </div>
             </Section>
         </Layout>
