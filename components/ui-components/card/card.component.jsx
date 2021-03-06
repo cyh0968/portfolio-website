@@ -2,7 +2,7 @@
 import { useState } from 'react';
 
 /* Utilities */
-import { delay, mergeStrings } from '../../../utils';
+import { delay } from '../../../utils';
 
 /* Styles */
 import styles from './card.module.scss';
