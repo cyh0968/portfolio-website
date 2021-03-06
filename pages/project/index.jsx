@@ -6,7 +6,7 @@ import utilStyles from '../../styles/utils.module.scss';
 
 /* Components */
 import { Layout } from '../../components/layout';
-import { Button, Slider, Section } from '../../components/ui-components';
+import { Button, Card, Slider, Section } from '../../components/ui-components';
 import {
   Css3Logo,
   ExpressLogo,
@@ -16,6 +16,9 @@ import {
   ReactLogo,
   SassLogo,
 } from '../../components/ui-components/logos';
+
+/* Enums */
+import { ColorsEnum } from '../../enums';
 
 function Project() {
   return (
@@ -47,9 +50,15 @@ function Project() {
 
         <h3 className={utilStyles.headingXl}>Technologies</h3>
         <div className={utilStyles.horizontal}>
-          <JavaScriptLogo></JavaScriptLogo>
-          <ReactLogo></ReactLogo>
-          <SassLogo></SassLogo>
+          <Card name='javascript'>
+            <JavaScriptLogo fill={ColorsEnum.JAVASCRIPT}></JavaScriptLogo>
+          </Card>
+          <Card name='react'>
+            <ReactLogo fill={ColorsEnum.REACT}></ReactLogo>
+          </Card>
+          <Card name='sass'>
+            <SassLogo fill={ColorsEnum.SASS}></SassLogo>
+          </Card>
         </div>
         <h3 className={utilStyles.headingXl}>Features</h3>
         <h4 className={utilStyles.headingLg}>Controller</h4>
@@ -185,15 +194,27 @@ function Project() {
 
         <h3 className={utilStyles.headingXl}>Technologies</h3>
         <div className={utilStyles.horizontal}>
-          <JavaScriptLogo></JavaScriptLogo>
-          <ReactLogo></ReactLogo>
-          <Css3Logo></Css3Logo>
+          <Card name='javascript'>
+            <JavaScriptLogo fill={ColorsEnum.JAVASCRIPT}></JavaScriptLogo>
+          </Card>
+          <Card name='react'>
+            <ReactLogo fill={ColorsEnum.REACT}></ReactLogo>
+          </Card>
+          <Card name='css3'>
+            <Css3Logo fill={ColorsEnum.CSS3}></Css3Logo>
+          </Card>
         </div>
 
         <div className={utilStyles.horizontal}>
-          <NodeJsLogo></NodeJsLogo>
-          <ExpressLogo></ExpressLogo>
-          <MySqlLogo></MySqlLogo>
+          <Card name='nodejs'>
+            <NodeJsLogo fill={ColorsEnum.NODEJS}></NodeJsLogo>
+          </Card>
+          <Card name='express'>
+            <ExpressLogo fill={ColorsEnum.EXPRESS}></ExpressLogo>
+          </Card>
+          <Card name='mysql'>
+            <MySqlLogo fill={ColorsEnum.MYSQL}></MySqlLogo>
+          </Card>
         </div>
         <h3 className={utilStyles.headingXl}>Features</h3>
         <Slider width='40rem' height='40rem'>

@@ -2,15 +2,17 @@ import Image from 'next/image';
 import utilStyles from '../../styles/utils.module.scss';
 import { Layout } from '../../components/layout';
 import { Cube, Section, TypoAnimation } from '../../components/ui-components';
-import ReactSvg from '../../assets/logos/react.svg';
-import NodeJsSvg from '../../assets/logos/node-dot-js.svg';
-import ExpressSvg from '../../assets/logos/express.svg';
-import PostgresSvg from '../../assets/logos/postgresql.svg';
+import {
+  ExpressLogo,
+  NodeJsLogo,
+  PostgreSqlLogo,
+  ReactLogo,
+} from '../../components/ui-components/logos';
 
 function About() {
   return (
     <Layout>
-      <Section leftHeading='About' id='about' pageDivider>
+      <Section primarySectionHeading='About' pageDivider>
         <Image
           className={utilStyles.borderCircle}
           src='/images/profile.jpg'
@@ -33,21 +35,21 @@ function About() {
           <p className={utilStyles.long}></p>
         </div>
       </Section>
-      <Section leftHeading='Focus' pageDivider>
+      <Section primarySectionHeading='Focus' pageDivider>
         <Cube size='medium' animation>
-          <ReactSvg fill='#000000'></ReactSvg>
-          <NodeJsSvg fill='#000000'></NodeJsSvg>
-          <ExpressSvg fill='#000000'></ExpressSvg>
-          <PostgresSvg fill='#000000'></PostgresSvg>
+          <ExpressLogo fill='#000000'></ExpressLogo>
+          <NodeJsLogo fill='#000000'></NodeJsLogo>
+          <PostgreSqlLogo fill='#000000'></PostgreSqlLogo>
+          <ReactLogo fill='#000000'></ReactLogo>
         </Cube>
         <h1 className={utilStyles.heading2Xl}>Mainly focused on</h1>
         <h2 className={utilStyles.headingXlc}>Web Technologies</h2>
       </Section>
-      <Section leftHeading='Skills' pageDivider>
+      <Section primarySectionHeading='skills' pageDivider>
         <h1 className={utilStyles.heading2Xl}>Other Skills</h1>
         <h2 className={utilStyles.headingXlc}>Node.js, Express, React, SQL</h2>
       </Section>
-      <Section leftHeading='Experience' pageDivider>
+      <Section primarySectionHeading='experience' secondarySectionHeading='work experience'>
         <h1 className={utilStyles.heading2Xl}>Software Devloper</h1>
         <h2 className={utilStyles.headingXlc}>Emerson</h2>
         <br />

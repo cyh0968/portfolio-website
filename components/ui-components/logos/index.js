@@ -1,9 +1,8 @@
-export { LogoContainer } from './logo-container';
-export { Css3Logo } from './css3-logo';
-export { ExpressLogo } from './express-logo';
-export { JavaScriptLogo } from './javascript-logo';
-export { MySqlLogo } from './mysql-logo';
-export { NodeJsLogo } from './nodejs-logo';
-export { ReactLogo } from './react-logo';
-export { SassLogo } from './sass-logo';
-export { SocketIoLogo } from './socket-io-logo';
+export { default as Css3Logo } from '../../../assets/logos/css3.svg';
+export { default as ExpressLogo } from '../../../assets/logos/express.svg';
+export { default as JavaScriptLogo } from '../../../assets/logos/javascript.svg';
+export { default as MySqlLogo } from '../../../assets/logos/mysql.svg';
+export { default as NodeJsLogo } from '../../../assets/logos/node-dot-js.svg';
+export { default as PostgreSqlLogo } from '../../../assets/logos/postgresql.svg';
+export { default as ReactLogo } from '../../../assets/logos/react.svg';
+export { default as SassLogo } from '../../../assets/logos/sass.svg';
