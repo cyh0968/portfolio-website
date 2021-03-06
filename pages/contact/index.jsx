@@ -1,29 +1,31 @@
+/* Utilities */
 import { mergeStrings } from '../../utils';
 
+/* Styles */
 import styles from './index.module.scss';
 import utilStyles from '../../styles/utils.module.scss';
 
+/* Components */
 import { Layout } from '../../components/layout';
+import { Section } from '../../components/ui-components/';
 import {
-  Section,
   DocumentIcon,
   GithubIcon,
   LinkedInIcon,
   MailIcon,
   MediumIcon,
   TwitterIcon,
-} from '../../components/ui-components';
+} from '../../components/ui-components/icons';
 
 const listStyle = mergeStrings(styles.heading, utilStyles.link);
 
 function Contact() {
   return (
     <Layout>
-      <Section>
+      <Section secondarySectionHeading='contact'>
         <div className={styles.contact}>
-          <h1 className={utilStyles.headingXlc}>Contact</h1>
           <ul className={utilStyles.list}>
-            <li className={utilStyles.item}>
+            <li className={styles.item}>
               <a
                 href='https://www.linkedin.com/in/yohan-choi-dev/'
                 target='_blank'
@@ -33,7 +35,7 @@ function Contact() {
                 LinkedIn
               </a>
             </li>
-            <li className={utilStyles.item}>
+            <li className={styles.item}>
               <a
                 href='https://github.com/yohan-choi-dev'
                 target='_blank'
@@ -42,7 +44,7 @@ function Contact() {
                 <GithubIcon name='logo-github' className={utilStyles.iconLg}></GithubIcon>Github
               </a>
             </li>
-            <li className={utilStyles.item}>
+            <li className={styles.item}>
               <a
                 href='https://twitter.com/remember2019'
                 target='_blank'
@@ -51,7 +53,7 @@ function Contact() {
                 <TwitterIcon name='logo-twitter' className={utilStyles.iconLg}></TwitterIcon>Twitter
               </a>
             </li>
-            <li className={utilStyles.item}>
+            <li className={styles.item}>
               <a
                 href='https://twitter.com/remember2019'
                 target='_blank'
@@ -60,13 +62,13 @@ function Contact() {
                 <MediumIcon name='logo-twitter' className={utilStyles.iconLg}></MediumIcon>Medium
               </a>
             </li>
-            <li className={utilStyles.item}>
+            <li className={styles.item}>
               <a href='malito:yohan.choi.dev@gmail.com' target='_blank' className={listStyle}>
                 <MailIcon name='mail-outline' className={utilStyles.iconLg} title='Mail'></MailIcon>
                 Mail
               </a>
             </li>
-            <li className={utilStyles.item}>
+            <li className={styles.item}>
               <a
                 href='https://twitter.com/remember2019'
                 target='_blank'

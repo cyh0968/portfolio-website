@@ -1,14 +1,27 @@
 .contact {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
 }
 
 .heading {
-    font-size: 2rem;
-    font-weight: 300;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    text-align: left;
+  font-size: 2rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.item {
+  list-style: none;
+  margin-bottom: 0.3rem;
+  transition: transform 0.5s ease;
+  &::before {
+    margin-right: 0.25rem;
+  }
+
+  &:hover {
+    transform: scale(1.2);
+  }
 }
