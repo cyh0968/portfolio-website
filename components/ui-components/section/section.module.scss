@@ -1,53 +1,59 @@
 /* Section */
-.container {
-    position: relative;
-    z-index: 3;
-    background-color: var(--primary-color);
-}
 .section {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: var(--primary-color);
 }
 
-.sectionLeft {
-    width: 6rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.aside {
+  width: 6.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.sectionRight {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-    @media only screen and (max-width: 64rem) {
-        width: 80%;
-    }
+.article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  @media only screen and (max-width: 64rem) {
+    width: 80%;
+  }
 }
 
-.leftHeading {
-    color: var(--white);
-    font-weight: 900;
-    font-size: 5rem;
-    word-spacing: 4px;
-    letter-spacing: 0.5rem;
-    writing-mode: vertical-lr;
-    text-orientation: upright;
-    text-transform: uppercase;
+.pageDivider {
+  width: 100vw;
+  height: 5rem;
+  border-top: dashed 1px var(--white);
+  background-color: var(--primary-color);
 }
 
-.rightHeading {
-    margin-top: 0;
-    margin-bottom: 1.25rem;
-    color: var(--white);
-    font-size: 3rem;
-    font-weight: 700;
-    word-spacing: 4px;
-    letter-spacing: 1px;
-    text-align: left;
-    text-transform: uppercase;
+/* Headings */
+.primarySectionHeading {
+  color: var(--white);
+  font-weight: 900;
+  font-size: 5rem;
+  word-spacing: 4px;
+  letter-spacing: 0.5rem;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  text-transform: uppercase;
+}
+
+.secondarySectionHeading {
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+  color: var(--white);
+  font-size: 3rem;
+  font-weight: 700;
+  word-spacing: 4px;
+  letter-spacing: 1px;
+  text-align: center;
+  text-transform: uppercase;
 }

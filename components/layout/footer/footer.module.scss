@@ -8,9 +8,8 @@
     background-color: var(--primary-color);
 }
 
-.contact {
-    display: flex;
-    justify-content: center;
+.backToList {
+    text-align: center;
 }
 
 .item {
@@ -20,6 +19,11 @@
     &active {
         transform: scale(1.5);
     }
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
 }
 
 .copyright {

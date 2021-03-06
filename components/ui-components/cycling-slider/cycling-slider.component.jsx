@@ -9,7 +9,7 @@ import { mergeStrings } from '../../../utils';
 import styles from './cycling-slider.module.scss';
 
 function CyclingSlider({ children }) {
-    return <div></div>;
+  return <div></div>;
 }
 
 export default CyclingSlider;

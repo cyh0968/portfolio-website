@@ -18,7 +18,7 @@ $positions: (
 .face {
     width: $length;
     height: $length;
-    border: 2px solid var(--white);
+    border: 2px solid var(--dark-grey);
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -26,5 +26,5 @@ $positions: (
     justify-content: center;
     font-family: Arial, sans-serif;
     font-size: 2rem;
-    background-color: var(--low-opacity-light-gray);
+    background-color: var(--low-opacity-dark-gray);
 }

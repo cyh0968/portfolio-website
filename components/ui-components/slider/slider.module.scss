@@ -57,7 +57,7 @@
     font-size: 4rem;
     font-weight: 900;
     cursor: pointer;
-    transition: all 0.1s ease;
+    transition: all 0.4s ease;
     &:hover {
         opacity: 0.7;
         transform: scale(1.2);
@@ -69,12 +69,12 @@
 }
 
 .previousButton {
-    left: -40%;
+    left: -30%;
     border-radius: 0 3px 3px 0;
 }
 
 .nextButton {
-    right: -40%;
+    right: -30%;
     border-radius: 3px 0 0 3px;
 }
 
