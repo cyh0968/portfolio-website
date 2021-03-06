@@ -6,7 +6,7 @@ import { mergeStrings } from '../../../utils';
 import styles from './cube.module.scss';
 
 /* Component */
-import { FaceList } from '../face-list';
+import { CubeFaceList } from './cube-face-list';
 
 function Cube({ direction = 'front', animation = false, children }) {
   const animationStyle = animation && styles.animation;
@@ -16,7 +16,7 @@ function Cube({ direction = 'front', animation = false, children }) {
   return (
     <div className={styles.container}>
       <div name='cube' className={cubeStyles}>
-        <FaceList>{children}</FaceList>
+        <CubeFaceList>{children}</CubeFaceList>
       </div>
     </div>
   );
