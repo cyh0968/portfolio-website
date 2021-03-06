@@ -1,6 +1,10 @@
-/* Utility */
-import { useState, useEffect, useRef } from 'react';
+/* React */
+import { useState } from 'react';
+
+/* Next */
 import Link from 'next/link';
+
+/* Utility */
 import { mergeStrings } from '../utils';
 
 /* Style */
@@ -9,37 +13,36 @@ import utilStyles from '../styles/utils.module.scss';
 
 /* Component */
 import { Layout } from '../components/layout';
-import { Cube, Ipad } from '../components/ui-components';
+import { Cube } from '../components/ui-components';
 
+/* Helper Functions */
+function getCubeDirectionForMenu(name) {
+  const options = {
+    about: 'front',
+    blog: 'right',
+    project: 'back',
+    contact: 'left',
+  };
+
+  return options[name];
+}
+
+/* Global Variables */
 const introContainerStyle = mergeStrings(styles.container, styles.introMarginBottom);
 const introStyle = mergeStrings(styles.intro, utilStyles.vertical);
 const introLeftStyle = mergeStrings(utilStyles.left, styles.moveInLeft);
 const introRightStyle = mergeStrings(utilStyles.right, styles.moveInRight);
 const menuHeadingStyle = mergeStrings(styles.menuHeading, utilStyles.stroke);
 
-const menuList = ['about', 'blog', 'project', 'contact'];
-const menuMap = new Map();
-menuMap.set('about', 'front');
-menuMap.set('blog', 'right');
-menuMap.set('project', 'back');
-menuMap.set('contact', 'left');
-
 function Homepage() {
-  const [visuableContent, setVisuableContent] = useState('about');
-  const sceneRef = useRef(null);
-
-  useEffect(() => {}, []);
-
-  function setCubeDirection() {
-    return menuMap.get(visuableContent);
-  }
+  const [cubeDirection, setCubeDirection] = useState('front');
 
   function handleOnMouseOver({ target }) {
     const name = target.getAttribute('name');
+    const direction = getCubeDirectionForMenu(name);
 
-    if (menuList.includes(name)) {
-      setVisuableContent(name);
-      sceneRef.current.style.zIndex = '200';
+    if (direction) {
+      setCubeDirection(direction);
     }
   }
 
@@ -106,8 +109,8 @@ function Homepage() {
             </Link>
           </div>
 
-          <div ref={sceneRef} className={styles.scene}>
-            <Cube size='large' show={setCubeDirection()}>
+          <div className={styles.scene}>
+            <Cube size='large' direction={cubeDirection}>
               <h3>About</h3>
               <h3>Blog</h3>
               <h3>Project</h3>
