@@ -1,57 +1,46 @@
 $length: 200px;
 $angle: -15deg;
 $positions: (
-    'front': translateZ(-($length / 2)) rotateY(0deg) rotateX($angle),
-    'right': translateZ(-($length / 2)) rotateY(-90deg) rotateX($angle),
-    'back': translateZ(-($length / 2)) rotateY(-180deg) rotateX($angle),
-    'left': translateZ(-($length / 2)) rotateY(90deg) rotateX($angle),
-    'top': translateZ(-($length / 2)) rotateX(-90deg) rotateX($angle),
-    'bottom': translateZ(-($length / 2)) rotateX(90deg) rotateX($angle),
+  'front': translateZ(-($length / 2)) rotateY(0deg) rotateX($angle),
+  'right': translateZ(-($length / 2)) rotateY(-90deg) rotateX($angle),
+  'back': translateZ(-($length / 2)) rotateY(-180deg) rotateX($angle),
+  'left': translateZ(-($length / 2)) rotateY(90deg) rotateX($angle),
+  'top': translateZ(-($length / 2)) rotateX(-90deg) rotateX($angle),
+  'bottom': translateZ(-($length / 2)) rotateX(90deg) rotateX($angle),
 );
 
 @each $key, $value in $positions {
-    .#{$key} {
-        transform: $value;
-    }
+  .#{$key} {
+    transform: $value;
+  }
 }
 
 @keyframes turn {
-    from {
-        transform: rotate3d(0, 0, 0, 0);
-    }
-    to {
-        transform: rotate3d(0, 1, 0, 365deg);
-    }
+  from {
+    transform: rotate3d(0, 0, 0, 0);
+  }
+  to {
+    transform: rotate3d(0, 1, 0, 365deg);
+  }
 }
 
 .animation {
-    animation: turn 20s linear infinite;
+  animation: turn 20s linear infinite;
 }
 
 .container {
-    position: relative;
-    width: $length;
-    height: $length;
-    perspective: $length * 2.5;
-    margin: $length / 2;
+  position: relative;
+  width: $length;
+  height: $length;
+  perspective: $length * 2.5;
+  margin: $length / 2;
+  transform: scale(2);
 }
 
 .cube {
-    width: 100%;
-    width: 100%;
-    position: relative;
-    transform-style: preserve-3d;
-    transition: transform 1s ease;
-}
-
-.large {
-    transform: scale(2);
-}
-
-.medium {
-    transform: scale(1.5);
-}
-
-.small {
-    transform: scale(1);
+  width: 100%;
+  width: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 1s ease;
 }
