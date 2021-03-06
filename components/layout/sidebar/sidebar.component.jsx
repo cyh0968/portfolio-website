@@ -1,6 +1,8 @@
+/* React */
 import { useState, useEffect, useRef } from 'react';
 import { useEventListener } from '../../hooks';
 
+/* Styles */
 import styles from './sidebar.module.scss';
 import utilStyles from '../../../styles/utils.module.scss';
 
@@ -41,12 +43,12 @@ function Sidebar() {
       scrollHeight === clientHeight
         ? 100
         : Math.ceil((scrollTop / (scrollHeight - clientHeight)) * 100);
-    const style = { height: +height + '%' };
+    const style = { height: height + '%' };
     return style;
   }
 
   return (
-    <div className={styles.siderbar}>
+    <div className={clientHeight === scrollHeight ? styles.none : styles.siderbar}>
       <div className={styles.line}>
         <div className={styles.gage} style={getGageStyle()}></div>
       </div>

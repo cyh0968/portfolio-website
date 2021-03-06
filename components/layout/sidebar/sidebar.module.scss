@@ -1,45 +1,49 @@
-.siderbar {
-    position: fixed;
-    z-index: 10;
-    width: 40px;
-    height: 400px;
-    top: 20%;
-    right: 15%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    transition: all 0.5s ease;
+.none {
+  display: none;
+}
 
-    @media only screen and (max-width: 64rem) {
-        right: 0%;
-    }
+.siderbar {
+  position: fixed;
+  z-index: 10;
+  width: 40px;
+  height: 400px;
+  top: 20%;
+  right: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  transition: all 0.5s ease;
+
+  @media only screen and (max-width: 64rem) {
+    right: 0%;
+  }
 }
 
 .circle {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background-color: var(--white);
-    transition: all 0.5s ease;
-    &:hover,
-    &:active {
-        transform: scale(1.2);
-    }
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--white);
+  transition: all 0.5s ease;
+  &:hover,
+  &:active {
+    transform: scale(1.2);
+  }
 }
 
 .line {
-    position: absolute;
-    z-index: -1;
-    width: 5px;
-    height: 400px;
-    right: 28px;
-    background-color: var(--low-opacity-white);
+  position: absolute;
+  z-index: -1;
+  width: 5px;
+  height: 400px;
+  right: 28px;
+  background-color: var(--low-opacity-white);
 }
 
 .gage {
-    position: relative;
-    z-index: 2;
-    width: 100%;
-    height: 0;
-    background-color: var(--white);
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 0;
+  background-color: var(--white);
 }
