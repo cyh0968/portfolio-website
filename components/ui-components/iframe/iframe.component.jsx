@@ -1,8 +1,8 @@
 /* Utilities */
 import PropTypes from 'prop-types';
+
 /* Styles */
 import styles from './iframe.module.scss';
-import utilStyles from '../../../styles/utils.module.scss';
 
 function IFrame({ src, title, width = 800, children }) {
   return (
@@ -23,9 +23,9 @@ function IFrame({ src, title, width = 800, children }) {
 }
 
 IFrame.propTypes = {
+  src: PropTypes.string,
   title: PropTypes.string,
   width: PropTypes.number,
-  src: PropTypes.string,
 };
 
 export default IFrame;
