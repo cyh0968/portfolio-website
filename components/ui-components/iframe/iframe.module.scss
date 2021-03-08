@@ -1,0 +1,15 @@
+.iFrame {
+  padding: 10px 5px;
+  border-radius: 5%;
+  box-shadow: 1px 1px 20px var(--dark-grey);
+  background-color: var(--primary-color);
+}
+
+.title {
+  color: var(--white);
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}

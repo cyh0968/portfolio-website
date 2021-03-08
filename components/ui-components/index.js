@@ -1,8 +1,8 @@
 export { Button } from './button';
 export { Card } from './card';
 export { Cube } from './cube';
-
 export { Date } from './date';
+export { IFrame } from './iframe';
 export { Ipad } from './ipad';
 export { ScrollAnimation } from './scroll-animation';
 export { Section } from './section';
