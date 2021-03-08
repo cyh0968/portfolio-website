@@ -2,50 +2,51 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;600&display=swap');
 /* Color Variables Setup */
 :root {
-    --white: #eeeeee;
-    --low-opacity-white: rgba(255, 255, 255, 0.2);
-    --low-opacity-light-gray: rgba(189, 189, 189, 0.2);
-    --low-opacity-dark-gray: rgba(117, 117, 117, 0.2);
-    --light-grey: #bdbdbd;
-    --dark-grey: #757575;
-    --primary-color: #000000;
-    --accent-color: #448aff;
-    --highlight-polygon: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+  --white: #eeeeee;
+  --low-opacity-white: rgba(255, 255, 255, 0.2);
+  --low-opacity-light-gray: rgba(189, 189, 189, 0.2);
+  --low-opacity-dark-gray: rgba(117, 117, 117, 0.2);
+  --light-grey: #bdbdbd;
+  --dark-grey: #757575;
+  --primary-color: #000000;
+  --accent-color: #448aff;
+  --highlight-polygon: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
 }
 
 /* Basic Setup */
 *,
 *::after,
 *::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 }
 
 html,
 body {
-    box-sizing: border-box;
-    background-color: var(--primary-color);
-    color: var(--white);
-    font-family: 'Lato', 'Arial', 'sans-serif';
-    font-weight: 300;
-    font-size: 125%; /* 1rem = 20px = 16px * 1.25 */
-    line-height: 1.6;
-    text-rendering: optimizeLegibility;
+  box-sizing: border-box;
+  background-color: var(--primary-color);
+  color: var(--white);
+  font-family: 'Lato', 'Arial', 'sans-serif';
+  font-weight: 300;
+  font-size: 125%; /* 1rem = 20px = 16px * 1.25 */
+  line-height: 1.6;
+  text-rendering: optimizeLegibility;
+  user-select: none;
 }
 
 /* Media Queries */
 @media only screen and (max-width: 34rem) {
-    html {
-        font-size: 100%;
-    }
+  html {
+    font-size: 100%;
+  }
 }
 
 a {
-    &,
-    &:link,
-    &:visited {
-        color: var(--white);
-        text-decoration: none;
-    }
+  &,
+  &:link,
+  &:visited {
+    color: var(--white);
+    text-decoration: none;
+  }
 }
