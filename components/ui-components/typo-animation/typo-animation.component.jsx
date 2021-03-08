@@ -1,7 +1,8 @@
+/* React */
 import { useState, useEffect } from 'react';
-import PropType from 'prop-types';
 
-import styles from './typo-animation.module.scss';
+/* Utilities */
+import PropType from 'prop-types';
 
 function TypoAnimation({ delay = 40, children = 'hello world' }) {
   const [characters, setCharacter] = useState(' ');
@@ -19,6 +20,7 @@ function TypoAnimation({ delay = 40, children = 'hello world' }) {
 }
 
 TypoAnimation.propTypes = {
+  delay: PropType.number,
   children: PropType.string,
 };
 
