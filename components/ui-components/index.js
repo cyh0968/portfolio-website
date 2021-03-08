@@ -3,6 +3,7 @@ export { Card } from './card';
 export { Cube } from './cube';
 export { Date } from './date';
 export { IFrame } from './iframe';
+export { Image } from './image';
 export { Ipad } from './ipad';
 export { ScrollAnimation } from './scroll-animation';
 export { Section } from './section';

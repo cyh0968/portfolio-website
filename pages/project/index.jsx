@@ -1,12 +1,9 @@
-/* Next */
-import Image from 'next/image';
-
 /* Styles */
 import utilStyles from '../../styles/utils.module.scss';
 
 /* Components */
 import { Layout } from '../../components/layout';
-import { Button, Card, IFrame, Slider, Section } from '../../components/ui-components';
+import { Button, Card, IFrame, Image, Slider, Section } from '../../components/ui-components';
 import {
   Css3Logo,
   ExpressLogo,
@@ -172,118 +169,76 @@ function Project() {
         </div>
         <h3 className={utilStyles.headingXl}>Features</h3>
         <Slider width='40rem' height='40rem'>
-          <div>
-            <h4 className={utilStyles.headingLg}>Home</h4>
-            <Image
-              className={utilStyles.borderRound}
-              src='/images/projects/fleamarket/09.png'
-              width={600}
-              height={800}></Image>
-          </div>
-          <div>
-            <h4 className={utilStyles.headingLg}>Create an account</h4>
-            <Image
-              className={utilStyles.borderRound}
-              src='/images/projects/fleamarket/10.png'
-              width={600}
-              height={800}></Image>
-          </div>
-          <div>
-            <h4 className={utilStyles.headingLg}>Login to account</h4>
-            <Image
-              className={utilStyles.borderRound}
-              src='/images/projects/fleamarket/11.png'
-              width={600}
-              height={800}></Image>
-          </div>
-          <div>
-            <h4 className={utilStyles.headingLg}>Edit account</h4>
-            <Image
-              className={utilStyles.borderRound}
-              src='/images/projects/fleamarket/18.png'
-              width={600}
-              height={600}></Image>
-          </div>
-          <div>
-            <h4 className={utilStyles.headingLg}>User's inventory</h4>
-            <Image
-              className={utilStyles.borderRound}
-              src='/images/projects/fleamarket/15.png'
-              width={600}
-              height={600}></Image>
-          </div>
-          <div>
-            <h4 className={utilStyles.headingLg}>Upload item</h4>
-            <Image
-              className={utilStyles.borderRound}
-              src='/images/projects/fleamarket/27.png'
-              width={600}
-              height={600}></Image>
-          </div>
-          <div>
-            <h4 className={utilStyles.headingLg}>Delete item</h4>
-            <Image
-              className={utilStyles.borderRound}
-              src='/images/projects/fleamarket/30.png'
-              width={600}
-              height={600}></Image>
-          </div>
-          <div>
-            <h4 className={utilStyles.headingLg}>Visit user profile</h4>
-            <Image
-              className={utilStyles.borderRound}
-              src='/images/projects/fleamarket/16.png'
-              width={600}
-              height={600}></Image>
-          </div>
-          <div>
-            <h4 className={utilStyles.headingLg}>Item page</h4>
-            <Image
-              className={utilStyles.borderRound}
-              src='/images/projects/fleamarket/26.png'
-              width={600}
-              height={600}></Image>
-          </div>
-          <div>
-            <h4 className={utilStyles.headingLg}>Chatting</h4>
-            <Image
-              className={utilStyles.borderRound}
-              src='/images/projects/fleamarket/01.png'
-              width={600}
-              height={600}></Image>
-          </div>
-          <div>
-            <h4 className={utilStyles.headingLg}>Select item</h4>
-            <Image
-              className={utilStyles.borderRound}
-              src='/images/projects/fleamarket/02.png'
-              width={600}
-              height={600}></Image>
-          </div>
-          <div>
-            <h4 className={utilStyles.headingLg}>Pending another user</h4>
-            <Image
-              className={utilStyles.borderRound}
-              src='/images/projects/fleamarket/04.png'
-              width={600}
-              height={600}></Image>
-          </div>
-          <div>
-            <h4 className={utilStyles.headingLg}>Users confirm item</h4>
-            <Image
-              className={utilStyles.borderRound}
-              src='/images/projects/fleamarket/06.png'
-              width={600}
-              height={600}></Image>
-          </div>
-          <div>
-            <h4 className={utilStyles.headingLg}>Rating a user</h4>
-            <Image
-              className={utilStyles.borderRound}
-              src='/images/projects/fleamarket/08.png'
-              width={600}
-              height={600}></Image>
-          </div>
+          <Image
+            src='/images/projects/fleamarket/09.png'
+            title='Home'
+            width={600}
+            height={800}></Image>
+          <Image
+            src='/images/projects/fleamarket/10.png'
+            title='Create an account'
+            width={600}
+            height={800}></Image>
+          <Image
+            src='/images/projects/fleamarket/11.png'
+            title='Login to account'
+            width={600}
+            height={800}></Image>
+          <Image
+            src='/images/projects/fleamarket/18.png'
+            title='Edit account'
+            width={600}
+            height={600}></Image>
+          <Image
+            src='/images/projects/fleamarket/15.png'
+            title="User's inventory"
+            width={600}
+            height={600}></Image>
+          <Image
+            src='/images/projects/fleamarket/27.png'
+            title='Upload item'
+            width={600}
+            height={600}></Image>
+          <Image
+            src='/images/projects/fleamarket/30.png'
+            title='Delete item'
+            width={600}
+            height={600}></Image>
+          <Image
+            src='/images/projects/fleamarket/16.png'
+            title='Visit user profile'
+            width={600}
+            height={600}></Image>
+          <Image
+            src='/images/projects/fleamarket/26.png'
+            title='Item page'
+            width={600}
+            height={600}></Image>
+          <Image
+            src='/images/projects/fleamarket/01.png'
+            title='Chatting'
+            width={600}
+            height={600}></Image>
+          <Image
+            src='/images/projects/fleamarket/02.png'
+            title='Select item'
+            width={600}
+            height={600}></Image>
+          <Image
+            src='/images/projects/fleamarket/04.png'
+            title='Pending another user'
+            width={600}
+            height={600}></Image>
+          <Image
+            src='/images/projects/fleamarket/06.png'
+            title='Users confirm item'
+            width={600}
+            height={600}></Image>
+          <Image
+            src='/images/projects/fleamarket/08.png'
+            title='Rating a user'
+            width={600}
+            height={600}></Image>
         </Slider>
       </Section>
     </Layout>
