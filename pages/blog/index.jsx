@@ -6,9 +6,10 @@ import { getSortedPostsData } from '../../lib/posts';
 /* Styles */
 import styles from './index.module.scss';
 import utilStyles from '../../styles/utils.module.scss';
+
 /* Component */
 import { Layout } from '../../components/layout';
-import { Date, Ipad, Section } from '../../components/ui-components';
+import { Date, Section } from '../../components/ui-components';
 
 export async function getStaticProps() {
   const allPostsData = await getSortedPostsData();
@@ -16,10 +17,11 @@ export async function getStaticProps() {
     props: { allPostsData },
   };
 }
+
 function Blog({ allPostsData }) {
   return (
     <Layout>
-      <Section leftHeading='Blog' rightHeading='Blog'>
+      <Section primarySectionHeading='Blog' secondarySectionHeading='Blog'>
         <div className={utilStyles.styles}>
           <ul className={utilStyles.list}>
             {allPostsData.map(({ id, date, title }) => (
