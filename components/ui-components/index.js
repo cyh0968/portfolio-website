@@ -8,14 +8,3 @@ export { ScrollAnimation } from './scroll-animation';
 export { Section } from './section';
 export { Slider } from './slider';
 export { TypoAnimation } from './typo-animation';
-export {
-  LinkedInIcon,
-  GithubIcon,
-  TwitterIcon,
-  MediumIcon,
-  DocumentIcon,
-  MailIcon,
-  ResumeIcon,
-  ChevronDown,
-  ChevronUp,
-} from './icons';
