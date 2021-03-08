@@ -1,51 +1,31 @@
 .container {
-    position: relative;
-    float: left;
-    transition: transform 1s ease;
-    width: 400px;
-    height: 600px;
-    margin: 2rem;
-    &:hover {
-        transform: scale(1.3);
-    }
+  position: relative;
+  float: left;
+  transition: transform 1s ease;
+  width: 400px;
+  height: 600px;
+  margin: 2rem;
+  &:hover {
+    transform: scale(1.3);
+  }
 }
 
 .ipad {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .screen {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 360px;
-    height: 505px;
-    background-color: rgb(40, 44, 52);
-    color: rgb(198, 120, 221);
-    font-size: 12px;
-    font-weight: 500;
-    font-family: 'Inconsolata', monospace;
-    border-radius: 1%;
-}
-textarea.input {
-}
-
-.textarea {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    bottom: -50%;
-    width: 100%;
-    height: 200px;
-    border: none;
-    color: rgb(198, 120, 221);
-    font-size: 12px;
-    font-weight: 500;
-    font-family: 'Inconsolata', monospace;
-    background-color: rgb(40, 44, 52);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 360px;
+  height: 505px;
+  font-size: 12px;
+  font-weight: 500;
+  font-family: 'Inconsolata', monospace;
+  border-radius: 1%;
 }
