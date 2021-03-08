@@ -30,3 +30,6 @@ package-lock.json
 # assets
 assets/
 /posts
+
+# vscode
+.vscode/
