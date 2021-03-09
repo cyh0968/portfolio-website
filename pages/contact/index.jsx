@@ -9,7 +9,6 @@ import utilStyles from '../../styles/utils.module.scss';
 import { Layout } from '../../components/layout';
 import { Section } from '../../components/ui-components/';
 import {
-  DocumentIcon,
   GithubIcon,
   LinkedInIcon,
   MailIcon,
@@ -27,55 +26,49 @@ function Contact() {
           <ul className={utilStyles.list}>
             <li className={styles.item}>
               <a
-                href='https://www.linkedin.com/in/yohan-choi-dev/'
-                target='_blank'
+                title='LinkedIn'
                 className={listStyle}
-                title='LinkedIn'>
+                href='https://www.linkedin.com/in/yohan-choi-dev/'
+                target='_blank'>
                 <LinkedInIcon name='logo-linkedin' className={utilStyles.iconLg}></LinkedInIcon>
                 LinkedIn
               </a>
             </li>
             <li className={styles.item}>
               <a
-                href='https://github.com/yohan-choi-dev'
-                target='_blank'
+                title='GitHub'
                 className={listStyle}
-                title='GitHub'>
+                href='https://github.com/yohan-choi-dev'
+                target='_blank'>
                 <GithubIcon name='logo-github' className={utilStyles.iconLg}></GithubIcon>Github
               </a>
             </li>
             <li className={styles.item}>
               <a
-                href='https://twitter.com/remember2019'
-                target='_blank'
+                title='Twitter'
                 className={listStyle}
-                title='Twitter'>
+                href='https://twitter.com/remember2019'
+                target='_blank'>
                 <TwitterIcon name='logo-twitter' className={utilStyles.iconLg}></TwitterIcon>Twitter
               </a>
             </li>
             <li className={styles.item}>
               <a
-                href='https://twitter.com/remember2019'
-                target='_blank'
+                title='Medium'
                 className={listStyle}
-                title='Twitter'>
+                href='https://medium/yohanchoi2020'
+                target='_blank'>
                 <MediumIcon name='logo-twitter' className={utilStyles.iconLg}></MediumIcon>Medium
               </a>
             </li>
             <li className={styles.item}>
-              <a href='malito:yohan.choi.dev@gmail.com' target='_blank' className={listStyle}>
-                <MailIcon name='mail-outline' className={utilStyles.iconLg} title='Mail'></MailIcon>
-                Mail
-              </a>
-            </li>
-            <li className={styles.item}>
               <a
-                href='https://twitter.com/remember2019'
-                target='_blank'
+                title='Mail'
                 className={listStyle}
-                title='Twitter'>
-                <DocumentIcon name='logo-twitter' className={utilStyles.iconLg}></DocumentIcon>
-                Resume
+                href='malito:yohan.choi.dev@gmail.com'
+                target='_blank'>
+                <MailIcon name='mail-outline' className={utilStyles.iconLg}></MailIcon>
+                Mail
               </a>
             </li>
           </ul>
