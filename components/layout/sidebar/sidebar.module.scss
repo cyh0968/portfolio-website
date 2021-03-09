@@ -18,6 +18,10 @@
   @include respond(mobile-largest) {
     right: 1rem;
   }
+
+  @include respond(mobile-largest) {
+    right: 0.4rem;
+  }
 }
 
 .circle {

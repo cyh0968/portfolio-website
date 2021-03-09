@@ -42,6 +42,10 @@ body {
   @include respond(mobile-largest) {
     font-size: 100%;
   }
+
+  @include respond(mobile-large) {
+    font-size: 90%;
+  }
 }
 
 a {

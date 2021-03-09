@@ -1,28 +1,40 @@
+@use '../../../styles/abstracts' as *;
+
 $transition: all 0.4s ease;
 $button-width: 8rem;
 $button-height: 2.8rem;
 $button-border-radius: 20%;
+$button-font-size: 1.2rem;
 
 .button {
   position: relative;
   z-index: 3;
   display: inline-block;
-  width: $button-width;
-  height: $button-height;
+  width: 8rem;
+  height: 2.8rem;
   margin: 0.5rem 1rem 0.5rem 0rem;
   border: solid var(--white) 3px;
   border-radius: $button-border-radius;
   transition: $transition;
+  @include respond(mobile-large) {
+    width: 10rem;
+    height: 3.5rem;
+  }
 
   &:hover .text {
     color: var(--primary-color);
   }
 
   &:hover .shadow {
-    width: $button-width;
-    height: $button-height;
+    width: 8rem;
+    height: 2.8rem;
     border-radius: $button-border-radius;
     background-color: var(--white);
+
+    @include respond(mobile-large) {
+      width: 10rem;
+      height: 3.5rem;
+    }
   }
 
   &:active {
@@ -46,6 +58,10 @@ $button-border-radius: 20%;
     line-height: 1.3;
     text-align: center;
     transition: $transition;
+
+    @include respond(mobile-large) {
+      font-size: 1.5rem;
+    }
   }
 }
 

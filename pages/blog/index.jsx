@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { getSortedPostsData } from '../../lib/posts';
 
 /* Styles */
+import styles from './index.module.scss';
 import utilStyles from '../../styles/utils.module.scss';
 
 /* Components */
@@ -26,17 +27,17 @@ function Blog({ allPostsData }) {
         <ul className={utilStyles.list}>
           {allPostsData.map(({ id, title, date, time, link, categories }) => (
             <li className={utilStyles.item} key={id}>
-              <h3>
+              <h3 className={styles.title}>
                 <Link href={link}>
                   <a className={utilStyles.link}>{title}</a>
                 </Link>
               </h3>
-              <small className={utilStyles.details}>
+              <small className={styles.details}>
                 <Date dateString={date}></Date>
                 {' ' + time}
               </small>
               {categories.length > 0 && (
-                <small className={utilStyles.details}>
+                <small className={styles.details}>
                   {categories.map((category, index, array) =>
                     index < array.length - 1 ? category + ', ' : category,
                   )}

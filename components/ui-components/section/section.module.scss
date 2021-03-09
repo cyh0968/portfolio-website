@@ -20,6 +20,11 @@
   @include respond(mobile-largest) {
     flex: 1 1 80%;
   }
+
+  @include respond(mobile-large) {
+    flex: 0 0 80%;
+    padding: 0rem 1rem 1rem;
+  }
 }
 
 .asideLeft {
@@ -31,6 +36,10 @@
   @include respond(mobile-largest) {
     flex: 1 1 10%;
   }
+
+  @include respond(mobile-large) {
+    display: none;
+  }
 }
 
 .asideRight {
@@ -41,6 +50,9 @@
   align-items: flex-end;
   @include respond(mobile-largest) {
     flex: 1 1 10%;
+  }
+  @include respond(mobile-large) {
+    display: none;
   }
 }
 

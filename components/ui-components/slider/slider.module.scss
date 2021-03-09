@@ -4,6 +4,9 @@
   position: relative;
   margin: 0rem auto 0.5rem;
   perspective: 500px;
+  @include respond(mobile-large) {
+    transform: scale(0.9);
+  }
 }
 
 .slider {
