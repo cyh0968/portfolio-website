@@ -5,13 +5,9 @@ import { mergeStrings } from '../../../../utils';
 /* Style */
 import styles from './cube-face.module.scss';
 
-function CubeFace({ key, position, children }) {
+function CubeFace({ position, children }) {
   const cubeFaceStyles = mergeStrings(styles.cubeFace, styles[position]);
-  return (
-    <div key={key} className={cubeFaceStyles}>
-      {children}
-    </div>
-  );
+  return <div className={cubeFaceStyles}>{children}</div>;
 }
 
 CubeFace.propTypes = {
