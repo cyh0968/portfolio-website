@@ -35,9 +35,6 @@
   @include respond(mobile-largest) {
     transform: translateZ(-100px) translateX(-15%) translateY(0%);
   }
-  @include respond(mobile-small) {
-    // display: none;
-  }
 }
 
 .next {
@@ -46,9 +43,6 @@
   @include respond(mobile-largest) {
     transform: translateZ(-100px) translateX(15%) translateY(0%);
   }
-  @include respond(mobile-small) {
-    // display: none;
-  }
 }
 
 .ready {
@@ -56,9 +50,6 @@
   transform: translateZ(-120px) translateY(-40%);
   @include respond(mobile-largest) {
     transform: translateZ(-120px) translateY(-10%);
-  }
-  @include respond(mobile-small) {
-    // display: none;
   }
 }
 
