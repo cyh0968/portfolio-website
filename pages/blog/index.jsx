@@ -22,30 +22,29 @@ export async function getStaticProps() {
 function Blog({ allPostsData }) {
   return (
     <Layout>
-      <Section primarySectionHeading='Blog' secondarySectionHeading='Blog'>
-        <div className={utilStyles.styles}>
-          <ul className={utilStyles.list}>
-            {allPostsData.map(({ id, title, date, time, link, categories }) => (
-              <li className={utilStyles.item} key={id}>
+      <Section secondarySectionHeading='Blog'>
+        <ul className={utilStyles.list}>
+          {allPostsData.map(({ id, title, date, time, link, categories }) => (
+            <li className={utilStyles.item} key={id}>
+              <h3>
                 <Link href={link}>
                   <a className={utilStyles.link}>{title}</a>
                 </Link>
-                <br />
+              </h3>
+              <small className={utilStyles.details}>
+                <Date dateString={date}></Date>
+                {' ' + time}
+              </small>
+              {categories.length > 0 && (
                 <small className={utilStyles.details}>
-                  <Date dateString={date}></Date>
-                  {' ' + time}
+                  {categories.map((category, index, array) =>
+                    index < array.length - 1 ? category + ', ' : category,
+                  )}
                 </small>
-                {categories.length > 0 && (
-                  <small className={utilStyles.details}>
-                    {categories.map((category, index, array) =>
-                      index < array.length - 1 ? category + ', ' : category,
-                    )}
-                  </small>
-                )}
-              </li>
-            ))}
-          </ul>
-        </div>
+              )}
+            </li>
+          ))}
+        </ul>
       </Section>
     </Layout>
   );

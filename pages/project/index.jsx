@@ -76,31 +76,31 @@ function Project() {
             backward, center: play/pause, right: forward)
           </p>
         </div>
-        <Slider width='40rem' height='25rem'>
+        <Slider width='45rem' height='30rem'>
           <IFrame
             src='https://www.youtube.com/embed/5bxqWZ6IHgk'
             title='Controller'
-            width={800}></IFrame>
+            width={600}></IFrame>
           <IFrame
             src='https://www.youtube.com/embed/VaTS6i_g6Fo'
             title='Bubble Sort'
-            width={800}></IFrame>
+            width={600}></IFrame>
           <IFrame
             src='https://www.youtube.com/embed/UwGUuV0lQgk'
             title='Selection Sort'
-            width={800}></IFrame>
+            width={600}></IFrame>
           <IFrame
             src='https://www.youtube.com/embed/863sLH3mAzA'
             title='Insertion Sort'
-            width={800}></IFrame>
+            width={600}></IFrame>
           <IFrame
             src='https://www.youtube.com/embed/CU-sk9Pwu6w'
             title='Merge Sort'
-            width={800}></IFrame>
+            width={600}></IFrame>
           <IFrame
             src='https://www.youtube.com/embed/qrCrlBGSVRM'
             title='Quick Sort'
-            width={800}></IFrame>
+            width={600}></IFrame>
         </Slider>
 
         <h3 className={utilStyles.headingXl}>How it works?</h3>
@@ -168,7 +168,7 @@ function Project() {
           </Card>
         </div>
         <h3 className={utilStyles.headingXl}>Features</h3>
-        <Slider width='40rem' height='40rem'>
+        <Slider width='45rem' height='60rem'>
           <Image
             src='/images/projects/fleamarket/09.png'
             title='Home'

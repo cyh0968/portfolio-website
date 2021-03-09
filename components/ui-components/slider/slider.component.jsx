@@ -93,20 +93,21 @@ function Slider({
   return (
     <div style={slideSize} className={styles.container}>
       {!autoPlayMode && (
-        <div className={styles.controller}>
+        <>
           <a className={styles.previousButton} onClick={showPreviousSlide}>
             &#10094;
           </a>
           <a className={styles.nextButton} onClick={showNextSlide}>
             &#10095;
           </a>
-        </div>
+        </>
       )}
-      <div style={slideSize} className={styles.slider}>
+      <div className={styles.slider}>
         {slides.map((slide, index, array) => (
           <div
             key={index}
             id={index}
+            style={slideSize}
             className={getSlideStatusStyles(index, array.length)}
             onClick={showSelectedSlide}>
             {slide}

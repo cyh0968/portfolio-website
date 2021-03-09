@@ -1,84 +1,95 @@
+@use '../../../styles/abstracts' as *;
+
 .container {
-    position: relative;
-    margin: 5rem auto;
-    perspective: 500px;
+  position: relative;
+  margin: 0rem auto 0.5rem;
+  perspective: 500px;
 }
 
 .slider {
-    position: relative;
-    transform-style: preserve-3d;
-    transition: transform 1s ease;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 1s ease;
 }
 
 .slide {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-family: Arial, sans-serif;
-    font-size: 2rem;
-    cursor: pointer;
-    transition: all 1s ease;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  font-family: Arial, sans-serif;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: all 1s ease;
 }
 
 .current {
-    opacity: 1;
-    transform: translateZ(0);
+  opacity: 1;
+  transform: translateZ(0);
 }
 
 .previous {
-    opacity: 0.7;
-    transform: translateZ(-100px) translateX(-50%) translateY(-20%);
+  opacity: 0.7;
+  transform: translateZ(-100px) translateX(-50%) translateY(-20%);
+  @include respond(mobile-largest) {
+    transform: translateZ(-100px) translateX(-15%) translateY(0%);
+  }
 }
 
 .next {
-    opacity: 0.7;
-    transform: translateZ(-100px) translateX(50%) translateY(-20%);
+  opacity: 0.7;
+  transform: translateZ(-100px) translateX(50%) translateY(-20%);
+  @include respond(mobile-largest) {
+    transform: translateZ(-100px) translateX(15%) translateY(0%);
+  }
 }
 
 .ready {
-    opacity: 0;
-    transform: translateZ(-120px) translateY(-40%);
+  opacity: 0;
+  transform: translateZ(-120px) translateY(-40%);
+  @include respond(mobile-largest) {
+    transform: translateZ(-120px) translateY(-10%);
+  }
 }
 
 .waiting {
-    display: none;
+  display: none;
 }
 
 .previousButton,
 .nextButton {
-    position: absolute;
-    z-index: 500;
-    top: 20%;
-    width: auto;
-    margin-top: 3rem;
-    color: var(--white);
-    font-size: 4rem;
-    font-weight: 900;
-    cursor: pointer;
-    transition: all 0.4s ease;
-    &:hover {
-        opacity: 0.7;
-        transform: scale(1.2);
-    }
+  position: absolute;
+  z-index: 500;
+  top: 20%;
+  width: auto;
+  margin-top: 3rem;
+  color: var(--white);
+  font-size: 4rem;
+  font-weight: 900;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  &:hover {
+    opacity: 0.7;
+    transform: scale(1.2);
+  }
 
-    &:active {
-        transform: scale(0.7);
-    }
+  &:active {
+    transform: scale(0.7);
+  }
 }
 
 .previousButton {
-    left: -30%;
-    border-radius: 0 3px 3px 0;
+  left: 0%;
+  border-radius: 0 3px 3px 0;
 }
 
 .nextButton {
-    right: -30%;
-    border-radius: 3px 0 0 3px;
+  right: 0%;
+  border-radius: 3px 0 0 3px;
 }
 
 .previousButton:hover,
 .nextButton:hover {
-    background-color: var(--primary-color);
+  background-color: var(--primary-color);
 }

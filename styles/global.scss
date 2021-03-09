@@ -1,6 +1,11 @@
+/* Abstract */
+@use './abstracts' as *;
+
+/* Import Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;600&display=swap');
-/* Color Variables Setup */
+
+/* Global Variables */
 :root {
   --white: #eeeeee;
   --low-opacity-white: rgba(255, 255, 255, 0.2);
@@ -33,11 +38,8 @@ body {
   line-height: 1.6;
   text-rendering: optimizeLegibility;
   user-select: none;
-}
 
-/* Media Queries */
-@media only screen and (max-width: 34rem) {
-  html {
+  @include respond(mobile-largest) {
     font-size: 100%;
   }
 }
