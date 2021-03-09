@@ -25,10 +25,8 @@ package-lock.json
 
 # next.js files
 .next
-/public
 
-# assets
-assets/
+# mark down
 /posts
 
 # vscode
