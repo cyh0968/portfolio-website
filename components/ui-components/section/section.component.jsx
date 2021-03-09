@@ -17,6 +17,7 @@ function Section({
           <h2 className={styles.secondarySectionHeading}>{secondarySectionHeading}</h2>
           {children}
         </article>
+        <aside className={styles.aside}></aside>
       </section>
       {pageDivider && <div className={styles.pageDivider} />}
     </>
