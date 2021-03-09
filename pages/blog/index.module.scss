@@ -1,5 +1,17 @@
-.post {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
+@use '../../styles/abstracts' as *;
+
+.title {
+  font-size: 1.5rem;
+  @include respond(mobile-largest) {
+    font-size: 1.8rem;
+  }
+}
+
+.details {
+  display: block;
+  color: var(--light-grey);
+  font-size: 0.9rem;
+  @include respond(mobile-largest) {
+    font-size: 1.08rem;
+  }
 }

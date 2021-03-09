@@ -1,3 +1,5 @@
+@use './abstracts' as *;
+
 .container {
   width: 60vw;
   margin: 0 auto;
@@ -182,39 +184,21 @@
 }
 
 .paragraph {
-  // width: 25rem;
   margin: 0 auto 0.5rem;
   font-size: 0.9rem;
-  /* text-align: center; */
   color: var(--white);
-
-  @media only screen and (max-width: 34rem) {
-    .paragraph {
-      width: 18rem;
-    }
-  }
-
-  @media only screen and (max-width: 20rem) {
-    & {
-      width: 15rem;
-    }
-  }
 }
 
 .long {
   font-weight: 500;
-  // line-height: 1.45;
+  @include respond(mobile-largest) {
+    font-size: 1.5rem;
+  }
 }
 
 .small {
   font-size: smaller;
   text-align: center;
-}
-
-.details {
-  display: block;
-  color: var(--light-grey);
-  font-size: 0.9rem;
 }
 
 /* Icon */
