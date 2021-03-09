@@ -1,12 +1,13 @@
 /* Varialbes */
-$bp-desktop-4k: 240rem;
-$bp-desktop-fhd: 120rem;
-$bp-desktop-hd: 80rem;
-$bp-mobile-largest: 64rem;
-$bp-mobile-large: 48rem;
-$bp-mobile-medium: 34rem;
-$bp-mobile-small: 24rem;
-$bp-mobile-smallest: 20rem;
+
+$bp-desktop-4k: 240rem; // 3480px
+$bp-desktop-fhd: 120rem; // 1920px
+$bp-desktop-hd: 80rem; // 1280px
+$bp-mobile-largest: 64rem; // 1024px
+$bp-mobile-large: 48rem; // 768px
+$bp-mobile-medium: 34rem; // 544px
+$bp-mobile-small: 24rem; // 384px
+$bp-mobile-smallest: 20rem; // 320px
 
 /* Mixin */
 @mixin respond($breakpoint) {
