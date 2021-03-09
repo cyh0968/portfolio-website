@@ -58,21 +58,24 @@ function Project() {
           </Card>
         </div>
         <h3 className={utilStyles.headingXl}>Features</h3>
-        <h4 className={utilStyles.headingLg}>Controller</h4>
         <div className={utilStyles.content}>
           <p className={utilStyles.long}>
-            By default, you can play, pause, forward, backward the sorting algorithm animation.
+            It supports five sorting algorithms; bubble sort, selection sort, insertion sort, merge
+            sort, quick sort.
+          </p>
+          <p className={utilStyles.long}>
+            You can play, pause, forward, backward the sorting algorithm animation.
           </p>
           <br />
           <p className={utilStyles.long}>
-            In a desktop environment, you can control the image with a keyboard.
+            In a desktop environment, you can control an animation with a keyboard.
           </p>
           <p className={utilStyles.long}>
             (&#8592;: backward, space: play/pause, &#8594;: forward)
           </p>
           <br />
           <p className={utilStyles.long}>
-            In Mobile, you can control the animation with wide buttons on the animation. (left:
+            In a mobile, you can control the animation with wide buttons on the animation. (left:
             backward, center: play/pause, right: forward)
           </p>
         </div>
