@@ -7,7 +7,6 @@ import utilStyles from '../../styles/utils.module.scss';
 
 /* Components */
 import { Layout } from '../../components/layout';
-import { Section } from '../../components/ui-components';
 
 function PageNotFound() {
   return (
