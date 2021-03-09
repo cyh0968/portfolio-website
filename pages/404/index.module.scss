@@ -1,0 +1,19 @@
+.container {
+  margin-top: 10rem;
+  height: 50vh;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10rem;
+}
+
+.goBackToHome {
+  transition: transform 0.4s ease;
+  &:hover {
+    transform: scale(1.2);
+  }
+}
