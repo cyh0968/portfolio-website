@@ -39,12 +39,32 @@ body {
   text-rendering: optimizeLegibility;
   user-select: none;
 
+  @include respond(desktop-fhd) {
+    font-size: 125%;
+  }
+
   @include respond(mobile-largest) {
     font-size: 100%;
   }
 
   @include respond(mobile-large) {
     font-size: 90%;
+  }
+
+  @include respond(mobile-medium) {
+    font-size: 70%;
+  }
+
+  @include respond(mobile-small) {
+    font-size: 45%;
+  }
+
+  @include respond(mobile-smallest) {
+    font-size: 40%;
+  }
+
+  @include respond(mobile-xsl) {
+    font-size: 30%;
   }
 }
 

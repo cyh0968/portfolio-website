@@ -5,6 +5,10 @@
   @include respond(mobile-largest) {
     font-size: 1.8rem;
   }
+
+  @include respond(mobile-small) {
+    font-size: 3rem;
+  }
 }
 
 .details {
@@ -13,5 +17,9 @@
   font-size: 0.9rem;
   @include respond(mobile-largest) {
     font-size: 1.08rem;
+  }
+
+  @include respond(mobile-small) {
+    font-size: 1.8rem;
   }
 }

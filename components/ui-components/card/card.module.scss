@@ -1,3 +1,5 @@
+@use '../../../styles/abstracts' as *;
+
 @keyframes turn-scale-up {
   0% {
     transform: scale(0.8) rotate3d(0, 0, 0, 0);
@@ -45,7 +47,7 @@
 
 .card {
   margin: 1rem;
-  border: solid 5px var(--white);
+  border: solid 0.25rem var(--white);
   border-radius: 5%;
   cursor: pointer;
 }
@@ -59,7 +61,7 @@
 
 .text {
   padding: 0.5rem 0.25rem;
-  border-top: solid 5px var(--white);
+  border-top: solid 0.25rem var(--white);
   color: var(--white);
   font-size: 1.5rem;
   font-weight: 500;

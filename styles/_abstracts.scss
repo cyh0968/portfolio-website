@@ -6,8 +6,9 @@ $bp-desktop-hd: 80rem; // 1280px
 $bp-mobile-largest: 64rem; // 1024px
 $bp-mobile-large: 48rem; // 768px
 $bp-mobile-medium: 34rem; // 544px
-$bp-mobile-small: 24rem; // 384px
-$bp-mobile-smallest: 20rem; // 320px
+$bp-mobile-small: 26rem; // 384px
+$bp-mobile-smallest: 21rem; // 320px
+$bp-mobile-xsl: 17.5rem; // 280px
 
 /* Mixin */
 @mixin respond($breakpoint) {
@@ -55,6 +56,12 @@ $bp-mobile-smallest: 20rem; // 320px
 
   @if $breakpoint == mobile-smallest {
     @media only screen and (max-width: $bp-mobile-smallest) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == mobile-xsl {
+    @media only screen and (max-width: $bp-mobile-xsl) {
       @content;
     }
   }

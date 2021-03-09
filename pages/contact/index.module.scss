@@ -1,3 +1,5 @@
+@use '../../styles/abstracts' as *;
+
 .contact {
   display: flex;
   flex-direction: column;
@@ -11,6 +13,15 @@
   letter-spacing: 2px;
   text-transform: uppercase;
   text-align: left;
+
+  @include respond(mobile-largest) {
+    font-size: 2.2rem;
+  }
+
+  @include respond(mobile-small) {
+    padding: 0;
+    font-size: 4rem;
+  }
 }
 
 .item {

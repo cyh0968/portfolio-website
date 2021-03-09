@@ -1,8 +1,18 @@
+@use '../../../styles/abstracts' as *;
+
+.container {
+  position: relative;
+
+  @include respond(mobile-medium) {
+  }
+
+  @include respond(mobile-small) {
+  }
+}
+
 .iFrame {
-  padding: 10px 5px;
-  border-radius: 5%;
-  box-shadow: 1px 1px 20px var(--dark-grey);
-  background-color: var(--primary-color);
+  width: 40rem;
+  height: 22.5rem;
 }
 
 .title {
@@ -11,5 +21,13 @@
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
-  margin-bottom: 10px;
+  margin-bottom: 2rem;
+
+  @include respond(mobile-medium) {
+    font-size: 1.6rem;
+  }
+
+  @include respond(mobile-small) {
+    font-size: 1.8rem;
+  }
 }

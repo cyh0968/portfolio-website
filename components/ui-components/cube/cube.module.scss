@@ -1,3 +1,5 @@
+@use '../../../styles/abstracts' as *;
+
 $length: 200px;
 $angle: -15deg;
 $positions: (
@@ -47,10 +49,16 @@ $positions: (
 
 .large {
   transform: scale(2);
+  @include respond(mobile-largest) {
+    display: none;
+  }
 }
 
 .medium {
   transform: scale(1.5);
+  @include respond(mobile-small) {
+    transform: scale(1);
+  }
 }
 
 .small {

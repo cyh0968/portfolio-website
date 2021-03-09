@@ -79,7 +79,7 @@ function Project() {
             backward, center: play/pause, right: forward)
           </p>
         </div>
-        <Slider width='45rem' height='30rem'>
+        <Slider type='video'>
           <IFrame
             src='https://www.youtube.com/embed/5bxqWZ6IHgk'
             title='Controller'
@@ -139,7 +139,7 @@ function Project() {
             design.
           </p>
           <br />
-          <div className={utilStyles.alignCenter}>
+          <div className={utilStyles.alignRight}>
             <Button name='code' href='https://github.com/yohan-choi-dev/fleamarket'>
               Code
             </Button>
@@ -171,7 +171,7 @@ function Project() {
           </Card>
         </div>
         <h3 className={utilStyles.headingXl}>Features</h3>
-        <Slider width='45rem' height='60rem'>
+        <Slider type='image'>
           <Image
             src='/images/projects/fleamarket/09.png'
             title='Home'

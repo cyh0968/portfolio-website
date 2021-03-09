@@ -3,10 +3,7 @@
 .container {
   position: relative;
   margin: 0rem auto 0.5rem;
-  perspective: 500px;
-  @include respond(mobile-large) {
-    transform: scale(0.9);
-  }
+  perspective: 200px;
 }
 
 .slider {
@@ -38,6 +35,9 @@
   @include respond(mobile-largest) {
     transform: translateZ(-100px) translateX(-15%) translateY(0%);
   }
+  @include respond(mobile-small) {
+    // display: none;
+  }
 }
 
 .next {
@@ -46,6 +46,9 @@
   @include respond(mobile-largest) {
     transform: translateZ(-100px) translateX(15%) translateY(0%);
   }
+  @include respond(mobile-small) {
+    // display: none;
+  }
 }
 
 .ready {
@@ -53,6 +56,9 @@
   transform: translateZ(-120px) translateY(-40%);
   @include respond(mobile-largest) {
     transform: translateZ(-120px) translateY(-10%);
+  }
+  @include respond(mobile-small) {
+    // display: none;
   }
 }
 
@@ -80,19 +86,75 @@
   &:active {
     transform: scale(0.7);
   }
+
+  @include respond(mobile-small) {
+    font-size: 8rem;
+  }
 }
 
 .previousButton {
-  left: 0%;
-  border-radius: 0 3px 3px 0;
+  left: -10%;
+  @include respond(mobile-large) {
+    left: -7%;
+  }
+
+  @include respond(mobile-small) {
+    left: -13%;
+  }
 }
 
 .nextButton {
-  right: 0%;
-  border-radius: 3px 0 0 3px;
+  right: -10%;
+
+  @include respond(mobile-large) {
+    right: -7%;
+  }
+
+  @include respond(mobile-small) {
+    right: -13%;
+  }
 }
 
 .previousButton:hover,
 .nextButton:hover {
   background-color: var(--primary-color);
+}
+
+.video {
+  width: 40rem;
+  height: 27.45rem;
+  @include respond(mobile-largest) {
+    width: 40rem;
+    height: 27.5rem;
+  }
+
+  @include respond(mobile-medium) {
+    width: 40rem;
+    height: 27.5rem;
+  }
+
+  @include respond(mobile-small) {
+    width: 40rem;
+    height: 27.5rem;
+  }
+}
+
+.image {
+  width: 30rem;
+  height: 40rem;
+
+  @include respond(mobile-largest) {
+    width: 37.5rem;
+    height: 52rem;
+  }
+
+  @include respond(mobile-medium) {
+    width: 40rem;
+    height: 52rem;
+  }
+
+  @include respond(mobile-small) {
+    width: 36rem;
+    height: 52rem;
+  }
 }

@@ -16,16 +16,12 @@ const slideStatusStyles = {
   waiting: mergeStrings(styles.slide, styles.waiting),
 };
 
-function Slider({
-  width = '40rem',
-  height = '20rem',
-  autoPlayMode = false,
-  playSpeed = 2000,
-  children,
-}) {
+function Slider({ type = 'video', autoPlayMode = false, playSpeed = 2000, children }) {
   const [indexOfCurrentSlide, setIndexOfCurrentSlide] = useState(0);
   const slides = Array.isArray(children) ? children : [children];
-  const slideSize = { width: width, height: height };
+  const sizeStyle = type === 'video' ? styles.video : styles.image;
+  const containerStyles = mergeStrings(styles.container, sizeStyle);
+  const sliderStyle = mergeStrings(styles.slider, sizeStyle);
 
   function showPreviousSlide() {
     // Decrease the index of current slide by -1.
@@ -91,7 +87,7 @@ function Slider({
   }, []);
 
   return (
-    <div style={slideSize} className={styles.container}>
+    <div className={containerStyles}>
       {!autoPlayMode && (
         <>
           <a className={styles.previousButton} onClick={showPreviousSlide}>
@@ -102,12 +98,11 @@ function Slider({
           </a>
         </>
       )}
-      <div className={styles.slider}>
+      <div className={sliderStyle}>
         {slides.map((slide, index, array) => (
           <div
             key={index}
             id={index}
-            style={slideSize}
             className={getSlideStatusStyles(index, array.length)}
             onClick={showSelectedSlide}>
             {slide}
@@ -119,6 +114,9 @@ function Slider({
 }
 
 Slider.propTypes = {
+  type: PropType.oneOf(['video', 'image']),
+  autoPlayMode: PropType.bool,
+  playSpeed: PropType.number,
   children: PropType.arrayOf(PropType.element),
 };
 

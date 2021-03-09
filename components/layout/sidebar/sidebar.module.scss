@@ -22,6 +22,14 @@
   @include respond(mobile-largest) {
     right: 0.4rem;
   }
+
+  @include respond(mobile-medium) {
+    right: -1.5rem;
+  }
+
+  @include respond(mobile-small) {
+    display: none;
+  }
 }
 
 .circle {
@@ -34,6 +42,9 @@
   &:active {
     transform: scale(1.2);
   }
+  @include respond(mobile-medium) {
+    display: none;
+  }
 }
 
 .line {
@@ -43,6 +54,9 @@
   height: 400px;
   right: 28px;
   background-color: var(--low-opacity-white);
+  @include respond(mobile-medium) {
+    width: 3px;
+  }
 }
 
 .gage {

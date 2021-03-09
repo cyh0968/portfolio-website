@@ -1,3 +1,5 @@
+@use '../styles/abstracts' as *;
+
 @keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -66,13 +68,17 @@
   height: 100vh;
   margin: 0.4rem auto 0rem;
   background-color: var(--primary-color);
-  @media only screen and (max-width: 64rem) {
-    width: 90vw;
+
+  @include respond(mobile-xsl) {
+    height: 80vh;
   }
 }
 
 .introMarginBottom {
   margin-bottom: 40rem;
+  @include respond(mobile-xsl) {
+    margin-bottom: 80rem;
+  }
 }
 
 .introHeading {

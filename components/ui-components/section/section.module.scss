@@ -87,4 +87,11 @@
   letter-spacing: 1px;
   text-align: center;
   text-transform: uppercase;
+  @include respond(mobile-largest) {
+    font-size: 3.6rem;
+  }
+
+  @include respond(mobile-small) {
+    font-size: 6rem;
+  }
 }

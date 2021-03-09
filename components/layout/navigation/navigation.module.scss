@@ -14,6 +14,10 @@ $max-width-64-right: 30%;
   transform: scale(0.1);
   transition: all 0.6s cubic-bezier(0.86, 0, 0.07, 1) $transition-delay;
 
+  @include respond(mobile-small) {
+    width: 5.3rem;
+    height: 5.3rem;
+  }
   @content;
 }
 
@@ -41,6 +45,11 @@ $navigation-transition: all 0.6s cubic-bezier(0.86, 0, 0.07, 1) 0.4s;
   border-radius: 50%;
   text-align: center;
   cursor: pointer;
+
+  @include respond(mobile-small) {
+    width: 5.3rem;
+    height: 5.3rem;
+  }
 }
 
 .icon {
@@ -73,6 +82,22 @@ $navigation-transition: all 0.6s cubic-bezier(0.86, 0, 0.07, 1) 0.4s;
   &::after {
     top: 0.8rem;
   }
+
+  @include respond(mobile-small) {
+    &,
+    &::before,
+    &::after {
+      width: 4.5rem;
+    }
+
+    &::before {
+      top: -1.32rem;
+    }
+
+    &::after {
+      top: 1.32rem;
+    }
+  }
 }
 
 .background {
@@ -87,6 +112,10 @@ $navigation-transition: all 0.6s cubic-bezier(0.86, 0, 0.07, 1) 0.4s;
   background-size: 100%;
   border-radius: 50%;
   transition: $navigation-transition;
+  @include respond(mobile-small) {
+    width: 5.3rem;
+    height: 5.3rem;
+  }
 }
 
 .ripple1 {
@@ -126,6 +155,21 @@ $navigation-transition: all 0.6s cubic-bezier(0.86, 0, 0.07, 1) 0.4s;
   font-size: 2.4rem;
   text-align: center;
   clip-path: var(--highlight-polygon);
+
+  @include respond(mobile-largest) {
+    width: 30rem;
+    font-size: 3.6rem;
+  }
+
+  @include respond(mobile-medium) {
+    width: 30rem;
+    font-size: 3.6rem;
+  }
+
+  @include respond(mobile-small) {
+    width: 40rem;
+    font-size: 4.8rem;
+  }
 
   &,
   &:link,
@@ -173,18 +217,66 @@ $navigation-transition: all 0.6s cubic-bezier(0.86, 0, 0.07, 1) 0.4s;
 
     & ~ .ripple1 {
       transform: scale(60);
+
+      @include respond(mobile-large) {
+        transform: scale(48);
+      }
+
+      @include respond(mobile-small) {
+        transform: scale(60);
+      }
+
+      @include respond(mobile-xsl) {
+        transform: scale(82.5);
+      }
     }
 
     & ~ .ripple2 {
       transform: scale(55);
+
+      @include respond(mobile-large) {
+        transform: scale(44);
+      }
+
+      @include respond(mobile-small) {
+        transform: scale(56);
+      }
+
+      @include respond(mobile-xsl) {
+        transform: scale(77.5);
+      }
     }
 
     & ~ .ripple3 {
       transform: scale(50);
+
+      @include respond(mobile-large) {
+        transform: scale(39);
+      }
+
+      @include respond(mobile-small) {
+        transform: scale(54.5);
+      }
+
+      @include respond(mobile-xsl) {
+        transform: scale(72.5);
+      }
     }
 
     & ~ .background {
       transform: scale(45);
+
+      @include respond(mobile-large) {
+        transform: scale(35);
+      }
+
+      @include respond(mobile-small) {
+        transform: scale(48);
+      }
+
+      @include respond(mobile-xsl) {
+        transform: scale(65);
+      }
     }
 
     & ~ .navigation {

@@ -39,7 +39,14 @@
 .alignLeft {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.alignRight {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
   align-items: center;
 }
 
@@ -89,6 +96,10 @@
   letter-spacing: 1px;
   text-align: center;
   text-transform: uppercase;
+
+  @include respond(mobile-small) {
+    font-size: 4.2rem;
+  }
 }
 
 .headingXl {
@@ -109,6 +120,14 @@
     width: 100%;
     background-color: var(--white);
     content: '';
+  }
+
+  @include respond(mobile-largest) {
+    font-size: 2.16rem;
+  }
+
+  @include respond(mobile-small) {
+    font-size: 3.6rem;
   }
 }
 
@@ -131,6 +150,14 @@
     background-color: var(--white);
     content: '';
   }
+
+  @include respond(mobile-largest) {
+    font-size: 2.16rem;
+  }
+
+  @include respond(mobile-small) {
+    font-size: 3.6rem;
+  }
 }
 
 .headingLg {
@@ -141,6 +168,14 @@
   text-align: left;
   text-transform: uppercase;
   margin-bottom: 1.5rem;
+
+  @include respond(mobile-largest) {
+    font-size: 1.56rem;
+  }
+
+  @include respond(mobile-small) {
+    font-size: 2.6rem;
+  }
 }
 
 .headingMd {
@@ -148,6 +183,14 @@
   font-size: 0.9rem;
   text-align: center;
   text-transform: uppercase;
+
+  @include respond(mobile-largest) {
+    font-size: 1.18rem;
+  }
+
+  @include respond(mobile-small) {
+    font-size: 1.8rem;
+  }
 }
 
 /* Link */
@@ -192,7 +235,11 @@
 .long {
   font-weight: 500;
   @include respond(mobile-largest) {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+  }
+
+  @include respond(mobile-small) {
+    font-size: 2.5rem;
   }
 }
 
