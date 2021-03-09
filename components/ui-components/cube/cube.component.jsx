@@ -18,9 +18,10 @@ function* positions() {
   yield 'bottom';
 }
 
-function Cube({ direction = 'front', animation = false, children }) {
+function Cube({ size = 'large', direction = 'front', animation = false, children }) {
   const elements = Array.isArray(children) ? children : [children];
   const animationStyle = animation && styles.animation;
+  const cubeContainerStyle = mergeStrings(styles.container, styles[size]);
   const cubeShowStyle = styles[direction];
   const cubeStyles = mergeStrings(styles.cube, cubeShowStyle, animationStyle);
   const cubeFacePositions = positions();
@@ -32,7 +33,7 @@ function Cube({ direction = 'front', animation = false, children }) {
   ));
 
   return (
-    <div className={styles.container}>
+    <div className={cubeContainerStyle}>
       <div name='cube' className={cubeStyles}>
         {listCubeFaces}
       </div>
@@ -41,6 +42,7 @@ function Cube({ direction = 'front', animation = false, children }) {
 }
 
 Cube.propTypes = {
+  size: PropType.oneOf(['large', 'medium', 'small']),
   direction: PropType.oneOf(['front', 'left', 'right', 'back', 'top', 'bottom']),
   animation: PropType.bool,
   children: PropType.arrayOf(PropType.element),

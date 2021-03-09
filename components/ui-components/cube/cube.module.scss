@@ -44,3 +44,15 @@ $positions: (
   transform-style: preserve-3d;
   transition: transform 1s ease;
 }
+
+.large {
+  transform: scale(2);
+}
+
+.medium {
+  transform: scale(1.5);
+}
+
+.small {
+  transform: scale(1);
+}
