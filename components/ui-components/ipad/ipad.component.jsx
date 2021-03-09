@@ -1,6 +1,3 @@
-/* React */
-import { useEffect } from 'react';
-
 /* Styles */
 import styles from './ipad.module.scss';
 
