@@ -1,4 +1,5 @@
 /* Next */
+import Link from 'next/link';
 import Head from 'next/head';
 
 /* Styles */
@@ -24,7 +25,7 @@ function Layout({ defaultLayout = false, siteTitle = "Yohan's website", children
           content="This is Yohan's portfolio website introducing projects and blog posts."
         />
         <meta property='og:url' content='http://yohan-choi.com' />
-        <meta property='og:image' content='/preview.png' />
+        <meta property='og:image' content='/images/preview.png' />
         <title>{siteTitle}</title>
       </Head>
       {defaultLayout ? (
