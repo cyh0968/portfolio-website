@@ -1,4 +1,16 @@
 @use '../../styles/abstracts' as *;
+.container {
+  margin-top: 10rem;
+  height: 50vh;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10rem;
+}
 
 .title {
   font-size: 1.5rem;

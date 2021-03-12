@@ -23,30 +23,43 @@ export async function getStaticProps() {
 function Blog({ allPostsData }) {
   return (
     <Layout>
-      <Section secondarySectionHeading='Blog'>
-        <ul className={utilStyles.list}>
-          {allPostsData.map(({ id, title, date, time, link, categories }) => (
-            <li className={utilStyles.item} key={id}>
-              <h3 className={styles.title}>
-                <Link href={link}>
-                  <a className={utilStyles.link}>{title}</a>
-                </Link>
-              </h3>
-              <small className={styles.details}>
-                <Date dateString={date}></Date>
-                {' ' + time}
-              </small>
-              {categories.length > 0 && (
+      {allPostsData.length > 0 ? (
+        <Section secondarySectionHeading='Blog'>
+          <ul className={utilStyles.list}>
+            {allPostsData.map(({ id, title, date, time, link, categories }) => (
+              <li className={utilStyles.item} key={id}>
+                <h3 className={styles.title}>
+                  <Link href={link}>
+                    <a className={utilStyles.link}>{title}</a>
+                  </Link>
+                </h3>
                 <small className={styles.details}>
-                  {categories.map((category, index, array) =>
-                    index < array.length - 1 ? category + ', ' : category,
-                  )}
+                  <Date dateString={date}></Date>
+                  {' ' + time}
                 </small>
-              )}
-            </li>
-          ))}
-        </ul>
-      </Section>
+                {categories.length > 0 && (
+                  <small className={styles.details}>
+                    {categories.map((category, index, array) =>
+                      index < array.length - 1 ? category + ', ' : category,
+                    )}
+                  </small>
+                )}
+              </li>
+            ))}
+          </ul>
+        </Section>
+      ) : (
+        <div className={styles.container}>
+          <h1 className={utilStyles.heading2Xl}>Comming Soon...</h1>
+          <div className={styles.content}>
+            <h2 className={utilStyles.goBackToHome}>
+              <Link href='/'>
+                <a className={utilStyles.link}>Go Back to Home</a>
+              </Link>
+            </h2>
+          </div>
+        </div>
+      )}
     </Layout>
   );
 }

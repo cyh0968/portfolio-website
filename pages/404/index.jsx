@@ -14,7 +14,7 @@ function PageNotFound() {
       <div className={styles.container}>
         <h1 className={utilStyles.heading2Xl}>404 Error - Page Not Found</h1>
         <div className={styles.content}>
-          <h2 className={styles.goBackToHome}>
+          <h2 className={utilStyles.goBackToHome}>
             <Link href='/'>
               <a className={utilStyles.link}>Go Back to Home</a>
             </Link>
