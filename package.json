@@ -21,8 +21,8 @@
   },
   "scripts": {
     "start": "next start",
-    "launch": "git pull origin master && next build &&pm2 start yarn --name 'portfolio' --interpreter bash -- start ",
-    "build": "next build",
+    "launch": "pm2 start yarn --name 'portfolio' --watch --interpreter bash -- start",
+    "build": "git pull origin master && next build",
     "dev": "next dev",
     "pretty": "prettier --write \"./**/*.{js,jsx,json}\""
   },
