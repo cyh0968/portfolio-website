@@ -111,10 +111,10 @@ function Homepage() {
 
           <div className={styles.scene}>
             <Cube size='large' direction={cubeDirection}>
-              <h3>About</h3>
-              <h3>Blog</h3>
-              <h3>Project</h3>
-              <h3>Contact</h3>
+              <div className={styles.cubeFaceHeading}>About</div>
+              <div className={styles.cubeFaceHeading}>Blog</div>
+              <div className={styles.cubeFaceHeading}>Project</div>
+              <div className={styles.cubeFaceHeading}>Contact</div>
             </Cube>
           </div>
         </div>
