@@ -56,7 +56,7 @@ function Contact() {
               <a
                 title='Medium'
                 className={listStyle}
-                href='https://medium/yohanchoi2020'
+                href='https://medium/@yohan-choi-dev'
                 target='_blank'>
                 <MediumIcon name='logo-twitter' className={utilStyles.iconLg}></MediumIcon>Medium
               </a>
