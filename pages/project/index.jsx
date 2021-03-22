@@ -140,6 +140,9 @@ function Project() {
           </p>
           <br />
           <div className={utilStyles.alignRight}>
+            <Button name='code' href='https://fleamarket.yohan-choi.com'>
+              Demo
+            </Button>
             <Button name='code' href='https://github.com/yohan-choi-dev/fleamarket'>
               Code
             </Button>
